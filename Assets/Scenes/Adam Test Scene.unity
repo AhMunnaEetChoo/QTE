@@ -514,7 +514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press <sprite=0> to Man Behind Winkie's
+  m_text: Press <sprite=24> to Man Behind Winkie's
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f071c042b2ed47cdb53d396a7cf6b2f, type: 2}
   m_sharedMaterial: {fileID: 7188557119288152769, guid: 9f071c042b2ed47cdb53d396a7cf6b2f, type: 2}
@@ -833,27 +833,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_videoPlayer: {fileID: 1566681775}
   m_timerText: {fileID: 1779254352}
-  m_clipData:
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
-    m_text: 
-  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
-    m_text: 
+  m_qtePrefab: {fileID: 0}
+  m_resultPrefab: {fileID: 0}
+  m_gameData:
+    clipData: []
 --- !u!1 &1779254351
 GameObject:
   m_ObjectHideFlags: 0

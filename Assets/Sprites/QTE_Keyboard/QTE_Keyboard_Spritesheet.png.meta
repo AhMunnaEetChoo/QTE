@@ -108,18 +108,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1020
-        height: 1024
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        y: 2386
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a6c00dd909ae4fb48a3ceb05109e93e
-      internalID: -551164916
+      spriteID: 3826edbde80104393aa616f1a0278c72
+      internalID: -66600652
       vertices: []
       indices: 
       edges: []
@@ -128,19 +128,775 @@ TextureImporter:
       name: QTE_Keyboard_Spritesheet_1
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 1024
-        height: 1024
-      alignment: 6
-      pivot: {x: 0, y: 0}
+        x: 476
+        y: 2386
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 118da8bcb4fa2452688b121a646856bf
-      internalID: 1115723006
+      spriteID: f46fea68d9a9341a39c0dba47fccd22c
+      internalID: -274384794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 2386
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdbe80f64d49476298ba8ea59da2c16
+      internalID: 944904901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 2386
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f459a77ae177a4769b41942abdf446a2
+      internalID: 837883675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 2386
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37438cf4895df4da3a6a1e74f75c7160
+      internalID: -1137136801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 2386
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdbc2cb19bbd400e97b55a0739a3f58
+      internalID: -1322256108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 2386
+        width: 1791
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4a8d10ebeb0495faaddc6466ad4e7b
+      internalID: 1492502248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daf30fcef3664b5990a07e7492cf558
+      internalID: -976615891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d285fb4d38c234299b8682c866f5ebaa
+      internalID: -966498599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa720c9780f77430bbeac501917435d6
+      internalID: 996793308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1061411a27e234f7ca295eb7d6df95c5
+      internalID: -446605634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbef9a91ed986419fb98488a3c00e34d
+      internalID: 19677865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf1fb921c7b9451897bbcb3ae7c14f6
+      internalID: 787525119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c30d7c35848482dbee77e8d2895ef6
+      internalID: 874402989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 1910
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9975c29b6c1824b05a6bedf7e6175da3
+      internalID: -268007692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1434
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f2aea2541554d9eb4bb60dccda4362
+      internalID: 392839724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1434
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8687970a3f5e14703ba8b40c336088b4
+      internalID: 62691055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 1434
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d7f2c3149ac49c094f6ffdd1a24e8e
+      internalID: -1904511522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 1434
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df00ea959433475c926e6f680b187f2
+      internalID: 176337029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 1434
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5266c4f88fc24daabe5605bf9c4c3d0
+      internalID: 988699902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 1434
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181e17bae2a354a1bbd1b70d7721c52e
+      internalID: -1452406597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 958
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce4a139b2cf049ecac6861386100a13
+      internalID: 463382631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 958
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91140d80bf4ca4924966017fbcb0fee9
+      internalID: 1094907585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 958
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539fbc627edbf4b968a03bb1355eb978
+      internalID: -105707989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 958
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62aeb009128ff4f83a7fa1cbbd2039f4
+      internalID: -80105221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 958
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ed790e69a524055b608165a66452b6
+      internalID: 1314627981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 958
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b114f970a3f4b4a5bba6dea2a31584af
+      internalID: 1347090920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 482
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9944ad850c5f44c659959780512f3dc2
+      internalID: 830383569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 482
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a073bc75437647e1b200880db65b4ee
+      internalID: 1448295836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 482
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba70e3aa7f6f5452496e5dfa2f97249a
+      internalID: 1667142798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 482
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35961e2c2f574ccf9c3705c31327e35
+      internalID: -348631525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 482
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b355374ce10344b4482bf1166f32fcb2
+      internalID: 1425898147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 482
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3153eb096fc437c9fe9d7d3060be4f
+      internalID: 1152820969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485c889561d7e4d62b3f741d422ab956
+      internalID: -1483790132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 6
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f67eaebb77b40409a8347827a70487
+      internalID: -61189813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 6
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c7490839f344d678e4f193d8072ba8
+      internalID: -1193400209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 6
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7abc8c7b0c2b41c6b30344bae3079ae
+      internalID: -967888167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QTE_Keyboard_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 6
+        width: 473
+        height: 473
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521c9e240ffcb4786aea4cafeb13b55f
+      internalID: 842566657
       vertices: []
       indices: 
       edges: []
@@ -148,7 +904,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8f5d8400889fe47109bbb4434503912f
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -156,8 +912,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      QTE_Keyboard_Spritesheet_0: -551164916
-      QTE_Keyboard_Spritesheet_1: 1115723006
+      QTE_Keyboard_Spritesheet_44: 842566657
+      QTE_Keyboard_Spritesheet_35: 1667142798
+      QTE_Keyboard_Spritesheet_40: -1483790132
+      QTE_Keyboard_Spritesheet_33: 830383569
+      QTE_Keyboard_Spritesheet_34: 1448295836
+      QTE_Keyboard_Spritesheet_41: -61189813
+      QTE_Keyboard_Spritesheet_32: -803487531
+      QTE_Keyboard_Spritesheet_30: 1314627981
+      QTE_Keyboard_Spritesheet_15: 874402989
+      QTE_Keyboard_Spritesheet_20: -1904511522
+      QTE_Keyboard_Spritesheet_8: -1883024070
+      QTE_Keyboard_Spritesheet_21: 176337029
+      QTE_Keyboard_Spritesheet_26: 463382631
+      QTE_Keyboard_Spritesheet_17: 626549985
+      QTE_Keyboard_Spritesheet_45: -534340865
+      QTE_Keyboard_Spritesheet_22: 988699902
+      QTE_Keyboard_Spritesheet_25: -377761163
+      QTE_Keyboard_Spritesheet_16: -268007692
+      QTE_Keyboard_Spritesheet_1: -274384794
+      QTE_Keyboard_Spritesheet_19: 62691055
+      QTE_Keyboard_Spritesheet_10: -966498599
+      QTE_Keyboard_Spritesheet_42: -1193400209
+      QTE_Keyboard_Spritesheet_39: -1693176364
+      QTE_Keyboard_Spritesheet_11: 996793308
+      QTE_Keyboard_Spritesheet_6: 1492502248
+      QTE_Keyboard_Spritesheet_4: -1137136801
+      QTE_Keyboard_Spritesheet_0: -66600652
+      QTE_Keyboard_Spritesheet_5: -1322256108
+      QTE_Keyboard_Spritesheet_14: 787525119
+      QTE_Keyboard_Spritesheet_43: -967888167
+      QTE_Keyboard_Spritesheet_13: 19677865
+      QTE_Keyboard_Spritesheet_29: -80105221
+      QTE_Keyboard_Spritesheet_37: 1425898147
+      QTE_Keyboard_Spritesheet_12: -446605634
+      QTE_Keyboard_Spritesheet_18: 392839724
+      QTE_Keyboard_Spritesheet_9: -976615891
+      QTE_Keyboard_Spritesheet_2: 944904901
+      QTE_Keyboard_Spritesheet_36: -348631525
+      QTE_Keyboard_Spritesheet_3: 837883675
+      QTE_Keyboard_Spritesheet_27: 1094907585
+      QTE_Keyboard_Spritesheet_28: -105707989
+      QTE_Keyboard_Spritesheet_7: 1468807648
+      QTE_Keyboard_Spritesheet_23: -1452406597
+      QTE_Keyboard_Spritesheet_38: 1152820969
+      QTE_Keyboard_Spritesheet_31: 1347090920
+      QTE_Keyboard_Spritesheet_24: 1967608712
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
