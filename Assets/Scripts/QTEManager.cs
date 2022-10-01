@@ -33,7 +33,7 @@ public class QTEManager : MonoBehaviour
     {
         public string url;
         public List<QTE> qtes = new List<QTE>();
-        public float volume = 1;
+        public float volume = 1.0f;
     };
 
     [System.Serializable]
@@ -82,6 +82,18 @@ public class QTEManager : MonoBehaviour
         private int m_currentQTE = 0;
         private GameObject m_currentPrompt;
         private GameObject m_currentResult;
+        enum QTEResult
+        {
+            None,
+            Perfect,
+            Great,
+            Cool,
+            Shame,
+            TooBad,
+            Whoops
+        }
+        private QTEResult m_qteResult = QTEResult.None;
+        private float m_qteResultTimer = 0.0f;
 
         public PlayClip(QTEManager _manager, List<ClipData> _dataList, VideoPlayer _videoPlayer)
         {
@@ -129,22 +141,29 @@ public class QTEManager : MonoBehaviour
                         string resultText = "";
                         if (difference < currentQTE.perfectBuffer)
                         {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                             resultText = "PERFECT!";
+                            m_qteResult = QTEResult.Perfect;
                         }
                         else if(difference < currentQTE.greatBuffer)
                         {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                             resultText = "GREAT!";
+                            m_qteResult = QTEResult.Great;
                         }
                         else if(difference < currentQTE.coolBuffer)
                         {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                             resultText = "Cool";
+                            m_qteResult = QTEResult.Cool;
                         }
                         else
                         {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
                             resultText = "Shame";
-                            // fail
+                            m_qteResult = QTEResult.Shame;
                         }
-
+                        m_qteResultTimer = 0.0f;
                         // for now spawn some test text
                         GameObject canvas = GameObject.Find("Canvas");
                         // spawn the text
@@ -158,6 +177,27 @@ public class QTEManager : MonoBehaviour
                     }
                     break;
                 case QTEStage.KeyPressed:
+                    m_qteResultTimer += Time.deltaTime;
+                    if(m_qteResultTimer > 1.0f)
+                    {
+                        //after 1 second
+                        switch (m_qteResult)
+                        {
+                            case QTEResult.Perfect:
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Perfect");
+                                break;
+                            case QTEResult.Great:
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Great");
+                                break;
+                            case QTEResult.Cool:
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Cool");
+                                break;
+                            case QTEResult.Shame:
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Shame");
+                                break;
+                        }
+                        m_qteResult = QTEResult.None;
+                    }
                     // nothing
                     break;
             }
@@ -181,6 +221,7 @@ public class QTEManager : MonoBehaviour
             GameObject.Destroy(m_currentResult);
             m_currentQTE = 0;
             m_qteStage = QTEStage.Initialising;
+            m_qteResult = QTEResult.None;
             m_clipIndex++;
         }
     }
