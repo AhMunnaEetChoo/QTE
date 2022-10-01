@@ -41,7 +41,7 @@ MonoBehaviour:
   m_SpriteCharacterTable:
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 0
+    m_GlyphIndex: 11
     m_Scale: 1
     m_Name: QTE_Keyboard_Spritesheet_0
     m_HashCode: -1433396412

@@ -8,6 +8,48 @@ using TMPro;
 
 public class QTEManager : MonoBehaviour
 {
+    public static readonly Dictionary<string, int> charToSpriteIndex = new Dictionary<string, int>
+    {
+        { "1", 0 },
+        { "2", 1 },
+        { "3", 2 },
+        { "4", 3 },
+        { "5", 4 },
+        { "6", 5 },
+        { "space", 6 },
+        { "7", 7 },
+        { "8", 8 },
+        { "9", 9 },
+        { "a", 10 },
+        { "b", 11 },
+        { "c", 12 },
+        { ".", 13 },
+        { "~", 14 },
+        { "d", 15 },
+        { "e", 16 },
+        { "f", 17 },
+        { "g", 18 },
+        { "h", 19 },
+        { "i", 20 },
+        { "j", 21 },
+        { "k", 22 },
+        { "l", 23 },
+        { "m", 24 },
+        { "n", 25 },
+        { "o", 26 },
+        { "p", 27 },
+        { "q", 28 },
+        { "r", 29 },
+        { "s", 30 },
+        { "t", 31 },
+        { "u", 32 },
+        { "v", 33 },
+        { "w", 34 },
+        { "x", 35 },
+        { "y", 36 },
+        { "z", 37 }
+    };
+
     private StateMachine m_stateMachine = new StateMachine();
     public VideoPlayer m_videoPlayer;
     public TMP_Text m_timerText;
@@ -128,7 +170,7 @@ public class QTEManager : MonoBehaviour
                         // spawn the text
                         m_currentPrompt = Instantiate(m_manager.m_qtePrefab, currentQTE.screenPos, Quaternion.identity, canvas.transform);
                         TMP_Text newText = m_currentPrompt.GetComponent<TMP_Text>();
-                        newText.text = currentQTE.text;
+                        newText.text = currentQTE.text.Replace("[" + currentQTE.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[currentQTE.button].ToString() + ">");
                         m_qteStage = QTEStage.ShowPrompt;
                     }
                     break;
