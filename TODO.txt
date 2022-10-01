@@ -3,7 +3,6 @@ TODO:
 Intro QTE - press these buttons
 10 second timer somewhere on screen
 figure out how to share timeline with movie for event triggers
-guarantee text position on position in video
 juicey text animation
 transport the audio stuff over from MPB
 screenshake? do it on the UI rather than video
