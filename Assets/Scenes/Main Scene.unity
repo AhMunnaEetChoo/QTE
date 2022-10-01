@@ -698,9 +698,25 @@ MonoBehaviour:
   m_videoPlayer: {fileID: 1566681775}
   m_timerText: {fileID: 1779254352}
   m_clipData:
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
+    m_text: 
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
+    m_text: 
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
+    m_text: 
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
+    m_text: 
   - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
     m_text: 
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
+    m_text: 
   - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
+    m_text: 
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
+    m_text: 
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
+    m_text: 
+  - m_url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
     m_text: 
 --- !u!1 &1779254351
 GameObject:
