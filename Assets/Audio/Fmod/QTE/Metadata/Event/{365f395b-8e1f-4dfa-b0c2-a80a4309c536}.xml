@@ -147,6 +147,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{53748667-38ab-4891-8b75-56d964ec7fb3}">
+		<property name="volume">
+			<value>-1</value>
+		</property>
+		<property name="pitch">
+			<value>3.4000001</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{26ae486c-fa1d-4c5c-b981-52a99e15ba17}</destination>
 		</relationship>
