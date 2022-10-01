@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cda252e28515d4eeb824ad0f212b39b7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Typo Round
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 69648e3bccea84d4c8026c9ac10e126a, type: 3}
+  - {fileID: 12800000, guid: d29b37c3928854ea1912acca6466ec7d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
