@@ -54,8 +54,13 @@ public class QTEManager : MonoBehaviour
     public VideoPlayer m_videoPlayer;
     public TMP_Text m_timerText;
     public GameObject m_qtePrefab;
-    public GameObject m_resultPrefab;
-
+    public GameObject m_awesomePrefab;
+    public GameObject m_perfectPrefab;
+    public GameObject m_greatPrefab;
+    public GameObject m_coolPrefab;
+    public GameObject m_shamePrefab;
+    public GameObject m_tooBadPrefab;
+    public GameObject m_whoopsPrefab;
 
     [System.Serializable]
     public class QTE
@@ -180,38 +185,37 @@ public class QTEManager : MonoBehaviour
                     {
                         // now check against the correct time..
                         float difference = Mathf.Abs(currentQTE.triggerTime - (float)m_videoPlayer.time);
-                        string resultText = "";
+                        GameObject toSpawn;
                         if (difference < currentQTE.perfectBuffer)
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                            resultText = "PERFECT!";
                             m_qteResult = QTEResult.Perfect;
+                            toSpawn = m_manager.m_perfectPrefab;
                         }
                         else if(difference < currentQTE.greatBuffer)
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                            resultText = "GREAT!";
                             m_qteResult = QTEResult.Great;
+                            toSpawn = m_manager.m_greatPrefab;
                         }
                         else if(difference < currentQTE.coolBuffer)
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                            resultText = "Cool";
                             m_qteResult = QTEResult.Cool;
+                            toSpawn = m_manager.m_coolPrefab;
                         }
                         else
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
-                            resultText = "Shame";
                             m_qteResult = QTEResult.Shame;
+                            toSpawn = m_manager.m_shamePrefab;
                         }
                         m_qteResultTimer = 0.0f;
                         // for now spawn some test text
                         GameObject canvas = GameObject.Find("Canvas");
+
                         // spawn the text
-                        m_currentResult = Instantiate(m_manager.m_resultPrefab, new Vector2(300.0f, 300.0f), Quaternion.identity, canvas.transform);
-                        TMP_Text newText = m_currentResult.GetComponent<TMP_Text>();
-                        newText.text = resultText;
+                        m_currentResult = Instantiate(toSpawn, new Vector2(300.0f, 300.0f), Quaternion.identity, canvas.transform);
                         m_qteStage = QTEStage.KeyPressed;
 
                         // for now destroy
