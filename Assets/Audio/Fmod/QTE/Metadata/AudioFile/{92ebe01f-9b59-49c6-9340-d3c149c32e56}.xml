@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{92ebe01f-9b59-49c6-9340-d3c149c32e56}">
+		<property name="assetPath">
+			<value>Rhythm_Nice_Tom.aif</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.0758958333333331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c8ea14ab-5a5a-4f52-bba0-461895542783}</destination>
+		</relationship>
+	</object>
+</objects>

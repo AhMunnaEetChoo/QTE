@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{065ea864-057d-4462-8dae-af959b877784}">
+		<property name="assetPath">
+			<value>ChannelChangeB.aif</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c8ea14ab-5a5a-4f52-bba0-461895542783}</destination>
+		</relationship>
+	</object>
+</objects>
