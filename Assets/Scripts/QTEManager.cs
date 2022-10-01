@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class QTEManager : MonoBehaviour
 {
     private StateMachine m_stateMachine = new StateMachine();
-    public List<ClipData> m_clipData = new List<ClipData>();
+    public VideoPlayer m_videoPlayer;
 
+    [System.Serializable]
     public class ClipData
     {
         public string m_url;
         public string m_text;
-    }
+    };
+    public List<ClipData> m_clipData = new List<ClipData>();
 
     public class MainMenu : IState
     {
@@ -38,17 +41,29 @@ public class QTEManager : MonoBehaviour
     public class PlayClip : IState
     {
         private List<ClipData> m_clipDataList;
-        
-        public PlayClip(List<ClipData> _dataList)
+        private VideoPlayer m_videoPlayer;
+
+        public PlayClip(List<ClipData> _dataList, VideoPlayer _videoPlayer)
         {
             m_clipDataList = _dataList;
+            m_videoPlayer = _videoPlayer;
+            m_videoPlayer.loopPointReached += EndReached;
         }
+        void EndReached(UnityEngine.Video.VideoPlayer vp)
+        {
+            OnEnter();
+        }
+
         public void Tick()
         {
         }
         public void OnEnter()
         {
             // choose a clip
+            int index = Random.Range(0, m_clipDataList.Count);
+            m_videoPlayer.url = m_clipDataList[index].m_url;
+            m_videoPlayer.Play();
+
             // start timers
         }
 
@@ -60,7 +75,7 @@ public class QTEManager : MonoBehaviour
     {
         // setup state machine
         MainMenu mainMenuState = new MainMenu();
-        PlayClip playClipState = new PlayClip(m_clipData);
+        PlayClip playClipState = new PlayClip(m_clipData, m_videoPlayer);
 
         m_stateMachine.AddTransition(mainMenuState, playClipState, mainMenuState.IsComplete);
         m_stateMachine.SetState(mainMenuState);
