@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
 using UnityEngine.Video;
+using TMPro;
 
 public class QTEManager : MonoBehaviour
 {
     private StateMachine m_stateMachine = new StateMachine();
     public VideoPlayer m_videoPlayer;
+    public TMP_Text m_timerText;
 
     [System.Serializable]
     public class ClipData
@@ -84,6 +86,10 @@ public class QTEManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        double seconds = m_videoPlayer.time;
+        double hundredseconds = m_videoPlayer.time * 100.0;
+        m_timerText.text = string.Format("{0:0}", seconds);
+
         m_stateMachine.Tick();
     }
 }
