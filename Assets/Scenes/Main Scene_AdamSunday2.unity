@@ -344,6 +344,73 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &66891878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66891880}
+  - component: {fileID: 66891879}
+  m_Layer: 0
+  m_Name: ScoreSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &66891879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66891878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 833388ca7d1134cc7a48010a6d0e09f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScorePerfect: 1000
+  ScoreGreat: 500
+  ScoreCool: 100
+  ScoreAwesome: 500
+  ScoreNice: 500
+  ScoreMash: 5
+  ScoreFailInstruction: -100
+  ScoreFailMash: -200
+  ScoreFailRhythm: -10
+  CurrentScoreText: {fileID: 105274445}
+  RainbowBurstParticle: {fileID: 6328842377267627056, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
+  BlueBurstParticle: {fileID: 662282866721291670, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
+  BlueSingleParticle: {fileID: 4118936611921964542, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
+  StarTarget: {fileID: 453852473}
+  ScorePerfectTrigger: 0
+  ScoreGreatTrigger: 0
+  ScoreCoolTrigger: 0
+  ScoreAwesomeTrigger: 0
+  ScoreNiceTrigger: 0
+  ScoreMashTrigger: 0
+  ScoreFailInstructionTrigger: 0
+  ScoreFailMashTrigger: 0
+  ScoreFailRhythmTrigger: 0
+--- !u!4 &66891880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66891878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 132.61372, y: 185.57953, z: 37.271576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!850595691 &97881670
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -15324,6 +15391,7 @@ MonoBehaviour:
   m_shamePrefab: {fileID: 431904441784585201, guid: 28b19a7e664884fe1a63969a72761c3f, type: 3}
   m_tooBadPrefab: {fileID: 8248972276569394638, guid: 8601d013e42474a97a3ce7c30cf0d4f9, type: 3}
   m_whoopsPrefab: {fileID: 8313402052362861787, guid: 70bb56847f3804848845d131b518cb63, type: 3}
+  m_buttonPrefab: {fileID: 0}
   m_gameData:
     clipData:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
