@@ -229,7 +229,7 @@ public class QTEManager : MonoBehaviour
                     break;
                 case QTEStage.Showresult:
                     _qteState.m_qteResultTimer += Time.deltaTime;
-                    if (_qteState.m_qteResult != QTEResult.None && _qteState.m_qteResultTimer > 1.0f)
+                    if (_qteState.m_qteResult != QTEResult.None && _qteState.m_qteResultTimer > 0.4f)
                     {
                         //after 1 second
                         GameObject toSpawn = m_manager.m_perfectPrefab;
@@ -315,7 +315,7 @@ public class QTEManager : MonoBehaviour
                 case QTEStage.Showresult:
                     {
                         _qteState.m_qteResultTimer += Time.deltaTime;
-                        if (_qteState.m_qteResult != QTEResult.None && _qteState.m_qteResultTimer > 1.0f)
+                        if (_qteState.m_qteResult != QTEResult.None && _qteState.m_qteResultTimer > 0.4f)
                         {
                             //after 1 second
                             GameObject toSpawn = m_manager.m_perfectPrefab;
@@ -387,10 +387,7 @@ public class QTEManager : MonoBehaviour
 
             m_videoPlayer.url = m_currentClipData.url;
             m_videoPlayer.Play();
-            for(ushort i = 0; i < m_videoPlayer.audioTrackCount; ++i)
-            {
-                m_videoPlayer.SetDirectAudioVolume(i, m_currentClipData.volume);
-            }
+            m_videoPlayer.SetDirectAudioVolume(0, m_currentClipData.volume);
         }
 
         public void OnExit()
