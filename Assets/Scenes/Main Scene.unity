@@ -3221,7 +3221,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-288164
+  m_Name: pb_Mesh28134
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10078,7 +10078,7 @@ MonoBehaviour:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4
       qtes:
       - text: Mash [s] to sit on sofa
-        button: b
+        button: s
         screenPos: {x: 0, y: -200}
         promptTime: 1
         triggerTime: 3
@@ -10090,8 +10090,8 @@ MonoBehaviour:
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4
       qtes:
-      - text: Mash [e] to eat sausages
-        button: b
+      - text: Mash [e] to Chow Down
+        button: e
         screenPos: {x: 0, y: -200}
         promptTime: 1
         triggerTime: 6
@@ -10104,7 +10104,7 @@ MonoBehaviour:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4
       qtes:
       - text: Press [i] to Declare that you are Spartacus
-        button: b
+        button: i
         screenPos: {x: 0, y: -200}
         promptTime: 1
         triggerTime: 6
@@ -10129,8 +10129,8 @@ MonoBehaviour:
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
       qtes:
-      - text: Press [j] to Jump very high
-        button: j
+      - text: Press [w] to Shoot Web
+        button: w
         screenPos: {x: 0, y: -200}
         promptTime: 1
         triggerTime: 6
