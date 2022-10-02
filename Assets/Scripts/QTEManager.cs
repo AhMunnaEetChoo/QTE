@@ -185,7 +185,8 @@ public class QTEManager : MonoBehaviour
                         GameObject canvas = GameObject.Find("Canvas");
 
                         // spawn the text
-                        _qteState.m_prompt = Instantiate(m_manager.m_qtePrefab, _qteData.screenPos, Quaternion.identity, canvas.transform);
+                        _qteState.m_prompt = Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
+                        _qteState.m_prompt.transform.localPosition = _qteData.screenPos;
                         TMP_Text newText = _qteState.m_prompt.GetComponent<TMP_Text>();
                         newText.text = _qteData.text.Replace("[" + _qteData.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">");
                         _qteState.m_qteStage = QTEStage.ShowPrompt;
@@ -265,7 +266,8 @@ public class QTEManager : MonoBehaviour
                                 break;
                         }
                         GameObject canvas = GameObject.Find("Canvas");
-                        Instantiate(toSpawn, new Vector2(300.0f, 300.0f), Quaternion.identity, canvas.transform);
+                        GameObject newText = Instantiate(toSpawn, Vector3.zero, Quaternion.identity, canvas.transform);
+                        newText.transform.localPosition = Vector3.zero;
 
                         _qteState.m_qteResult = QTEResult.None;
                     }
@@ -282,7 +284,8 @@ public class QTEManager : MonoBehaviour
                         GameObject canvas = GameObject.Find("Canvas");
 
                         // spawn the text
-                        _qteState.m_prompt = Instantiate(m_manager.m_qtePrefab, _qteData.screenPos, Quaternion.identity, canvas.transform);
+                        _qteState.m_prompt = Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
+                        _qteState.m_prompt.transform.localPosition = _qteData.screenPos;
                         TMP_Text newText = _qteState.m_prompt.GetComponent<TMP_Text>();
                         newText.text = _qteData.text.Replace("[" + _qteData.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">");
                         _qteState.m_qteStage = QTEStage.ShowPrompt;
@@ -345,7 +348,8 @@ public class QTEManager : MonoBehaviour
                                     break;
                             }
                             GameObject canvas = GameObject.Find("Canvas");
-                            Instantiate(toSpawn, new Vector2(300.0f, 300.0f), Quaternion.identity, canvas.transform);
+                            GameObject newText = Instantiate(toSpawn, Vector3.zero, Quaternion.identity, canvas.transform);
+                            newText.transform.localPosition = Vector3.zero;
 
                             _qteState.m_qteResult = QTEResult.None;
                             _qteState.m_qteResultTimer = 0.0f;

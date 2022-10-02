@@ -3,7 +3,5 @@ TODO:
 Rhythm mode
 Score
 Merge TV scene into main scene
-make QTEs fail for wrong button press
-
 screenshake? do it on the UI rather than video
 
