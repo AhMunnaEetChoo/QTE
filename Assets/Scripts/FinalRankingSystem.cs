@@ -28,15 +28,27 @@ public class FinalRankingSystem : MonoBehaviour
 
     public bool GameEnded;
     public bool RankingStart;
-    public bool RankingFinished;
+    public bool RankingEnd;
+
+    public float BaldManAnimationDelay;
+
+    public GameObject BaldManMain;
+    public Animator BaldMan;
+    public GameObject BaldManSad;
+    public GameObject BaldManMop;
+    public GameObject BaldManFedora;
+    public GameObject BaldManDog;
+    public GameObject BaldManDogFedora;
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
+
+        //MoveCamera When Game Ends
 
         if (GameEnded == true)
         {
@@ -49,6 +61,8 @@ public class FinalRankingSystem : MonoBehaviour
             }
         }
 
+        //Count up score
+
         if (RankingStart == true && ScoreCountUp < CurrentScore)
         {
             ScoreCountUp += CountSpeed * Time.deltaTime;
@@ -56,6 +70,8 @@ public class FinalRankingSystem : MonoBehaviour
             RankingCounter.gameObject.SetActive(true);
             RankingCounter.text = string.Format("<mspace=0.55em>{0:0}</mspace>", ScoreCountUp);
         }
+
+        //Rankings appear
 
         if (RankingStart == true && ScoreCountUp >= ScoreF)
         {
@@ -86,10 +102,63 @@ public class FinalRankingSystem : MonoBehaviour
             SStar.SetActive(true);
         }
 
+        //Start Animation when ranking ends
+
         if (RankingStart == true && ScoreCountUp >= CurrentScore)
         {
             ScoreCountUp = CurrentScore;
             RankingStart = false;
+            RankingEnd = true;
+            RankingCounter.text = string.Format("<mspace=0.55em>{0:0}</mspace>", CurrentScore);
+
+            if (RankingEnd == true)
+            {
+                BaldManAnimationDelay -= Time.deltaTime;
+            }
+
+            if (BaldManAnimationDelay <= 0)
+            {
+
+                RankingEnd = false;
+                BaldMan.SetTrigger("Squish");
+
+            }
+
+        }
+
+        //Props only appear when BaldSquish animation is playing
+
+        if (BaldMan.GetCurrentAnimatorStateInfo(0).IsName("BaldSquish"))
+
+        {
+
+            if (CurrentScore >= ScoreS)
+            {
+                BaldManDog.SetActive(true);
+                BaldManDogFedora.SetActive(true);
+            }
+
+            if (CurrentScore >= ScoreA && CurrentScore < ScoreS)
+            {
+                BaldManDog.SetActive(true);
+            }
+
+            if (CurrentScore >= ScoreB && CurrentScore < ScoreA)
+            {
+                BaldManFedora.SetActive(true);
+            }
+
+            if (CurrentScore >= ScoreC && CurrentScore < ScoreB)
+            {
+                BaldManMop.SetActive(true);
+            }
+
+            if (CurrentScore < ScoreC)
+            {
+                BaldManSad.SetActive(true);
+                BaldManMain.SetActive(false);
+            }
+
         }
 
     }
