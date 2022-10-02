@@ -14,7 +14,7 @@ public class LevelScriptEditor : Editor
         void UpdateVids()
         {
             myTarget.m_gameData.clipData.Clear();
-            DirectoryInfo dir = new DirectoryInfo("/Users/oliverpowell/Documents/GitHub/QTE/docs/Clips");
+            DirectoryInfo dir = new DirectoryInfo(Application.dataPath + "/../docs/Clips");
             FileInfo[] info = dir.GetFiles("*.mp4");
             foreach (FileInfo f in info)
             {

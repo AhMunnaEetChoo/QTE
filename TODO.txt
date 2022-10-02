@@ -1,10 +1,7 @@
 TODO:
 
-Intro QTE - press these buttons
-10 second timer somewhere on screen
-figure out how to share timeline with movie for event triggers
-juicey text animation
-transport the audio stuff over from MPB
+Mash mode
+Rhythm mode
+
 screenshake? do it on the UI rather than video
 
-play clip, synchronise time, intro text fade in and out. key fades in and hovers

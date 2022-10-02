@@ -154,7 +154,10 @@ public class QTEManager : MonoBehaviour
             // TODO: is final video ...
 
             OnExit();
-            OnEnter();
+            if (m_clipIndex < m_clipDataList.Count)
+            {
+                OnEnter();
+            }
         }
 
         public void Tick()
