@@ -10087,6 +10087,8 @@ MonoBehaviour:
         greatBuffer: 0.2
         coolBuffer: 0.3
         awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
       - text: Press [i] to Declare that you are Spartacus
         button: i
@@ -10097,6 +10099,8 @@ MonoBehaviour:
         greatBuffer: 0.2
         coolBuffer: 0.3
         awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
       - text: Press [i] to Declare that you are Spartacus
         button: i
@@ -10107,6 +10111,8 @@ MonoBehaviour:
         greatBuffer: 0.2
         coolBuffer: 0.3
         awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
       - text: Press [i] to Declare that you are Spartacus
         button: i
@@ -10117,6 +10123,8 @@ MonoBehaviour:
         greatBuffer: 0.2
         coolBuffer: 0.3
         awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
       - text: Press [i] to Declare that you are Spartacus
         button: i
@@ -10127,6 +10135,8 @@ MonoBehaviour:
         greatBuffer: 0.2
         coolBuffer: 0.3
         awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
@@ -10140,6 +10150,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
       - text: Press [c] to Cut!
         button: c
@@ -10150,6 +10162,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
       - text: Press [k] to Kick
         button: k
@@ -10160,6 +10174,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       - text: Press [j] to Jump!
         button: j
@@ -10170,6 +10186,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 0.5
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
@@ -10183,6 +10201,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 0.7
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
@@ -10196,6 +10216,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
@@ -10209,6 +10231,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 1
       volume: 0.2
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
@@ -10222,6 +10246,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
@@ -10235,6 +10261,8 @@ MonoBehaviour:
         greatBuffer: 5
         coolBuffer: 6
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       - text: Press [d] to Duck!
         button: d
@@ -10245,6 +10273,8 @@ MonoBehaviour:
         greatBuffer: 1.5
         coolBuffer: 2
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4
@@ -10258,6 +10288,8 @@ MonoBehaviour:
         greatBuffer: 7
         coolBuffer: 8
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 1
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4
@@ -10271,6 +10303,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1.2
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
@@ -10284,6 +10318,8 @@ MonoBehaviour:
         greatBuffer: 7
         coolBuffer: 8
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
@@ -10297,6 +10333,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
@@ -10310,6 +10348,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
@@ -10323,6 +10363,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
@@ -10336,6 +10378,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4
@@ -10349,6 +10393,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1.2
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
@@ -10362,6 +10408,8 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4
@@ -10375,6 +10423,8 @@ MonoBehaviour:
         greatBuffer: 7
         coolBuffer: 8
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 1
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
@@ -10388,6 +10438,8 @@ MonoBehaviour:
         greatBuffer: 7
         coolBuffer: 8
         awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
 --- !u!1 &1682399655

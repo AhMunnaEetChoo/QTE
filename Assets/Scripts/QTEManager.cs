@@ -83,6 +83,8 @@ public class QTEManager : MonoBehaviour
         public float greatBuffer = 0.8f;
         public float coolBuffer = 1.0f;
         public int awesomeMashCount = 10;
+        public Vector2 rhythmTargetPos = new Vector2(0, 100);
+        public Vector2 rhythmCueStartPos = new Vector2(800, 0);
         public QTEType qteType = QTEType.Instruction;
     };
 
@@ -388,19 +390,19 @@ public class QTEManager : MonoBehaviour
                         _qteState.m_qteStage = QTEStage.ShowPrompt;
 
                         _qteState.m_rhythmTarget = Instantiate(m_manager.m_buttonPrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
-                        _qteState.m_rhythmTarget.transform.localPosition = Vector3.zero;
+                        _qteState.m_rhythmTarget.transform.localPosition = _qteData.rhythmTargetPos;
                         TMP_Text buttonTargetText = _qteState.m_rhythmTarget.GetComponent<TMP_Text>();
                         buttonTargetText.text = buttonSprite;
 
                         _qteState.m_rhythmCue = Instantiate(m_manager.m_buttonPrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
-                        _qteState.m_rhythmCue.transform.localPosition = new Vector3(1000.0f, 0, 0);
+                        _qteState.m_rhythmCue.transform.localPosition = _qteData.rhythmCueStartPos;
                         TMP_Text buttonCueText = _qteState.m_rhythmCue.GetComponent<TMP_Text>();
                         buttonCueText.text = buttonSprite;
                     }
                     break;
                 case QTEStage.ShowPrompt:
                     float t = ((float)m_videoPlayer.time - _qteData.promptTime) / (_qteData.triggerTime - _qteData.promptTime);
-                    _qteState.m_rhythmCue.transform.localPosition = new Vector3(Mathf.LerpUnclamped(1000.0f, 0.0f, t), 0, 0);
+                    _qteState.m_rhythmCue.transform.localPosition = Vector3.LerpUnclamped(_qteData.rhythmCueStartPos, _qteData.rhythmTargetPos, t);
 
                     if(QTECheckTime(_qteState, _qteData))
                     {
