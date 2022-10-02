@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311915, g: 0.3807396, b: 0.35872662, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -556,95 +556,149 @@ MonoBehaviour:
   m_whoopsPrefab: {fileID: 8313402052362861787, guid: 70bb56847f3804848845d131b518cb63, type: 3}
   m_gameData:
     clipData:
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
       qtes:
-      - text: Press [f] to pay respect
-        button: f
+      - text: Press [d] to duck
+        button: d
         screenPos: {x: 300, y: 350}
         promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
-      qtes:
-      - text: Press [f] to pay respect
-        button: f
-        screenPos: {x: 300, y: 350}
-        promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
-      qtes:
-      - text: Press [f] to pay respect
-        button: f
-        screenPos: {x: 300, y: 350}
-        promptTime: 1
-        triggerTime: 7
+        triggerTime: 8
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
       qtes:
-      - text: Press [f] to pay respect
-        button: f
+      - text: Hit [d] to detonate
+        button: d
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
+      qtes:
+      - text: Mash [r] to run
+        button: r
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 7
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      - text: Bash [l] to leap!
+        button: l
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 8.4
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      volume: 0.6
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
+      qtes:
+      - text: Press [t] to Thrust
+        button: t
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 1.7
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      - text: Press [c] to Cut!
+        button: c
+        screenPos: {x: 300, y: 350}
+        promptTime: 1.5
+        triggerTime: 2
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      - text: Press [k] to Kick
+        button: k
+        screenPos: {x: 300, y: 350}
+        promptTime: 6
+        triggerTime: 6.9
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      - text: Press [j] to Jump!
+        button: j
+        screenPos: {x: 300, y: 350}
+        promptTime: 8
+        triggerTime: 8.4
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      volume: 0.5
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
+      qtes:
+      - text: Press [b] to Bee
+        button: f
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 4.5
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
       qtes:
-      - text: Press [f] to pay respect
+      - text: Press [k] to Know Kung Fu
         button: f
         screenPos: {x: 300, y: 350}
         promptTime: 1
-        triggerTime: 7
+        triggerTime: 5.5
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
+      qtes:
+      - text: Hit [b] to Be Back
+        button: f
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 8.6
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
+      qtes:
+      - text: Press [s] to Stroke Chin
+        button: f
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 8
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
       qtes:
-      - text: Press [f] to pay respect
+      - text: Press [m] to Man Behind Winkie's
         button: f
         screenPos: {x: 300, y: 350}
         promptTime: 1
-        triggerTime: 7
+        triggerTime: 7.4
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
       qtes:
-      - text: Press [f] to pay respect
+      - text: Press [s] to Space!
         button: f
         screenPos: {x: 300, y: 350}
         promptTime: 1
-        triggerTime: 7
+        triggerTime: 8.05
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
-      qtes:
-      - text: Press [f] to pay respect
-        button: f
-        screenPos: {x: 300, y: 350}
-        promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Tilda.mp4
       qtes:
       - text: Press [f] to pay respect
         button: f
@@ -656,6 +710,17 @@ MonoBehaviour:
         coolBuffer: 1
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
+      qtes:
+      - text: Press [f] to pay respect
+        button: f
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 7
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
       qtes:
       - text: Press [f] to pay respect
         button: f
