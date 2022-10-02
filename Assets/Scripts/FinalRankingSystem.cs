@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class FinalRankingSystem : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class FinalRankingSystem : MonoBehaviour
     public GameObject AStar;
     public GameObject SStar;
 
+    public TMP_Text RankingCounter;
+    public TMP_Text CurrentScoreText;
+
     public Animator CameraAnim;
 
     public bool GameEnded;
@@ -37,6 +41,7 @@ public class FinalRankingSystem : MonoBehaviour
         if (GameEnded == true)
         {
             CameraAnim.SetBool("GameEnded", true);
+            CurrentScoreText.gameObject.SetActive(false);
 
             if (CameraAnim.GetCurrentAnimatorStateInfo(0).IsName("CameraEndLoop"))
             {
@@ -47,6 +52,9 @@ public class FinalRankingSystem : MonoBehaviour
         if (RankingStart == true && ScoreCountUp < CurrentScore)
         {
             ScoreCountUp += CountSpeed * Time.deltaTime;
+
+            RankingCounter.gameObject.SetActive(true);
+            RankingCounter.text = string.Format("<mspace=0.55em>{0:0}</mspace>", ScoreCountUp);
         }
 
         if (RankingStart == true && ScoreCountUp >= ScoreF)
