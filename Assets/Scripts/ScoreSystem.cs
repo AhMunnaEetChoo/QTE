@@ -125,7 +125,7 @@ public class ScoreSystem : MonoBehaviour
 
         if (ScoreNiceTrigger == true)
         {
-            ScoreAwesomeTrigger = false;
+            ScoreNiceTrigger = false;
             CurrentScore += ScoreAwesome;
         }
 
