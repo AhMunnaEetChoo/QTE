@@ -1,0 +1,316 @@
+{
+    "clipData": [
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4",
+            "qtes": [
+                {
+                    "text": "Press [d] to duck",
+                    "button": "d",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 0.699999988079071
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4",
+            "qtes": [
+                {
+                    "text": "Hit [b] to Blow Up",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 6.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4",
+            "qtes": [
+                {
+                    "text": "Mash [r] to run",
+                    "button": "r",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 7.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                },
+                {
+                    "text": "Bash [l] to leap!",
+                    "button": "l",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.399999618530274,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 0.20000000298023225
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4",
+            "qtes": [
+                {
+                    "text": "Press [t] to Thrust",
+                    "button": "t",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 1.7000000476837159,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                },
+                {
+                    "text": "Press [c] to Cut!",
+                    "button": "c",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.5,
+                    "triggerTime": 2.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                },
+                {
+                    "text": "Press [k] to Kick",
+                    "button": "k",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 6.0,
+                    "triggerTime": 6.900000095367432,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                },
+                {
+                    "text": "Press [j] to Jump!",
+                    "button": "j",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 8.0,
+                    "triggerTime": 8.399999618530274,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 0.5
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to ?",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 4.5,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4",
+            "qtes": [
+                {
+                    "text": "Press [k] to Know Kung Fu",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 5.5,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4",
+            "qtes": [
+                {
+                    "text": "Hit [b] to Be Back",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.600000381469727,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4",
+            "qtes": [
+                {
+                    "text": "Press [s] to Stroke Chin",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4",
+            "qtes": [
+                {
+                    "text": "Press [m] to Man Behind Winkie's",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 7.400000095367432,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4",
+            "qtes": [
+                {
+                    "text": "Press [s] to Space!",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.050000190734864,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Tilda.mp4",
+            "qtes": [
+                {
+                    "text": "Press [~] and [a] to ?",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 7.25,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4",
+            "qtes": [
+                {
+                    "text": "Press [s] to Play Snare",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 1.0,
+                    "perfectBuffer": 4.0,
+                    "greatBuffer": 5.0,
+                    "coolBuffer": 6.0
+                },
+                {
+                    "text": "Press [d] to Duck!",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 6.0,
+                    "triggerTime": 6.800000190734863,
+                    "perfectBuffer": 1.0,
+                    "greatBuffer": 1.5,
+                    "coolBuffer": 2.0
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4",
+            "qtes": [
+                {
+                    "text": "Press B to begin beautiful friendship",
+                    "button": "f",
+                    "screenPos": {
+                        "x": 300.0,
+                        "y": 350.0
+                    },
+                    "promptTime": 5.0,
+                    "triggerTime": 6.0,
+                    "perfectBuffer": 6.0,
+                    "greatBuffer": 7.0,
+                    "coolBuffer": 8.0
+                }
+            ],
+            "volume": 1.0
+        }
+    ]
+}
