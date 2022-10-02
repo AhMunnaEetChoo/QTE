@@ -10113,16 +10113,6 @@ MonoBehaviour:
         coolBuffer: 1
         awesomeMashCount: 10
         qteType: 1
-      - text: Bash [l] to leap!
-        button: l
-        screenPos: {x: 0, y: -200}
-        promptTime: 7
-        triggerTime: 8.4
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        qteType: 0
       volume: 0.2
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
       qtes:
@@ -10139,7 +10129,7 @@ MonoBehaviour:
       - text: Press [c] to Cut!
         button: c
         screenPos: {x: 0, y: -200}
-        promptTime: 1.5
+        promptTime: 1.8
         triggerTime: 2
         perfectBuffer: 0.5
         greatBuffer: 0.8
@@ -10209,7 +10199,7 @@ MonoBehaviour:
         button: e
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 8
+        triggerTime: 8.5
         perfectBuffer: 6
         greatBuffer: 7
         coolBuffer: 8
@@ -10222,10 +10212,10 @@ MonoBehaviour:
         button: b
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
+        triggerTime: 6
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1.2
         awesomeMashCount: 10
         qteType: 0
       volume: 1
@@ -10301,10 +10291,60 @@ MonoBehaviour:
         screenPos: {x: 0, y: -200}
         promptTime: 1
         triggerTime: 6
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
-        awesomeMashCount: 10
+        perfectBuffer: 8
+        greatBuffer: 9
+        coolBuffer: 10
+        awesomeMashCount: 6
+        qteType: 2
+      - text: Press [i] to Declare that you are Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 8
+        greatBuffer: 9
+        coolBuffer: 10
+        awesomeMashCount: 6
+        qteType: 2
+      - text: Press [i] to Declare that you are Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 8
+        greatBuffer: 9
+        coolBuffer: 10
+        awesomeMashCount: 6
+        qteType: 2
+      - text: Press [i] to Declare that you are Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 8
+        greatBuffer: 9
+        coolBuffer: 10
+        awesomeMashCount: 6
+        qteType: 2
+      - text: Press [i] to Declare that you are Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 8
+        greatBuffer: 9
+        coolBuffer: 10
+        awesomeMashCount: 6
+        qteType: 2
+      - text: Press [i] to Declare that you are Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 8
+        greatBuffer: 9
+        coolBuffer: 10
+        awesomeMashCount: 6
         qteType: 2
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4
@@ -10313,10 +10353,10 @@ MonoBehaviour:
         button: w
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 6
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
+        triggerTime: 10.5
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1.2
         awesomeMashCount: 10
         qteType: 0
       volume: 1
