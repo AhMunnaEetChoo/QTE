@@ -634,7 +634,7 @@ MonoBehaviour:
       volume: 0.5
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
       qtes:
-      - text: Press [b] to Bee
+      - text: Press [b] to ?
         button: f
         screenPos: {x: 300, y: 350}
         promptTime: 1
@@ -700,36 +700,44 @@ MonoBehaviour:
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Tilda.mp4
       qtes:
-      - text: Press [f] to pay respect
+      - text: Press [~] and [a] to ?
         button: f
         screenPos: {x: 300, y: 350}
         promptTime: 1
-        triggerTime: 7
+        triggerTime: 7.25
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
       qtes:
-      - text: Press [f] to pay respect
+      - text: Press [s] to Play Snare
         button: f
         screenPos: {x: 300, y: 350}
         promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
+        triggerTime: 1
+        perfectBuffer: 4
+        greatBuffer: 5
+        coolBuffer: 6
+      - text: Press [d] to Duck!
+        button: f
+        screenPos: {x: 300, y: 350}
+        promptTime: 6
+        triggerTime: 6.8
+        perfectBuffer: 1
+        greatBuffer: 1.5
+        coolBuffer: 2
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
       qtes:
-      - text: Press [f] to pay respect
+      - text: Press B to begin beautiful friendship
         button: f
         screenPos: {x: 300, y: 350}
-        promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
+        promptTime: 5
+        triggerTime: 6
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
       volume: 1
 --- !u!1 &1779254351
 GameObject:
