@@ -570,32 +570,6 @@ MonoBehaviour:
   m_whoopsPrefab: {fileID: 8313402052362861787, guid: 70bb56847f3804848845d131b518cb63, type: 3}
   m_gameData:
     clipData:
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
-      qtes:
-      - text: Press [d] to duck
-        button: d
-        screenPos: {x: 300, y: 350}
-        promptTime: 1
-        triggerTime: 8
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        qteType: 0
-      volume: 0.7
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
-      qtes:
-      - text: Hit [b] to Blow Up
-        button: b
-        screenPos: {x: 300, y: 350}
-        promptTime: 1
-        triggerTime: 6
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        qteType: 0
-      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
       qtes:
       - text: Mash [r] to run
@@ -607,11 +581,11 @@ MonoBehaviour:
         greatBuffer: 0.8
         coolBuffer: 1
         awesomeMashCount: 10
-        qteType: 0
+        qteType: 1
       - text: Bash [l] to leap!
         button: l
         screenPos: {x: 300, y: 350}
-        promptTime: 1
+        promptTime: 7
         triggerTime: 8.4
         perfectBuffer: 0.5
         greatBuffer: 0.8
@@ -662,6 +636,32 @@ MonoBehaviour:
         awesomeMashCount: 10
         qteType: 0
       volume: 0.5
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
+      qtes:
+      - text: Press [d] to duck
+        button: d
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 8
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        qteType: 0
+      volume: 0.7
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
+      qtes:
+      - text: Hit [b] to Blow Up
+        button: b
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        qteType: 0
+      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
       qtes:
       - text: Press [b] to ?
