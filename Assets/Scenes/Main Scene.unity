@@ -10281,6 +10281,19 @@ MonoBehaviour:
         awesomeMashCount: 10
         qteType: 0
       volume: 1
+    - url: Clips/Vid_Happiness.mp4ithub.io/QTE/Clips/Vid_Happiness.mp4
+      qtes:
+      - text: Mash [s] to sit on sofa
+        button: b
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 3
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
+        awesomeMashCount: 10
+        qteType: 1
+      volume: 1
 --- !u!1 &1682399655
 GameObject:
   m_ObjectHideFlags: 0
