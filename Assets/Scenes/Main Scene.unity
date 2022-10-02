@@ -665,7 +665,7 @@ MonoBehaviour:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
       qtes:
       - text: Press [b] to ?
-        button: f
+        button: b
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 4.5
@@ -678,7 +678,7 @@ MonoBehaviour:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
       qtes:
       - text: Press [k] to Know Kung Fu
-        button: f
+        button: k
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 5.5
@@ -691,7 +691,7 @@ MonoBehaviour:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
       qtes:
       - text: Hit [b] to Be Back
-        button: f
+        button: b
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 8.6
@@ -704,7 +704,7 @@ MonoBehaviour:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
       qtes:
       - text: Press [s] to Stroke Chin
-        button: f
+        button: s
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 8
@@ -714,10 +714,23 @@ MonoBehaviour:
         awesomeMashCount: 10
         qteType: 0
       volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Tilda.mp4
+      qtes:
+      - text: Press [~] and [a] to ?
+        button: ~
+        screenPos: {x: 300, y: 350}
+        promptTime: 1
+        triggerTime: 7.25
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        qteType: 0
+      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
       qtes:
       - text: Press [m] to Man Behind Winkie's
-        button: f
+        button: m
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 7.4
@@ -729,8 +742,8 @@ MonoBehaviour:
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
       qtes:
-      - text: Press [s] to Space!
-        button: f
+      - text: Press [space] to Space!
+        button: space
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 8.05
@@ -740,23 +753,10 @@ MonoBehaviour:
         awesomeMashCount: 10
         qteType: 0
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Tilda.mp4
-      qtes:
-      - text: Press [~] and [a] to ?
-        button: f
-        screenPos: {x: 300, y: 350}
-        promptTime: 1
-        triggerTime: 7.25
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        qteType: 0
-      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
       qtes:
       - text: Press [s] to Play Snare
-        button: f
+        button: s
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 1
@@ -766,7 +766,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         qteType: 0
       - text: Press [d] to Duck!
-        button: f
+        button: d
         screenPos: {x: 300, y: 350}
         promptTime: 6
         triggerTime: 6.8
@@ -778,8 +778,8 @@ MonoBehaviour:
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
       qtes:
-      - text: Press B to begin beautiful friendship
-        button: f
+      - text: Press [b] to begin beautiful friendship
+        button: b
         screenPos: {x: 300, y: 350}
         promptTime: 5
         triggerTime: 6

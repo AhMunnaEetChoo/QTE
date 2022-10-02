@@ -193,7 +193,7 @@ public class QTEManager : MonoBehaviour
                     break;
                 case QTEStage.ShowPrompt:
                     // if player presses the right QTE button
-                    if (((KeyControl)Keyboard.current[_qteData.button]).isPressed)
+                    if (((KeyControl)Keyboard.current[_qteData.button]).isPressed || m_videoPlayer.time > (_qteData.triggerTime + _qteData.coolBuffer))
                     {
                         // now check against the correct time..
                         float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
@@ -308,6 +308,7 @@ public class QTEManager : MonoBehaviour
                             }
                             _qteState.m_qteStage = QTEStage.Showresult;
                             _qteState.m_qteResultTimer = 0.0f;
+                            GameObject.Destroy(_qteState.m_prompt);
                         }
                         break;
                     }
