@@ -197,7 +197,7 @@ public class QTEManager : MonoBehaviour
                     bool outOfTime = m_videoPlayer.time > (_qteData.triggerTime + _qteData.coolBuffer);
                     if (Keyboard.current.anyKey.isPressed || outOfTime)
                     {
-                        if (((KeyControl)Keyboard.current[_qteData.button]).isPressed && !outOfTime)
+                        if (((KeyControl)Keyboard.current[_qteData.button]).isPressed)
                         {
                             // now check against the correct time..
                             float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
@@ -217,10 +217,10 @@ public class QTEManager : MonoBehaviour
                                 _qteState.m_qteResult = QTEResult.Cool;
                             }
                         }
-                        else
+
+                        if(_qteState.m_qteResult == QTEResult.None)
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
-                            // pick a random failure
                             _qteState.m_qteResult = (QTEResult)Random.Range((int)QTEResult.Shame, (int)QTEResult.Whoops + 1);
                         }
                         _qteState.m_qteResultTimer = 0.0f;
