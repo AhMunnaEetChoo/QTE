@@ -1,10 +1,8 @@
 TODO:
 
-Mash mode
 Rhythm mode
 Score
 Merge TV scene into main scene
-fix volume
 make QTEs fail for wrong button press
 
 screenshake? do it on the UI rather than video

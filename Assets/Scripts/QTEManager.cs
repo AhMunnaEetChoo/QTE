@@ -193,30 +193,34 @@ public class QTEManager : MonoBehaviour
                     break;
                 case QTEStage.ShowPrompt:
                     // if player presses the right QTE button
-                    if (((KeyControl)Keyboard.current[_qteData.button]).isPressed || m_videoPlayer.time > (_qteData.triggerTime + _qteData.coolBuffer))
+                    bool outOfTime = m_videoPlayer.time > (_qteData.triggerTime + _qteData.coolBuffer);
+                    if (Keyboard.current.anyKey.isPressed || outOfTime)
                     {
-                        // now check against the correct time..
-                        float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
-                        if (difference < _qteData.perfectBuffer)
+                        if (((KeyControl)Keyboard.current[_qteData.button]).isPressed && !outOfTime)
                         {
-                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                            _qteState.m_qteResult = QTEResult.Perfect;
-                        }
-                        else if (difference < _qteData.greatBuffer)
-                        {
-                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                            _qteState.m_qteResult = QTEResult.Great;
-                        }
-                        else if (difference < _qteData.coolBuffer)
-                        {
-                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                            _qteState.m_qteResult = QTEResult.Cool;
+                            // now check against the correct time..
+                            float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
+                            if (difference < _qteData.perfectBuffer)
+                            {
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                                _qteState.m_qteResult = QTEResult.Perfect;
+                            }
+                            else if (difference < _qteData.greatBuffer)
+                            {
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                                _qteState.m_qteResult = QTEResult.Great;
+                            }
+                            else if (difference < _qteData.coolBuffer)
+                            {
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                                _qteState.m_qteResult = QTEResult.Cool;
+                            }
                         }
                         else
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
                             // pick a random failure
-                            _qteState.m_qteResult =  (QTEResult)Random.Range((int)QTEResult.Shame, (int)QTEResult.Whoops+1);
+                            _qteState.m_qteResult = (QTEResult)Random.Range((int)QTEResult.Shame, (int)QTEResult.Whoops + 1);
                         }
                         _qteState.m_qteResultTimer = 0.0f;
 
