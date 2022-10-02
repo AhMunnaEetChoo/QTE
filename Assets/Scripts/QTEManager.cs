@@ -53,6 +53,7 @@ public class QTEManager : MonoBehaviour
     private StateMachine m_stateMachine = new StateMachine();
     public VideoPlayer m_videoPlayer;
     public TMP_Text m_timerText;
+
     public GameObject m_qtePrefab;
     public GameObject m_awesomePrefab;
     public GameObject m_perfectPrefab;
@@ -62,6 +63,13 @@ public class QTEManager : MonoBehaviour
     public GameObject m_tooBadPrefab;
     public GameObject m_whoopsPrefab;
 
+    public enum QTEType
+    {
+        Instruction,
+        Mash,
+        Rhythm
+    }
+        
     [System.Serializable]
     public class QTE
     {
@@ -73,6 +81,8 @@ public class QTEManager : MonoBehaviour
         public float perfectBuffer = 0.5f;
         public float greatBuffer = 0.8f;
         public float coolBuffer = 1.0f;
+        public int awesomeMashCount = 10;
+        public QTEType qteType = QTEType.Instruction;
     };
 
     [System.Serializable]
@@ -122,7 +132,7 @@ public class QTEManager : MonoBehaviour
         {
             Initialising,
             ShowPrompt,
-            KeyPressed
+            Showresult
         }
         private QTEStage m_qteStage = QTEStage.Initialising;
         private ClipData m_currentClipData;
@@ -141,6 +151,7 @@ public class QTEManager : MonoBehaviour
         }
         private QTEResult m_qteResult = QTEResult.None;
         private float m_qteResultTimer = 0.0f;
+        private int m_mashCount = 0;
 
         public PlayClip(QTEManager _manager, List<ClipData> _dataList, VideoPlayer _videoPlayer)
         {
@@ -160,18 +171,13 @@ public class QTEManager : MonoBehaviour
             }
         }
 
-        public void Tick()
+        private void InstructionUpdate()
         {
-            if (m_currentQTE >= m_currentClipData.qtes.Count)
-            {
-                return;
-            }
             QTE currentQTE = m_currentClipData.qtes[m_currentQTE];
-
             switch (m_qteStage)
             {
                 case QTEStage.Initialising:
-                    if(m_videoPlayer.time > currentQTE.promptTime)
+                    if (m_videoPlayer.time > currentQTE.promptTime)
                     {
                         GameObject canvas = GameObject.Find("Canvas");
 
@@ -188,73 +194,188 @@ public class QTEManager : MonoBehaviour
                     {
                         // now check against the correct time..
                         float difference = Mathf.Abs(currentQTE.triggerTime - (float)m_videoPlayer.time);
-                        GameObject toSpawn;
                         if (difference < currentQTE.perfectBuffer)
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                             m_qteResult = QTEResult.Perfect;
-                            toSpawn = m_manager.m_perfectPrefab;
                         }
-                        else if(difference < currentQTE.greatBuffer)
+                        else if (difference < currentQTE.greatBuffer)
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                             m_qteResult = QTEResult.Great;
-                            toSpawn = m_manager.m_greatPrefab;
                         }
-                        else if(difference < currentQTE.coolBuffer)
+                        else if (difference < currentQTE.coolBuffer)
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                             m_qteResult = QTEResult.Cool;
-                            toSpawn = m_manager.m_coolPrefab;
                         }
                         else
                         {
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
-                            m_qteResult = QTEResult.Shame;
-                            toSpawn = m_manager.m_shamePrefab;
+                            // pick a random failure
+                            m_qteResult =  (QTEResult)Random.Range((int)QTEResult.Shame, (int)QTEResult.Whoops+1);
                         }
                         m_qteResultTimer = 0.0f;
-                        // for now spawn some test text
-                        GameObject canvas = GameObject.Find("Canvas");
 
                         // spawn the text
-                        m_currentResult = Instantiate(toSpawn, new Vector2(300.0f, 300.0f), Quaternion.identity, canvas.transform);
-                        m_qteStage = QTEStage.KeyPressed;
+                        m_qteStage = QTEStage.Showresult;
 
                         // for now destroy
                         GameObject.Destroy(m_currentPrompt);
                     }
                     break;
-                case QTEStage.KeyPressed:
+                case QTEStage.Showresult:
                     m_qteResultTimer += Time.deltaTime;
-                    if(m_qteResultTimer > 1.0f)
+                    if (m_qteResult != QTEResult.None && m_qteResultTimer > 1.0f)
                     {
                         //after 1 second
+                        GameObject toSpawn = m_manager.m_perfectPrefab;
                         switch (m_qteResult)
                         {
                             case QTEResult.Perfect:
                                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Perfect");
+                                toSpawn = m_manager.m_perfectPrefab;
                                 break;
                             case QTEResult.Great:
                                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Great");
+                                toSpawn = m_manager.m_greatPrefab;
                                 break;
                             case QTEResult.Cool:
                                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Cool");
+                                toSpawn = m_manager.m_coolPrefab;
                                 break;
                             case QTEResult.Shame:
                                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Shame");
+                                toSpawn = m_manager.m_shamePrefab;
+                                break;
+                            case QTEResult.TooBad:
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_TooBad");
+                                toSpawn = m_manager.m_tooBadPrefab;
+                                break;
+                            case QTEResult.Whoops:
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Whoops");
+                                toSpawn = m_manager.m_whoopsPrefab;
                                 break;
                         }
+                        GameObject canvas = GameObject.Find("Canvas");
+                        m_currentResult = Instantiate(toSpawn, new Vector2(300.0f, 300.0f), Quaternion.identity, canvas.transform);
+
                         m_qteResult = QTEResult.None;
                     }
-                    // nothing
                     break;
+            }
+        }
+        private void MashUpdate()
+        {
+            QTE currentQTE = m_currentClipData.qtes[m_currentQTE];
+            switch (m_qteStage)
+            {
+                case QTEStage.Initialising:
+                    if (m_videoPlayer.time > currentQTE.promptTime)
+                    {
+                        GameObject canvas = GameObject.Find("Canvas");
+
+                        // spawn the text
+                        m_currentPrompt = Instantiate(m_manager.m_qtePrefab, currentQTE.screenPos, Quaternion.identity, canvas.transform);
+                        TMP_Text newText = m_currentPrompt.GetComponent<TMP_Text>();
+                        newText.text = currentQTE.text.Replace("[" + currentQTE.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[currentQTE.button].ToString() + ">");
+                        m_qteStage = QTEStage.ShowPrompt;
+                    }
+                    break;
+                case QTEStage.ShowPrompt:
+                    {
+                        // if player presses the right QTE button
+                        if (((KeyControl)Keyboard.current[currentQTE.button]).isPressed)
+                        {
+                            m_mashCount++;
+                            // play a small ping thing,
+                            // fire a star
+                        }
+                        if (m_videoPlayer.time > currentQTE.triggerTime)
+                        {
+                            // finished, display result
+                            if(m_mashCount > currentQTE.awesomeMashCount)
+                            {
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Mash_SuccessfulHitSound");
+                                m_qteResult = QTEResult.Perfect;
+                            }
+                            else
+                            {
+                                m_qteResult = (QTEResult)Random.Range((int)QTEResult.Shame, (int)QTEResult.Whoops+1);
+                                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
+                            }
+                            m_qteStage = QTEStage.Showresult;
+                            m_qteResultTimer = 0.0f;
+                        }
+                        break;
+                    }
+                case QTEStage.Showresult:
+                    {
+                        m_qteResultTimer += Time.deltaTime;
+                        if (m_qteResult != QTEResult.None && m_qteResultTimer > 1.0f)
+                        {
+                            //after 1 second
+                            GameObject toSpawn = m_manager.m_perfectPrefab;
+                            switch (m_qteResult)
+                            {
+                                case QTEResult.Perfect:
+                                case QTEResult.Great:
+                                case QTEResult.Cool:
+                                    FMODUnity.RuntimeManager.PlayOneShot("event:/Mash_Awesome");
+                                    toSpawn = m_manager.m_awesomePrefab;
+                                    break;
+                                case QTEResult.Shame:
+                                    FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Shame");
+                                    toSpawn = m_manager.m_shamePrefab;
+                                    break;
+                                case QTEResult.TooBad:
+                                    FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_TooBad");
+                                    toSpawn = m_manager.m_tooBadPrefab;
+                                    break;
+                                case QTEResult.Whoops:
+                                    FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Whoops");
+                                    toSpawn = m_manager.m_whoopsPrefab;
+                                    break;
+                            }
+                            GameObject canvas = GameObject.Find("Canvas");
+                            m_currentResult = Instantiate(toSpawn, new Vector2(300.0f, 300.0f), Quaternion.identity, canvas.transform);
+
+                            m_qteResult = QTEResult.None;
+                            m_qteResultTimer = 0.0f;
+                        }
+                    }
+                    break;
+            }
+        }
+        private void RhythmUpdate()
+        {
+
+        }
+        public void Tick()
+        {
+            if (m_currentQTE >= m_currentClipData.qtes.Count)
+            {
+                return;
+            }
+            QTE currentQTE = m_currentClipData.qtes[m_currentQTE];
+
+            switch (currentQTE.qteType)
+            {
+                case QTEType.Instruction:
+                    InstructionUpdate();
+                    break;
+                case QTEType.Mash:
+                    MashUpdate();
+                    break;
+                case QTEType.Rhythm:
+                    RhythmUpdate();
+                    break;
+
             }
         }
         public void OnEnter()
         {
             // choose a clip
-            //int index = Random.Range(0, m_clipDataList.Count);
             m_currentClipData = m_clipDataList[m_clipIndex];
             m_videoPlayer.url = m_currentClipData.url;
             m_videoPlayer.Play();
@@ -268,6 +389,7 @@ public class QTEManager : MonoBehaviour
         {
             GameObject.Destroy(m_currentPrompt);
             GameObject.Destroy(m_currentResult);
+            m_mashCount = 0;
             m_currentQTE = 0;
             m_qteStage = QTEStage.Initialising;
             m_qteResult = QTEResult.None;

@@ -2,6 +2,8 @@ TODO:
 
 Mash mode
 Rhythm mode
+Score
+Merge TV scene into main scene
 
 screenshake? do it on the UI rather than video
 
