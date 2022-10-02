@@ -566,11 +566,11 @@ MonoBehaviour:
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
-      volume: 1
+      volume: 0.7
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
       qtes:
-      - text: Hit [d] to detonate
-        button: d
+      - text: Hit [b] to Blow Up
+        button: b
         screenPos: {x: 300, y: 350}
         promptTime: 1
         triggerTime: 6
@@ -596,7 +596,7 @@ MonoBehaviour:
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
-      volume: 0.6
+      volume: 0.2
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
       qtes:
       - text: Press [t] to Thrust
