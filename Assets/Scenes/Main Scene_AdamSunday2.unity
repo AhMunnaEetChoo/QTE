@@ -480,7 +480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0000012
+  m_text: <mspace=0.55em>0123456789</mspace>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f071c042b2ed47cdb53d396a7cf6b2f, type: 2}
   m_sharedMaterial: {fileID: 7188557119288152769, guid: 9f071c042b2ed47cdb53d396a7cf6b2f, type: 2}
@@ -15044,6 +15044,8 @@ MonoBehaviour:
   BStar: {fileID: 1427476811}
   AStar: {fileID: 1501050156}
   SStar: {fileID: 1808576819}
+  RankingCounter: {fileID: 1647140107}
+  CurrentScoreText: {fileID: 105274445}
   CameraAnim: {fileID: 1071475166}
   GameEnded: 0
   RankingStart: 0
@@ -15655,7 +15657,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1647140105
 RectTransform:
   m_ObjectHideFlags: 0
