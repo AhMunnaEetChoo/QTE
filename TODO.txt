@@ -6,3 +6,4 @@ Merge TV scene into main scene
 particle effects on score
 screenshake? do it on the UI rather than video
 fix the game with capslock on
+transitions
