@@ -10081,7 +10081,7 @@ MonoBehaviour:
         button: s
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 3
+        triggerTime: 9
         perfectBuffer: 6
         greatBuffer: 7
         coolBuffer: 8
@@ -10094,7 +10094,7 @@ MonoBehaviour:
         button: e
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 6
+        triggerTime: 8
         perfectBuffer: 6
         greatBuffer: 7
         coolBuffer: 8
@@ -10112,7 +10112,7 @@ MonoBehaviour:
         greatBuffer: 7
         coolBuffer: 8
         awesomeMashCount: 10
-        qteType: 0
+        qteType: 2
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4
       qtes:
@@ -10120,7 +10120,7 @@ MonoBehaviour:
         button: b
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 6
+        triggerTime: 7
         perfectBuffer: 6
         greatBuffer: 7
         coolBuffer: 8
