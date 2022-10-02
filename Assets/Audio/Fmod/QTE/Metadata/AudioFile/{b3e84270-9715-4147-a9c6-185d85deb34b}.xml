@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b3e84270-9715-4147-a9c6-185d85deb34b}">
+		<property name="assetPath">
+			<value>Applause.aif</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.979833333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{c8ea14ab-5a5a-4f52-bba0-461895542783}</destination>
+		</relationship>
+	</object>
+</objects>
