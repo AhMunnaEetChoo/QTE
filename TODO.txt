@@ -1,6 +1,5 @@
 TODO:
 
-only allow one prompt on screen at a time
 
 Rhythm mode animation
 fix most current trigger
@@ -19,3 +18,4 @@ reset at end
 
 Done:
 sfx for mashing
+only allow one prompt on screen at a time
