@@ -5,9 +5,14 @@ using TMPro;
 
 public class FinalRankingSystem : MonoBehaviour
 {
-    public float CurrentScore;
-    public float ScoreCountUp;
-    public float CountSpeed;
+
+    public ScoreSystem ScoreSystem;
+
+    private float CurrentScore;
+    private float ScoreCountUp;
+    private float CountSpeed;
+
+public float SecondsOfRanking;
 
     public int ScoreF;
     public int ScoreC;
@@ -49,11 +54,14 @@ public class FinalRankingSystem : MonoBehaviour
     {
 
         //MoveCamera When Game Ends
+        //Extract score from scoring system
 
         if (GameEnded == true)
         {
             CameraAnim.SetBool("GameEnded", true);
             CurrentScoreText.gameObject.SetActive(false);
+            CurrentScore = ScoreSystem.CurrentScore;
+            CountSpeed = CurrentScore / SecondsOfRanking;
 
             if (CameraAnim.GetCurrentAnimatorStateInfo(0).IsName("CameraEndLoop"))
             {

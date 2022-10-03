@@ -373,6 +373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 833388ca7d1134cc7a48010a6d0e09f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentScore: 0
   ScorePerfect: 1000
   ScoreGreat: 500
   ScoreCool: 100
@@ -15676,9 +15677,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6978820e5eb9c45dfbf23e774feac485, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentScore: 203
-  ScoreCountUp: 0
-  CountSpeed: 100
+  ScoreSystem: {fileID: 66891879}
+  SecondsOfRanking: 5
   ScoreF: 100
   ScoreC: 200
   ScoreB: 300

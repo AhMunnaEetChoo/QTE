@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScoreSystem : MonoBehaviour
 {
-    private int CurrentScore;
+    public int CurrentScore;
 
     public int ScorePerfect;
     public int ScoreGreat;
