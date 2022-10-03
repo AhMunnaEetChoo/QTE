@@ -11,6 +11,7 @@ public class FinalRankingSystem : MonoBehaviour
     private float CurrentScore;
     private float ScoreCountUp;
     private float CountSpeed;
+    public int Rank;
 
 public float SecondsOfRanking;
 
@@ -84,33 +85,43 @@ public float SecondsOfRanking;
 
         //Rankings appear
 
-        if (RankingStart == true && ScoreCountUp >= ScoreF)
+        if (RankingStart == true && ScoreCountUp >= ScoreF && Rank == 0)
         {
             FStar.SetActive(true);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+            Rank += 1;
         }
 
-        if (RankingStart == true && ScoreCountUp >= ScoreC)
+        if (RankingStart == true && ScoreCountUp >= ScoreC && Rank == 1)
         {
             FStar.SetActive(false);
             CStar.SetActive(true);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+            Rank += 1;
         }
 
-        if (RankingStart == true && ScoreCountUp >= ScoreB)
+        if (RankingStart == true && ScoreCountUp >= ScoreB && Rank == 2)
         {
             CStar.SetActive(false);
             BStar.SetActive(true);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+            Rank += 1;
         }
 
-        if (RankingStart == true && ScoreCountUp >= ScoreA)
+        if (RankingStart == true && ScoreCountUp >= ScoreA && Rank == 3)
         {
             BStar.SetActive(false);
             AStar.SetActive(true);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+            Rank += 1;
         }
 
-        if (RankingStart == true && ScoreCountUp >= ScoreS)
+        if (RankingStart == true && ScoreCountUp >= ScoreS && Rank == 4)
         {
             AStar.SetActive(false);
             SStar.SetActive(true);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+            Rank += 1;
         }
 
         //Start Animation when ranking ends
