@@ -121,6 +121,10 @@ public class PlayClip : IState
             else
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                GameObject canvas = GameObject.Find("Canvas");
+
+                GameObject btnImpact = GameObject.Instantiate(m_manager.m_buttonImpactPrefab, _qteData.rhythmTargetPos, Quaternion.identity, canvas.transform);
+                btnImpact.transform.localPosition = _qteData.rhythmTargetPos;
                 if (m_prompt)
                 {
                     GameObject.Destroy(m_prompt);
