@@ -1,20 +1,50 @@
 {
     "clipData": [
         {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4",
+            "qtes": [
+                {
+                    "text": "Press [k] to Know Kung Fu",
+                    "button": "k",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 5.0,
+                    "perfectBuffer": 0.10000000149011612,
+                    "greatBuffer": 0.20000000298023225,
+                    "coolBuffer": 0.30000001192092898,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4",
             "qtes": [
                 {
-                    "text": "Press [b] to ____",
+                    "text": "Press [b] to ___",
                     "button": "b",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 4.5,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 0.6000000238418579,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -38,7 +68,7 @@
                     "button": "b",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -100.0
+                        "y": -150.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 8.083000183105469,
@@ -68,7 +98,7 @@
                     "button": "r",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 7.0,
@@ -478,11 +508,11 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4",
             "qtes": [
                 {
-                    "text": "Hit [b] to Blow Up",
+                    "text": "Press [b] to Blow The Bloody Doors Off",
                     "button": "b",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 6.0,
@@ -505,46 +535,16 @@
             "volume": 1.0
         },
         {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4",
-            "qtes": [
-                {
-                    "text": "Press [k] to Know Kung Fu",
-                    "button": "k",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 5.5,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4",
             "qtes": [
                 {
-                    "text": "Mash [e] to Chow Down",
+                    "text": "<u>Mash</u> [e] to Chow Down",
                     "button": "e",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": 0.0
                     },
-                    "promptTime": 1.0,
+                    "promptTime": 0.0,
                     "triggerTime": 8.5,
                     "perfectBuffer": 6.0,
                     "greatBuffer": 7.0,
@@ -568,11 +568,11 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4",
             "qtes": [
                 {
-                    "text": "Press [d] to ?",
-                    "button": "b",
+                    "text": "Press [f] to Pay Respects",
+                    "button": "f",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 6.0,
@@ -598,11 +598,11 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4",
             "qtes": [
                 {
-                    "text": "Press [w] to Shoot Web",
+                    "text": "Press [w] to Web",
                     "button": "w",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 6.0,
@@ -619,7 +619,7 @@
                         "y": 0.0
                     },
                     "qteType": 0,
-                    "dontPress": false
+                    "dontPress": true
                 }
             ],
             "volume": 1.0
@@ -688,17 +688,17 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4",
             "qtes": [
                 {
-                    "text": "Press [w] to Shoot Web",
+                    "text": "Press [w] to Web",
                     "button": "w",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 10.5,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.2000000476837159,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 0.6000000238418579,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -718,11 +718,11 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4",
             "qtes": [
                 {
-                    "text": "Press [space] to Space!",
+                    "text": "Press [space] to Space",
                     "button": "space",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 8.050000190734864,
@@ -748,11 +748,11 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4",
             "qtes": [
                 {
-                    "text": "Mash [s] to sit on sofa",
+                    "text": "<u>Mash</u> [s] to Sit On Couch",
                     "button": "s",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
                     "promptTime": 1.0,
                     "triggerTime": 9.0,
@@ -778,17 +778,17 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4",
             "qtes": [
                 {
-                    "text": "Press [b] to begin beautiful friendship",
+                    "text": "Press [b] to Begin Beautiful Friendship",
                     "button": "b",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -100.0
                     },
-                    "promptTime": 5.0,
+                    "promptTime": 2.0,
                     "triggerTime": 6.0,
-                    "perfectBuffer": 6.0,
-                    "greatBuffer": 7.0,
-                    "coolBuffer": 8.0,
+                    "perfectBuffer": 10.0,
+                    "greatBuffer": 11.0,
+                    "coolBuffer": 12.0,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
