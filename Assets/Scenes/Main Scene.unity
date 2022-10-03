@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4450966, g: 0.4946965, b: 0.5737793, a: 1}
+  m_IndirectSpecularColor: {r: 0.44509637, g: 0.49469584, b: 0.5737789, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7714,16 +7714,276 @@ MonoBehaviour:
   m_buttonPrefab: {fileID: 36991487993545089, guid: 1a668336898b94f9a8d0f18b679730fa, type: 3}
   m_gameData:
     clipData:
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
+      qtes:
+      - text: '[s]wipe!'
+        button: s
+        screenPos: {x: 0, y: -50}
+        promptTime: 0
+        triggerTime: 1.92
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: -100}
+        resultPos: {x: 0, y: 0}
+        qteType: 2
+        dontPress: 0
+      - text: '[s]wipe!'
+        button: s
+        screenPos: {x: 0, y: -50}
+        promptTime: 0
+        triggerTime: 3.32
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: -100}
+        resultPos: {x: 0, y: 0}
+        qteType: 2
+        dontPress: 0
+      - text: Press [k] to Kick!
+        button: k
+        screenPos: {x: 0, y: -50}
+        promptTime: 4
+        triggerTime: 6.32
+        perfectBuffer: 0.3
+        greatBuffer: 0.6
+        coolBuffer: 0.9
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      - text: Press [j] to Jump!
+        button: j
+        screenPos: {x: 0, y: -100}
+        promptTime: 7.3
+        triggerTime: 8.4
+        perfectBuffer: 0.3
+        greatBuffer: 0.6
+        coolBuffer: 0.9
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 0.5
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesBoulder.mp4
+      qtes:
+      - text: <u>Mash</u> [r] to Run
+        button: r
+        screenPos: {x: 0, y: -100}
+        promptTime: 0.5
+        triggerTime: 4.5
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: -100}
+        qteType: 1
+        dontPress: 0
+      - text: Press [j] to Jump
+        button: j
+        screenPos: {x: 0, y: 100}
+        promptTime: 6
+        triggerTime: 7.875
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 0.2
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4
+      qtes:
+      - text: <u>Mash</u> [e] to Chow Down
+        button: e
+        screenPos: {x: 0, y: -100}
+        promptTime: 0
+        triggerTime: 8.5
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 1
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
+      qtes:
+      - text: Press [space] to Space
+        button: space
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 8.05
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
+      qtes:
+      - text: Press [s] to Stroke Chin
+        button: s
+        screenPos: {x: 0, y: -100}
+        promptTime: 0.3
+        triggerTime: 8
+        perfectBuffer: 0.3
+        greatBuffer: 0.6
+        coolBuffer: 0.9
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
       qtes:
       - text: Press [k] to Know Kung Fu
         button: k
-        screenPos: {x: 0, y: -200}
+        screenPos: {x: 0, y: -100}
         promptTime: 1
-        triggerTime: 5.5
+        triggerTime: 5
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
+        coolBuffer: 0.8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
+      qtes:
+      - text: Press [w] to Web
+        button: w
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 1
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4
+      qtes:
+      - text: Press [w] to Web
+        button: w
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 10.083
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
+        coolBuffer: 0.6
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
+      qtes:
+      - text: Press [m] to Man Behind Winkie's
+        button: m
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 7.4
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
+      qtes:
+      - text: Press [b] to Begin Beautiful Friendship
+        button: b
+        screenPos: {x: 0, y: -100}
+        promptTime: 2
+        triggerTime: 6
+        perfectBuffer: 10
+        greatBuffer: 11
+        coolBuffer: 12
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4
+      qtes:
+      - text: <u>Mash</u> [s] to Sit On Couch
+        button: s
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 9
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 1
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
+      qtes:
+      - text: Press [b] to ___
+        button: b
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 4
+        perfectBuffer: 0.3
+        greatBuffer: 0.45
+        coolBuffer: 0.6
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
+      qtes:
+      - text: Press [b] to Be Back
+        button: b
+        screenPos: {x: 0, y: -150}
+        promptTime: 1
+        triggerTime: 8.083
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
+        coolBuffer: 0.6
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
@@ -7735,9 +7995,9 @@ MonoBehaviour:
       qtes:
       - text: No [i]'m Spartacus
         button: i
-        screenPos: {x: 0, y: -200}
+        screenPos: {x: 0, y: -50}
         promptTime: 0.3
-        triggerTime: 3
+        triggerTime: 2.625
         perfectBuffer: 0.1
         greatBuffer: 0.1
         coolBuffer: 0.1
@@ -7749,7 +8009,7 @@ MonoBehaviour:
         dontPress: 0
       - text: No [i]'m Spartacus
         button: i
-        screenPos: {x: 0, y: -200}
+        screenPos: {x: 0, y: -50}
         promptTime: 3.3
         triggerTime: 4
         perfectBuffer: 0.1
@@ -7763,7 +8023,7 @@ MonoBehaviour:
         dontPress: 0
       - text: No [i]'m Spartacus
         button: i
-        screenPos: {x: 0, y: -200}
+        screenPos: {x: 0, y: -50}
         promptTime: 4.3
         triggerTime: 7
         perfectBuffer: 0.1
@@ -7777,7 +8037,7 @@ MonoBehaviour:
         dontPress: 0
       - text: No [i]'m Spartacus
         button: i
-        screenPos: {x: 0, y: -200}
+        screenPos: {x: 0, y: -50}
         promptTime: 7.3
         triggerTime: 9
         perfectBuffer: 0.1
@@ -7790,82 +8050,93 @@ MonoBehaviour:
         qteType: 2
         dontPress: 0
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesBoulder.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
       qtes:
-      - text: Mash [r] to run
-        button: r
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
+      - text: '[s]nare'
+        button: s
+        screenPos: {x: 0, y: 0}
+        promptTime: 0
+        triggerTime: 0.833
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 1
-        dontPress: 0
-      volume: 0.2
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
-      qtes:
-      - text: Press [t] to Thrust
-        button: t
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 1.7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
+        rhythmCueStartPos: {x: -400, y: 100}
         resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
-      - text: Press [c] to Cut!
-        button: c
-        screenPos: {x: 0, y: -200}
-        promptTime: 1.8
-        triggerTime: 2
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
+      - text: '[s]nare'
+        button: s
+        screenPos: {x: 0, y: 0}
+        promptTime: 0
+        triggerTime: 1.958
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
+        rhythmCueStartPos: {x: -400, y: 100}
         resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
-      - text: Press [k] to Kick
-        button: k
-        screenPos: {x: 0, y: -200}
-        promptTime: 6
-        triggerTime: 6.9
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
+      - text: '[s]nare'
+        button: s
+        screenPos: {x: 0, y: 0}
+        promptTime: 0
+        triggerTime: 3.083
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: -400, y: 100}
+        resultPos: {x: 0, y: 0}
+        qteType: 2
+        dontPress: 0
+      - text: '[s]nare'
+        button: s
+        screenPos: {x: 0, y: 0}
+        promptTime: 0
+        triggerTime: 4.083
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: -400, y: 100}
+        resultPos: {x: 0, y: 0}
+        qteType: 2
+        dontPress: 0
+      - text: '[s]nare'
+        button: s
+        screenPos: {x: 0, y: -100}
+        promptTime: 0
+        triggerTime: 4.25
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: -400, y: 100}
+        resultPos: {x: 0, y: 0}
+        qteType: 2
+        dontPress: 0
+      - text: Press [d] to Duck!
+        button: d
+        screenPos: {x: 0, y: 100}
+        promptTime: 5
+        triggerTime: 6.8
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
+        coolBuffer: 0.6
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
-      - text: Press [j] to Jump!
-        button: j
-        screenPos: {x: 0, y: -200}
-        promptTime: 8
-        triggerTime: 8.4
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 0.5
+      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
       qtes:
       - text: Press [d] to duck
@@ -7885,127 +8156,11 @@ MonoBehaviour:
       volume: 0.7
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
       qtes:
-      - text: Hit [b] to Blow Up
+      - text: Press [b] to Blow The Bloody Doors Off
         button: b
-        screenPos: {x: 0, y: -200}
+        screenPos: {x: 0, y: -100}
         promptTime: 1
         triggerTime: 6
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
-      qtes:
-      - text: Press [s] to Play Snare
-        button: s
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 1
-        perfectBuffer: 4
-        greatBuffer: 5
-        coolBuffer: 6
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      - text: Press [d] to Duck!
-        button: d
-        screenPos: {x: 0, y: -200}
-        promptTime: 6
-        triggerTime: 6.8
-        perfectBuffer: 1
-        greatBuffer: 1.5
-        coolBuffer: 2
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4
-      qtes:
-      - text: Mash [e] to Chow Down
-        button: e
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 8.5
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 1
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
-      qtes:
-      - text: Press [w] to Shoot Web
-        button: w
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 6
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
-      qtes:
-      - text: Hit [b] to Be Back
-        button: b
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 8.6
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
-      qtes:
-      - text: Press [b] to ?
-        button: b
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 4.5
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
-      qtes:
-      - text: Press [s] to Stroke Chin
-        button: s
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 8
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
@@ -8018,99 +8173,14 @@ MonoBehaviour:
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4
       qtes:
-      - text: Press [d] to ?
-        button: b
-        screenPos: {x: 0, y: -200}
+      - text: Press [f] to Pay Respects
+        button: f
+        screenPos: {x: 0, y: -100}
         promptTime: 1
         triggerTime: 6
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1.2
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
-      qtes:
-      - text: Press [m] to Man Behind Winkie's
-        button: m
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 7.4
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4
-      qtes:
-      - text: Press [w] to Shoot Web
-        button: w
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 10.5
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1.2
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
-      qtes:
-      - text: Press [space] to Space!
-        button: space
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 8.05
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4
-      qtes:
-      - text: Mash [s] to sit on sofa
-        button: s
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 9
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 1
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
-      qtes:
-      - text: Press [b] to begin beautiful friendship
-        button: b
-        screenPos: {x: 0, y: -200}
-        promptTime: 5
-        triggerTime: 6
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
