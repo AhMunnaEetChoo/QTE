@@ -441,10 +441,15 @@ public class PlayClip : IState
         {
             TriggerQTE(closestStateToTrigger, closestTotrigger);
         }
+
+        if(m_videoPlayer.time > m_videoPlayer.length *0.98)
+        {
+            FlickChannel();
+        }
     }
     public void OnEnter()
     {
-        // play the fuzzy transition thing
+        // play the fuzzy transition thing if it's not already doing so.
         FlickChannel();
 
         // choose a clip
@@ -480,8 +485,12 @@ public class PlayClip : IState
 
     public void FlickChannel()
     {
-        m_manager.m_tvStatic.SetActive(true);
-        FMODUnity.RuntimeManager.PlayOneShot("event:/ChannelChange");
-        m_channelChangetimer = 0.5f;
+        if(!m_manager.m_tvStatic.activeSelf)
+        {
+            m_manager.m_tvStatic.SetActive(true);
+            m_manager.m_tvStatic.GetComponent<Animator>().Play("TVStatic", -1, Random.Range(0.0f, 1.0f));
+            FMODUnity.RuntimeManager.PlayOneShot("event:/ChannelChange");
+            m_channelChangetimer = 0.5f;
+        }
     }
 }
