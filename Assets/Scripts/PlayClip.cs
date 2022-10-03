@@ -94,17 +94,14 @@ public class PlayClip : IState
                 {
                     if (difference < _qteData.perfectBuffer)
                     {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                         _qteState.m_qteResult = QTEResult.Perfect;
                     }
                     else if (difference < _qteData.greatBuffer)
                     {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                         _qteState.m_qteResult = QTEResult.Great;
                     }
                     else if (difference < _qteData.coolBuffer)
                     {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                         _qteState.m_qteResult = QTEResult.Cool;
                     }
                 }
@@ -112,7 +109,6 @@ public class PlayClip : IState
                 {
                     if (difference < _qteData.coolBuffer)
                     {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
                         _qteState.m_qteResult = QTEResult.Nice;
                     }
                 }
@@ -123,6 +119,15 @@ public class PlayClip : IState
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
                 _qteState.m_qteResult = (QTEResult)Random.Range((int)QTEResult.Shame, (int)QTEResult.Whoops + 1);
             }
+            else
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                if (m_prompt)
+                {
+                    GameObject.Destroy(m_prompt);
+                }
+            }
+
             return true;
         }
         return false;
