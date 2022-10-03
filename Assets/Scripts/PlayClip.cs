@@ -366,7 +366,7 @@ public class PlayClip : IState
                 break;
             case QTEStage.ShowPrompt:
                 float t = ((float)m_videoPlayer.time - _qteData.promptTime) / (_qteData.triggerTime - _qteData.promptTime);
-                _qteState.m_rhythmCue.transform.localPosition = Vector3.LerpUnclamped(_qteData.rhythmCueStartPos, _qteData.rhythmTargetPos, t);
+                _qteState.m_rhythmCue.transform.localPosition = Vector3.Lerp(_qteData.rhythmCueStartPos, _qteData.rhythmTargetPos, t);
                 break;
             case QTEStage.Showresult:
                 QTEShowResult(_qteState, _qteData, _qteData.rhythmTargetPos + new Vector2(200.0f, 0.0f));

@@ -1,5 +1,6 @@
 TODO:
 
+import json from url
 transitions
 Rhythm mode animation
 fix the game with capslock on
