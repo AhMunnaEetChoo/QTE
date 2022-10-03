@@ -132,6 +132,15 @@ public float SecondsOfRanking;
 
             }
 
+            //Create F Rank even if not reached
+
+            if (CurrentScore < ScoreF)
+            {
+                RankingCounter.gameObject.SetActive(true);
+                RankingCounter.text = string.Format("<mspace=0.55em>{0:0}</mspace>", ScoreCountUp);
+                FStar.SetActive(true);
+            }
+
         }
 
         //Props only appear when BaldSquish animation is playing
