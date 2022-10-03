@@ -13,17 +13,31 @@ public class LevelScriptEditor : Editor
 
         void UpdateVids()
         {
-            myTarget.m_gameData.clipData.Clear();
             DirectoryInfo dir = new DirectoryInfo(Application.dataPath + "/../docs/Clips");
             FileInfo[] info = dir.GetFiles("*.mp4");
+
             foreach (FileInfo f in info)
             {
-                QTEManager.ClipData cd = new QTEManager.ClipData();
-                cd.url = "https://ahmunnaeetchoo.github.io/QTE/Clips/" + f.Name;
+                
+                string url = "https://ahmunnaeetchoo.github.io/QTE/Clips/" + f.Name;
 
-                QTEManager.QTE defaultQTE = new QTEManager.QTE();
-                cd.qtes.Add(defaultQTE);
-                myTarget.m_gameData.clipData.Add(cd);
+                // find existing urls in the current game data
+                bool foundURL = false;
+                foreach (QTEManager.ClipData clipData in myTarget.m_gameData.clipData)
+                {
+                    if(clipData.url == url)
+                    {
+                        foundURL = true;
+                    }
+                }
+                if(!foundURL)
+                {
+                    QTEManager.ClipData cd = new QTEManager.ClipData();
+                    cd.url = url;
+                    QTEManager.QTE defaultQTE = new QTEManager.QTE();
+                    cd.qtes.Add(defaultQTE);
+                    myTarget.m_gameData.clipData.Add(cd);
+                }
             }
         }
 

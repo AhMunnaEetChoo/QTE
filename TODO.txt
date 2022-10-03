@@ -1,18 +1,13 @@
 TODO:
 
-transitions
-provide custom json url option
 Rhythm mode animation
-fix the game with capslock on
+
 game start with title
 reset at end
-
-audio to hook up:
-Credits applause
-channel change
-tv static loop
+provide custom json url option
 
 Done:
+transitions
 sfx for mashing
 only allow one prompt on screen at a time
 Score
@@ -22,3 +17,7 @@ spiderman
 Trigger game end when clips have finished
 import json from url
 result position
+channel change
+tv static loop
+Credits applause
+fix the game with capslock on
