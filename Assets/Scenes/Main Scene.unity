@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44509637, g: 0.49469584, b: 0.5737789, a: 1}
+  m_IndirectSpecularColor: {r: 0.4450966, g: 0.4946965, b: 0.5737793, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -492,7 +492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &105274443
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7696,6 +7696,7 @@ MonoBehaviour:
   m_finalRankingSystem: {fileID: 0}
   m_videoPlayer: {fileID: 693383885}
   m_jsonURL: https://ahmunnaeetchoo.github.io/QTE/GameData.json
+  m_extraJsonURL: https://ahmunnaeetchoo.github.io/QTE/GameDataExtra.json
   m_webDataRetrieved: 0
   m_tvStatic: {fileID: 1113628085}
   m_creditsMusicEmitter: {fileID: 693383887}
