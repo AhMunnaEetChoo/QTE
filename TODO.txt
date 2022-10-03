@@ -1,10 +1,8 @@
 TODO:
 
-do tv static until next video ready
 
 WIBNIF:
 provide custom json url option
-Rhythm mode animation
 
 Done:
 transitions
@@ -26,3 +24,5 @@ Press E for extra mode
 game start with title
 scoring system in game data
 score linked to rank
+do tv static until next video ready
+Rhythm mode animation
