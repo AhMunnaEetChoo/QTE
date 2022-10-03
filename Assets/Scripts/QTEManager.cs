@@ -59,7 +59,7 @@ public class QTEManager : MonoBehaviour
 
     public string m_jsonURL;
     public string m_extraJsonURL;
-    public bool m_webDataRetrieved = true;
+    private int m_gameLoadCount = 0;
     private string m_mainGameJson;
     private string m_extraGameJson;
 
@@ -149,7 +149,7 @@ public class QTEManager : MonoBehaviour
         public bool ReadyToStart()
         {
 #if !UNITY_EDITOR
-            return (m_readyToStart || m_readyForExtra) && m_manager.m_webDataRetrieved;
+            return (m_readyToStart || m_readyForExtra) && m_manager.m_gameLoadCount ==2;
 #else
             return m_readyToStart || m_readyForExtra;
 #endif
@@ -256,9 +256,8 @@ public class QTEManager : MonoBehaviour
         m_mainGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameData.json");
         m_extraGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameDataExtra.json");
 #else
-        StartCoroutine(GetRequest(m_jsonURL, m_mainGameJson));
-        StartCoroutine(GetRequest(m_extraJsonURL, m_extraGameJson));
-        m_webDataRetrieved = false;
+        StartCoroutine(GetRequest(m_jsonURL, false));
+        StartCoroutine(GetRequest(m_extraJsonURL, true));
 #endif
 
         // setup state machine
@@ -271,7 +270,7 @@ public class QTEManager : MonoBehaviour
         m_stateMachine.SetState(mainMenuState);
 
     }
-    IEnumerator GetRequest(string uri, string output)
+    IEnumerator GetRequest(string uri, bool _extraGame)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
@@ -291,9 +290,15 @@ public class QTEManager : MonoBehaviour
                     Debug.LogError(pages[page] + ": HTTP Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.Success:
-                    Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
-                    output = webRequest.downloadHandler.text;
-                    m_webDataRetrieved = true;
+                    if(_extraGame)
+                    {
+                        m_extraGameJson = webRequest.downloadHandler.text;
+                    }
+                    else
+                    {
+                        m_mainGameJson = webRequest.downloadHandler.text;
+                    }
+                    m_gameLoadCount++;
                     break;
             }
         }
