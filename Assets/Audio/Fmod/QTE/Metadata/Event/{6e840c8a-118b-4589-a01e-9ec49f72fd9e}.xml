@@ -123,9 +123,7 @@
 	<object class="MixerBusPanner" id="{37a9acc2-068c-4056-bf2d-0702fa9a1d1b}" />
 	<object class="MultiSound" id="{e3d69df9-90c5-437b-b965-fccf5c2f8c6b}">
 		<relationship name="sounds">
-			<destination>{b91359a5-1d1d-45ef-b366-9fe5221b4c3a}</destination>
 			<destination>{9ff88afe-5e7d-4d8b-8bd2-b115d2082240}</destination>
-			<destination>{9972c6a9-bbd0-41a9-8b35-622a63e56fcd}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{a9ae624d-3f1c-4906-9ec4-b72bbe88095a}" />
@@ -136,20 +134,42 @@
 	</object>
 	<object class="MixerBusPanner" id="{0c6109a5-4f74-45b1-b609-3db2777c7f47}" />
 	<object class="MixerBusFader" id="{544da82a-2cfc-4eec-9551-ceb47d4d2835}" />
-	<object class="SingleSound" id="{b91359a5-1d1d-45ef-b366-9fe5221b4c3a}">
-		<relationship name="audioFile">
-			<destination>{96204378-778b-42c7-aa1a-5ac3f4abf4c9}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{9ff88afe-5e7d-4d8b-8bd2-b115d2082240}">
+		<relationship name="modulators">
+			<destination>{d6d79751-f1c2-4331-a9a5-b3e1109f3bd5}</destination>
+			<destination>{13fc56d8-f8a9-4172-8cc6-c00623e8dacb}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{e0edf2db-4d99-4f12-b278-fb98d5e39be6}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{9972c6a9-bbd0-41a9-8b35-622a63e56fcd}">
-		<relationship name="audioFile">
-			<destination>{92ebe01f-9b59-49c6-9340-d3c149c32e56}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{43d7909c-e520-4061-8240-d3f1b460ca75}" />
+	<object class="ADSRModulator" id="{d6d79751-f1c2-4331-a9a5-b3e1109f3bd5}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="holdTime">
+			<value>380</value>
+		</property>
+		<property name="decayTime">
+			<value>20</value>
+		</property>
+		<property name="sustainValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{13fc56d8-f8a9-4172-8cc6-c00623e8dacb}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+	</object>
 </objects>

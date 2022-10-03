@@ -118,10 +118,17 @@
 	<object class="MixerBusEffectChain" id="{f7c7140e-5373-4b17-a1b2-636eccd7cb14}">
 		<relationship name="effects">
 			<destination>{57f6e9d1-bfab-4dbf-b11d-4ffffdb6f9fd}</destination>
+			<destination>{00c26d3f-fec9-483e-a6f5-09709dc62751}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{4f050a19-4995-46a9-bb1e-73d24319627e}" />
 	<object class="SingleSound" id="{d45a4458-8713-4991-ab90-dafa4f74f7c5}">
+		<property name="volume">
+			<value>-5.5</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{f7166ee8-3fd8-41f1-b56b-5a6005406176}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{50892bce-ec61-46da-8afb-c8c6b3fa7eb0}</destination>
 		</relationship>
@@ -134,5 +141,33 @@
 	</object>
 	<object class="MixerBusPanner" id="{e967b264-25df-4bb5-a28f-97aa31ab6728}" />
 	<object class="MixerBusFader" id="{57f6e9d1-bfab-4dbf-b11d-4ffffdb6f9fd}" />
+	<object class="ThreeEQEffect" id="{00c26d3f-fec9-483e-a6f5-09709dc62751}">
+		<property name="highGain">
+			<value>-17</value>
+		</property>
+	</object>
+	<object class="ADSRModulator" id="{f7166ee8-3fd8-41f1-b56b-5a6005406176}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="holdTime">
+			<value>0</value>
+		</property>
+		<property name="decayTime">
+			<value>860</value>
+		</property>
+		<property name="sustainValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{d28c9d2c-512b-4ce8-a17b-a936c25f06b8}" />
 </objects>
