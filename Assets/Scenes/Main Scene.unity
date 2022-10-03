@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44509637, g: 0.49469584, b: 0.5737789, a: 1}
+  m_IndirectSpecularColor: {r: 0.4450966, g: 0.4946965, b: 0.5737793, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7708,6 +7708,21 @@ MonoBehaviour:
   m_buttonPrefab: {fileID: 36991487993545089, guid: 1a668336898b94f9a8d0f18b679730fa, type: 3}
   m_gameData:
     clipData:
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesBoulder.mp4
+      qtes:
+      - text: Mash [r] to run
+        button: r
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 7
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        qteType: 1
+      volume: 0.2
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4
       qtes:
       - text: No [i]'m Spartacus
@@ -7852,21 +7867,6 @@ MonoBehaviour:
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianJonesBoulder.mp4
-      qtes:
-      - text: Mash [r] to run
-        button: r
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 7
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        qteType: 1
-      volume: 0.2
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
       qtes:
       - text: Press [k] to Know Kung Fu
@@ -7969,13 +7969,13 @@ MonoBehaviour:
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
       qtes:
-      - text: Press [s] to Stroke Chin
-        button: s
+      - text: Press [b] to ?
+        button: b
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 8
+        triggerTime: 4.5
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
@@ -7984,13 +7984,13 @@ MonoBehaviour:
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
       qtes:
-      - text: Press [b] to ?
-        button: b
+      - text: Press [s] to Stroke Chin
+        button: s
         screenPos: {x: 0, y: -200}
         promptTime: 1
-        triggerTime: 4.5
+        triggerTime: 8
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1

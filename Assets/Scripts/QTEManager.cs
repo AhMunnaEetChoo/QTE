@@ -51,6 +51,7 @@ public class QTEManager : MonoBehaviour
     };
 
     private StateMachine m_stateMachine = new StateMachine();
+    private ScoreSystem m_scoreSystem;
     public VideoPlayer m_videoPlayer;
     public TMP_Text m_timerText;
 
@@ -236,26 +237,32 @@ public class QTEManager : MonoBehaviour
                 {
                     case QTEResult.Perfect:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Perfect");
+                        m_manager.m_scoreSystem.ScorePerfectTrigger = true;
                         toSpawn = m_manager.m_perfectPrefab;
                         break;
                     case QTEResult.Great:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Great");
+                        m_manager.m_scoreSystem.ScoreGreatTrigger = true;
                         toSpawn = m_manager.m_greatPrefab;
                         break;
                     case QTEResult.Cool:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Cool");
+                        m_manager.m_scoreSystem.ScoreCoolTrigger = true;
                         toSpawn = m_manager.m_coolPrefab;
                         break;
                     case QTEResult.Shame:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Shame");
+                        m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
                         toSpawn = m_manager.m_shamePrefab;
                         break;
                     case QTEResult.TooBad:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_TooBad");
+                        m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
                         toSpawn = m_manager.m_tooBadPrefab;
                         break;
                     case QTEResult.Whoops:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Whoops");
+                        m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
                         toSpawn = m_manager.m_whoopsPrefab;
                         break;
                 }
@@ -372,18 +379,22 @@ public class QTEManager : MonoBehaviour
                                 case QTEResult.Great:
                                 case QTEResult.Cool:
                                     FMODUnity.RuntimeManager.PlayOneShot("event:/Mash_Awesome");
+                                    m_manager.m_scoreSystem.ScoreAwesomeTrigger = true;
                                     toSpawn = m_manager.m_awesomePrefab;
                                     break;
                                 case QTEResult.Shame:
                                     FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Shame");
+                                    m_manager.m_scoreSystem.ScoreFailMashTrigger = true;
                                     toSpawn = m_manager.m_shamePrefab;
                                     break;
                                 case QTEResult.TooBad:
                                     FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_TooBad");
+                                    m_manager.m_scoreSystem.ScoreFailMashTrigger = true;
                                     toSpawn = m_manager.m_tooBadPrefab;
                                     break;
                                 case QTEResult.Whoops:
                                     FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Whoops");
+                                    m_manager.m_scoreSystem.ScoreFailMashTrigger = true;
                                     toSpawn = m_manager.m_whoopsPrefab;
                                     break;
                             }
@@ -523,6 +534,8 @@ public class QTEManager : MonoBehaviour
 
         m_stateMachine.AddTransition(mainMenuState, playClipState, mainMenuState.IsComplete);
         m_stateMachine.SetState(mainMenuState);
+
+        m_scoreSystem = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
     }
 
     // Update is called once per frame
