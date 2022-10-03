@@ -259,7 +259,7 @@
                         "y": -50.0
                     },
                     "promptTime": 0.30000001192092898,
-                    "triggerTime": 2.625,
+                    "triggerTime": 2.5250000953674318,
                     "perfectBuffer": 0.10000000149011612,
                     "greatBuffer": 0.10000000149011612,
                     "coolBuffer": 0.10000000149011612,
@@ -287,7 +287,7 @@
                         "y": -50.0
                     },
                     "promptTime": 1.6749999523162842,
-                    "triggerTime": 4.0,
+                    "triggerTime": 3.9000000953674318,
                     "perfectBuffer": 0.10000000149011612,
                     "greatBuffer": 0.10000000149011612,
                     "coolBuffer": 0.10000000149011612,
@@ -315,7 +315,7 @@
                         "y": -50.0
                     },
                     "promptTime": 4.675000190734863,
-                    "triggerTime": 7.0,
+                    "triggerTime": 6.900000095367432,
                     "perfectBuffer": 0.10000000149011612,
                     "greatBuffer": 0.10000000149011612,
                     "coolBuffer": 0.10000000149011612,
@@ -343,7 +343,7 @@
                         "y": -50.0
                     },
                     "promptTime": 6.675000190734863,
-                    "triggerTime": 9.0,
+                    "triggerTime": 8.899999618530274,
                     "perfectBuffer": 0.10000000149011612,
                     "greatBuffer": 0.10000000149011612,
                     "coolBuffer": 0.10000000149011612,
