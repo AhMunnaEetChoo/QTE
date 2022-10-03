@@ -7775,6 +7775,7 @@ MonoBehaviour:
   m_tooBadPrefab: {fileID: 8248972276569394638, guid: 8601d013e42474a97a3ce7c30cf0d4f9, type: 3}
   m_whoopsPrefab: {fileID: 8313402052362861787, guid: 70bb56847f3804848845d131b518cb63, type: 3}
   m_buttonPrefab: {fileID: 36991487993545089, guid: 1a668336898b94f9a8d0f18b679730fa, type: 3}
+  m_buttonImpactPrefab: {fileID: 3778882796783795158, guid: d07d95b9a046444c4a8ccea1d7cdfa9c, type: 3}
   m_gameData:
     clipData:
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4

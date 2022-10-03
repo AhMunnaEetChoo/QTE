@@ -1,7 +1,6 @@
 TODO:
 
-
-reset at end
+WIBNIF:
 provide custom json url option
 Rhythm mode animation
 

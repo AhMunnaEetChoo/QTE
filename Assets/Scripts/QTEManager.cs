@@ -80,6 +80,7 @@ public class QTEManager : MonoBehaviour
     public GameObject m_tooBadPrefab;
     public GameObject m_whoopsPrefab;
     public GameObject m_buttonPrefab;
+    public GameObject m_buttonImpactPrefab;
 
     public enum QTEType
     {
@@ -314,7 +315,8 @@ public class QTEManager : MonoBehaviour
         int index = newText.text.IndexOf("[");
         while (index != -1)
         {
-            string qteButt = newText.text[index + 1].ToString();
+            int upTo = newText.text.IndexOf("]");
+            string qteButt = newText.text.Substring(index + 1, upTo - (index + 1));
             newText.text = newText.text.Replace("[" + qteButt + "]", "<sprite=" + QTEManager.charToSpriteIndex[qteButt].ToString() + ">");
             index = newText.text.IndexOf("[");
         }
