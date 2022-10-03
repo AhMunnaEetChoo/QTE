@@ -1,6 +1,318 @@
 {
     "clipData": [
         {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4",
+            "qtes": [
+                {
+                    "text": "Press [t] to Thrust",
+                    "button": "t",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -200.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 1.7000000476837159,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "Press [c] to Cut!",
+                    "button": "c",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -200.0
+                    },
+                    "promptTime": 1.7999999523162842,
+                    "triggerTime": 2.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "Press [k] to Kick",
+                    "button": "k",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -200.0
+                    },
+                    "promptTime": 6.0,
+                    "triggerTime": 6.900000095367432,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                },
+                {
+                    "text": "Press [j] to Jump!",
+                    "button": "j",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -200.0
+                    },
+                    "promptTime": 8.0,
+                    "triggerTime": 8.399999618530274,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 0.5
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4",
+            "qtes": [
+                {
+                    "text": "Press [s] to Stroke Chin",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -200.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4",
+            "qtes": [
+                {
+                    "text": "Press [w] to Web",
+                    "button": "w",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 6.0,
+                    "perfectBuffer": 6.0,
+                    "greatBuffer": 7.0,
+                    "coolBuffer": 8.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": true
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4",
+            "qtes": [
+                {
+                    "text": "Press [w] to Web",
+                    "button": "w",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 10.5,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 0.6000000238418579,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4",
+            "qtes": [
+                {
+                    "text": "Press [m] to Man Behind Winkie's",
+                    "button": "m",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -200.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 7.400000095367432,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4",
+            "qtes": [
+                {
+                    "text": "Press [space] to Space",
+                    "button": "space",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.050000190734864,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to Begin Beautiful Friendship",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 2.0,
+                    "triggerTime": 6.0,
+                    "perfectBuffer": 10.0,
+                    "greatBuffer": 11.0,
+                    "coolBuffer": 12.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4",
+            "qtes": [
+                {
+                    "text": "<u>Mash</u> [s] to Sit On Couch",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 9.0,
+                    "perfectBuffer": 6.0,
+                    "greatBuffer": 7.0,
+                    "coolBuffer": 8.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "qteType": 1,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4",
             "qtes": [
                 {
@@ -13,8 +325,8 @@
                     "promptTime": 1.0,
                     "triggerTime": 5.0,
                     "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.20000000298023225,
-                    "coolBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.25,
+                    "coolBuffer": 0.75,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -41,9 +353,9 @@
                         "y": -100.0
                     },
                     "promptTime": 1.0,
-                    "triggerTime": 4.5,
-                    "perfectBuffer": 0.20000000298023225,
-                    "greatBuffer": 0.4000000059604645,
+                    "triggerTime": 4.0,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.44999998807907107,
                     "coolBuffer": 0.6000000238418579,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
@@ -128,7 +440,7 @@
                     "button": "i",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -50.0
                     },
                     "promptTime": 0.30000001192092898,
                     "triggerTime": 2.625,
@@ -152,7 +464,7 @@
                     "button": "i",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -50.0
                     },
                     "promptTime": 3.299999952316284,
                     "triggerTime": 4.0,
@@ -176,7 +488,7 @@
                     "button": "i",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -50.0
                     },
                     "promptTime": 4.300000190734863,
                     "triggerTime": 7.0,
@@ -200,7 +512,7 @@
                     "button": "i",
                     "screenPos": {
                         "x": 0.0,
-                        "y": -200.0
+                        "y": -50.0
                     },
                     "promptTime": 7.300000190734863,
                     "triggerTime": 9.0,
@@ -373,108 +685,6 @@
             "volume": 1.0
         },
         {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4",
-            "qtes": [
-                {
-                    "text": "Press [t] to Thrust",
-                    "button": "t",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 1.7000000476837159,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 2,
-                    "dontPress": false
-                },
-                {
-                    "text": "Press [c] to Cut!",
-                    "button": "c",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "promptTime": 1.7999999523162842,
-                    "triggerTime": 2.0,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 2,
-                    "dontPress": false
-                },
-                {
-                    "text": "Press [k] to Kick",
-                    "button": "k",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "promptTime": 6.0,
-                    "triggerTime": 6.900000095367432,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                },
-                {
-                    "text": "Press [j] to Jump!",
-                    "button": "j",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "promptTime": 8.0,
-                    "triggerTime": 8.399999618530274,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 0.5
-        },
-        {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4",
             "qtes": [
                 {
@@ -579,216 +789,6 @@
                     "perfectBuffer": 0.5,
                     "greatBuffer": 0.800000011920929,
                     "coolBuffer": 1.2000000476837159,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4",
-            "qtes": [
-                {
-                    "text": "Press [w] to Web",
-                    "button": "w",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -100.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 6.0,
-                    "perfectBuffer": 6.0,
-                    "greatBuffer": 7.0,
-                    "coolBuffer": 8.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": true
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4",
-            "qtes": [
-                {
-                    "text": "Press [s] to Stroke Chin",
-                    "button": "s",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 8.0,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4",
-            "qtes": [
-                {
-                    "text": "Press [m] to Man Behind Winkie's",
-                    "button": "m",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 7.400000095367432,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4",
-            "qtes": [
-                {
-                    "text": "Press [w] to Web",
-                    "button": "w",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -100.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 10.5,
-                    "perfectBuffer": 0.20000000298023225,
-                    "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.6000000238418579,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4",
-            "qtes": [
-                {
-                    "text": "Press [space] to Space",
-                    "button": "space",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -100.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 8.050000190734864,
-                    "perfectBuffer": 0.5,
-                    "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4",
-            "qtes": [
-                {
-                    "text": "<u>Mash</u> [s] to Sit On Couch",
-                    "button": "s",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -100.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 9.0,
-                    "perfectBuffer": 6.0,
-                    "greatBuffer": 7.0,
-                    "coolBuffer": 8.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "qteType": 1,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4",
-            "qtes": [
-                {
-                    "text": "Press [b] to Begin Beautiful Friendship",
-                    "button": "b",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -100.0
-                    },
-                    "promptTime": 2.0,
-                    "triggerTime": 6.0,
-                    "perfectBuffer": 10.0,
-                    "greatBuffer": 11.0,
-                    "coolBuffer": 12.0,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
