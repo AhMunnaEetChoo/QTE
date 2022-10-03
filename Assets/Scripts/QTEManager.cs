@@ -88,6 +88,7 @@ public class QTEManager : MonoBehaviour
         public Vector2 rhythmTargetPos = new Vector2(0, 100);
         public Vector2 rhythmCueStartPos = new Vector2(800, 0);
         public QTEType qteType = QTEType.Instruction;
+        public bool dontPress = false;
     };
 
     [System.Serializable]
@@ -203,7 +204,7 @@ public class QTEManager : MonoBehaviour
                     // now check against the correct time..
                     float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
 
-                    if(_qteData.qteType == QTEType.Instruction)
+                    if(_qteData.qteType == QTEType.Instruction && !_qteData.dontPress)
                     {
                         if (difference < _qteData.perfectBuffer)
                         {
@@ -221,7 +222,7 @@ public class QTEManager : MonoBehaviour
                             _qteState.m_qteResult = QTEResult.Cool;
                         }
                     }
-                    else
+                    else if(_qteData.qteType == QTEType.Rhythm)
                     {
                         if (difference < _qteData.coolBuffer)
                         {
