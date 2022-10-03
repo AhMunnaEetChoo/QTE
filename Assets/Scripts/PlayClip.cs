@@ -212,13 +212,8 @@ public class PlayClip : IState
             case QTEStage.Initialising:
                 if (m_videoPlayer.time > _qteData.promptTime)
                 {
-                    GameObject canvas = GameObject.Find("Canvas");
-
                     // spawn the text
-                    SetPrompt(GameObject.Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform), _qteData.triggerTime + _qteData.coolBuffer);
-                    m_prompt.transform.localPosition = _qteData.screenPos;
-                    TMP_Text newText = m_prompt.GetComponent<TMP_Text>();
-                    newText.text = _qteData.text.Replace("[" + _qteData.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">");
+                    SetPrompt(m_manager.SpawnQTE(_qteData.screenPos, _qteData.text), _qteData.triggerTime + _qteData.coolBuffer);
                     _qteState.m_qteStage = QTEStage.ShowPrompt;
                 }
                 break;
@@ -260,13 +255,7 @@ public class PlayClip : IState
             case QTEStage.Initialising:
                 if (m_videoPlayer.time > _qteData.promptTime)
                 {
-                    GameObject canvas = GameObject.Find("Canvas");
-
-                    // spawn the text
-                    SetPrompt(GameObject.Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform), _qteData.triggerTime + _qteData.coolBuffer);
-                    m_prompt.transform.localPosition = _qteData.screenPos;
-                    TMP_Text newText = m_prompt.GetComponent<TMP_Text>();
-                    newText.text = _qteData.text.Replace("[" + _qteData.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">");
+                    SetPrompt(m_manager.SpawnQTE(_qteData.screenPos, _qteData.text), _qteData.triggerTime + _qteData.coolBuffer);
                     _qteState.m_qteStage = QTEStage.ShowPrompt;
                 }
                 break;
@@ -352,10 +341,7 @@ public class PlayClip : IState
                     GameObject canvas = GameObject.Find("Canvas");
                     string buttonSprite = "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">";
                     // spawn the text
-                    SetPrompt(GameObject.Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform), _qteData.triggerTime + _qteData.coolBuffer);
-                    m_prompt.transform.localPosition = _qteData.screenPos;
-                    TMP_Text newText = m_prompt.GetComponent<TMP_Text>();
-                    newText.text = _qteData.text.Replace("[" + _qteData.button + "]", buttonSprite);
+                    SetPrompt(m_manager.SpawnQTE(_qteData.screenPos, _qteData.text), _qteData.triggerTime + _qteData.coolBuffer);
                     _qteState.m_qteStage = QTEStage.ShowPrompt;
 
                     _qteState.m_rhythmTarget = GameObject.Instantiate(m_manager.m_buttonPrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);

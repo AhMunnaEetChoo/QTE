@@ -1,8 +1,6 @@
 TODO:
 
 
-scoring system in game data
-score linked to rank
 reset at end
 provide custom json url option
 Rhythm mode animation
@@ -25,3 +23,5 @@ fix the game with capslock on
 Press S to start
 Press E for extra mode
 game start with title
+scoring system in game data
+score linked to rank

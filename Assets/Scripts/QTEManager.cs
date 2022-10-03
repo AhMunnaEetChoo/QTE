@@ -5,6 +5,7 @@ using UnityEngine.InputSystem.Controls;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class QTEManager : MonoBehaviour
@@ -65,7 +66,9 @@ public class QTEManager : MonoBehaviour
     public GameObject m_cameraAnimated;
     public GameObject m_tvStatic;
     public FMODUnity.StudioEventEmitter m_creditsMusicEmitter;
+    public FMODUnity.StudioEventEmitter m_clappingMusicEmitter;
     public Vector2 m_startPromptPosition;
+    public Vector2 m_resetPromptPosition;
 
     public GameObject m_qtePrefab;
     public GameObject m_awesomePrefab;
@@ -160,15 +163,7 @@ public class QTEManager : MonoBehaviour
             m_manager.m_tvStatic.SetActive(true);
             m_manager.m_scoreSystem.CurrentScoreText.gameObject.SetActive(false);
 
-            GameObject canvas = GameObject.Find("Canvas");
-
-            // spawn the text
-            m_startPrompt = GameObject.Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
-            m_startPrompt.transform.localPosition = m_manager.m_startPromptPosition;
-            TMP_Text newText = m_startPrompt.GetComponent<TMP_Text>();
-            string pressSText = "Press [s] to Start\n Press [e] for Extra Mode";
-            newText.text = pressSText.Replace("[s]", "<sprite=" + QTEManager.charToSpriteIndex["s"].ToString() + ">").Replace("[e]", "<sprite=" + QTEManager.charToSpriteIndex["e"].ToString() + ">");
-
+            m_startPrompt = m_manager.SpawnQTE(m_manager.m_startPromptPosition, "Press [s] to Start\n Press [e] for Extra Mode");
         }
 
         public void OnExit()
@@ -192,8 +187,8 @@ public class QTEManager : MonoBehaviour
     }
     public class ShowScore : IState
     {
-        private bool m_isComplete = false;
         private QTEManager m_manager;
+        private GameObject m_pressR;
 
         public ShowScore(QTEManager _manager)
         {
@@ -206,13 +201,29 @@ public class QTEManager : MonoBehaviour
         }
         public void Tick()
         {
+            if(m_pressR)
+            {
+                if ((bool)Keyboard.current?.rKey.wasPressedThisFrame)
+                {
+                    OnExit();
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                }
+            }
+            else
+            {
+                if (m_manager.m_finalRankingSystem.GetComponent<FinalRankingSystem>().BaldManAnimationDelay <= 0)
+                {
+                    m_pressR = m_manager.SpawnQTE(m_manager.m_resetPromptPosition, "Press [r] to Reset");
+                }
+            }
         }
         public void OnEnter()
         {
             m_manager.m_tvStatic.SetActive(false);
             m_manager.m_finalRankingSystem.GameEnded = true;
-            FMODUnity.RuntimeManager.PlayOneShot("event:/CreditsApplause");
             m_manager.m_creditsMusicEmitter.Play();
+            m_manager.m_clappingMusicEmitter.Play();
+            
 
             // populate the ranking targets from json data
             FinalRankingSystem rankingSystem = m_manager.m_finalRankingSystem.GetComponent<FinalRankingSystem>();
@@ -226,6 +237,7 @@ public class QTEManager : MonoBehaviour
         public void OnExit()
         {
             m_manager.m_creditsMusicEmitter.Stop();
+            m_manager.m_clappingMusicEmitter.Stop();
         }
     }
 
@@ -290,9 +302,22 @@ public class QTEManager : MonoBehaviour
         m_stateMachine.Tick();
     }
 
-    void InitialiseFromJSON(string _jsonString)
+    public GameObject SpawnQTE(Vector3 _position, string _text)
     {
-        m_gameData = JsonUtility.FromJson<GameData>(_jsonString);
-    }
+        GameObject canvas = GameObject.Find("Canvas");
 
+        GameObject qte = GameObject.Instantiate(m_qtePrefab, m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
+        qte.transform.localPosition = _position;
+        TMP_Text newText = qte.GetComponent<TMP_Text>();
+
+        newText.text = _text;
+        int index = newText.text.IndexOf("[");
+        while (index != -1)
+        {
+            string qteButt = newText.text[index + 1].ToString();
+            newText.text = newText.text.Replace("[" + qteButt + "]", "<sprite=" + QTEManager.charToSpriteIndex[qteButt].ToString() + ">");
+            index = newText.text.IndexOf("[");
+        }
+        return qte;
+    }
 }
