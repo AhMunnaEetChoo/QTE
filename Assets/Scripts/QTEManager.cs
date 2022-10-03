@@ -105,6 +105,16 @@ public class QTEManager : MonoBehaviour
     };
 
     [System.Serializable]
+    public class ScoreData
+    {
+        public int scoref = 0;
+        public int scorec = 1000;
+        public int scoreb = 2000;
+        public int scorea = 10000;
+        public int scores = 20000;
+    }
+
+    [System.Serializable]
     public class ClipData
     {
         public string url;
@@ -116,6 +126,7 @@ public class QTEManager : MonoBehaviour
     public class GameData
     {
         public List<ClipData> clipData = new List<ClipData>();
+        public ScoreData scoreData = new ScoreData();
     };
     public GameData m_gameData = new GameData();
 
@@ -202,6 +213,14 @@ public class QTEManager : MonoBehaviour
             m_manager.m_finalRankingSystem.GameEnded = true;
             FMODUnity.RuntimeManager.PlayOneShot("event:/CreditsApplause");
             m_manager.m_creditsMusicEmitter.Play();
+
+            // populate the ranking targets from json data
+            FinalRankingSystem rankingSystem = m_manager.m_finalRankingSystem.GetComponent<FinalRankingSystem>();
+            rankingSystem.ScoreF = m_manager.m_gameData.scoreData.scoref;
+            rankingSystem.ScoreC = m_manager.m_gameData.scoreData.scorec;
+            rankingSystem.ScoreB = m_manager.m_gameData.scoreData.scoreb;
+            rankingSystem.ScoreA = m_manager.m_gameData.scoreData.scorea;
+            rankingSystem.ScoreS = m_manager.m_gameData.scoreData.scores;
         }
 
         public void OnExit()
