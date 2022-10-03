@@ -63,6 +63,7 @@ public class QTEManager : MonoBehaviour
     private string m_mainGameJson;
     private string m_extraGameJson;
 
+    public GameObject m_canvas;
     public GameObject m_cameraAnimated;
     public GameObject m_tvStatic;
     public FMODUnity.StudioEventEmitter m_creditsMusicEmitter;
@@ -247,6 +248,7 @@ public class QTEManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        m_canvas = GameObject.Find("Canvas");
         m_scoreSystem = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
         m_finalRankingSystem = GameObject.Find("FinalRankingSystem").GetComponent<FinalRankingSystem>();
 
@@ -305,9 +307,7 @@ public class QTEManager : MonoBehaviour
 
     public GameObject SpawnQTE(Vector3 _position, string _text)
     {
-        GameObject canvas = GameObject.Find("Canvas");
-
-        GameObject qte = GameObject.Instantiate(m_qtePrefab, m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
+        GameObject qte = GameObject.Instantiate(m_qtePrefab, m_qtePrefab.transform.position, Quaternion.identity, m_canvas.transform);
         qte.transform.localPosition = _position;
         TMP_Text newText = qte.GetComponent<TMP_Text>();
 

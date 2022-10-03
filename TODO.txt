@@ -1,5 +1,7 @@
 TODO:
 
+do tv static until next video ready
+
 WIBNIF:
 provide custom json url option
 Rhythm mode animation

@@ -121,10 +121,13 @@ public class PlayClip : IState
             else
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                GameObject canvas = GameObject.Find("Canvas");
 
-                GameObject btnImpact = GameObject.Instantiate(m_manager.m_buttonImpactPrefab, _qteData.rhythmTargetPos, Quaternion.identity, canvas.transform);
-                btnImpact.transform.localPosition = _qteData.rhythmTargetPos;
+                if(_qteData.qteType == QTEManager.QTEType.Rhythm)
+                {
+                    GameObject btnImpact = GameObject.Instantiate(m_manager.m_buttonImpactPrefab, _qteData.rhythmTargetPos, Quaternion.identity, m_manager.m_canvas.transform);
+                    btnImpact.transform.localPosition = _qteData.rhythmTargetPos;
+                }
+
                 if (m_prompt)
                 {
                     GameObject.Destroy(m_prompt);
@@ -201,8 +204,7 @@ public class PlayClip : IState
                     toSpawn = m_manager.m_whoopsPrefab;
                     break;
             }
-            GameObject canvas = GameObject.Find("Canvas");
-            GameObject newText = GameObject.Instantiate(toSpawn, Vector3.zero, Quaternion.identity, canvas.transform);
+            GameObject newText = GameObject.Instantiate(toSpawn, Vector3.zero, Quaternion.identity, m_manager.m_canvas.transform);
             newText.transform.localPosition = _spawnPos;
 
             _qteState.m_qteResult = QTEResult.None;
@@ -323,8 +325,7 @@ public class PlayClip : IState
                                 toSpawn = m_manager.m_whoopsPrefab;
                                 break;
                         }
-                        GameObject canvas = GameObject.Find("Canvas");
-                        GameObject newText = GameObject.Instantiate(toSpawn, Vector3.zero, Quaternion.identity, canvas.transform);
+                        GameObject newText = GameObject.Instantiate(toSpawn, Vector3.zero, Quaternion.identity, m_manager.m_canvas.transform);
                         newText.transform.localPosition = _qteData.resultPos;
                         GameObject.Destroy(m_prompt);
 
@@ -342,18 +343,17 @@ public class PlayClip : IState
             case QTEStage.Initialising:
                 if (m_videoPlayer.time > _qteData.promptTime)
                 {
-                    GameObject canvas = GameObject.Find("Canvas");
                     string buttonSprite = "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">";
                     // spawn the text
                     SetPrompt(m_manager.SpawnQTE(_qteData.screenPos, _qteData.text), _qteData.triggerTime + _qteData.coolBuffer);
                     _qteState.m_qteStage = QTEStage.ShowPrompt;
 
-                    _qteState.m_rhythmTarget = GameObject.Instantiate(m_manager.m_buttonPrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
+                    _qteState.m_rhythmTarget = GameObject.Instantiate(m_manager.m_buttonPrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, m_manager.m_canvas.transform);
                     _qteState.m_rhythmTarget.transform.localPosition = _qteData.rhythmTargetPos;
                     TMP_Text buttonTargetText = _qteState.m_rhythmTarget.GetComponent<TMP_Text>();
                     buttonTargetText.text = buttonSprite;
 
-                    _qteState.m_rhythmCue = GameObject.Instantiate(m_manager.m_buttonPrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
+                    _qteState.m_rhythmCue = GameObject.Instantiate(m_manager.m_buttonPrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, m_manager.m_canvas.transform);
                     _qteState.m_rhythmCue.transform.localPosition = _qteData.rhythmCueStartPos;
                     TMP_Text buttonCueText = _qteState.m_rhythmCue.GetComponent<TMP_Text>();
                     buttonCueText.text = buttonSprite;
@@ -370,7 +370,7 @@ public class PlayClip : IState
     }
     public void Tick()
     {
-        if (m_channelChangetimer <= 0.0f)
+        if (m_channelChangetimer <= 0.0f && m_videoPlayer.isPrepared)
         {
             m_manager.m_tvStatic.SetActive(false);
         }
