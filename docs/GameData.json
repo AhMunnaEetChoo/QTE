@@ -676,5 +676,12 @@
             ],
             "volume": 1.0
         }
-    ]
+    ],
+    "scoreData": {
+        "scoref": 1000,
+        "scorec": 3000,
+        "scoreb": 6000,
+        "scorea": 10000,
+        "scores": 14000
+    }
 }
