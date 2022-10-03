@@ -69,6 +69,40 @@
             "volume": 1.0
         },
         {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4",
+            "qtes": [
+                {
+                    "text": "<u>Mash</u> [e] to Chow Down",
+                    "button": "e",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 8.5,
+                    "perfectBuffer": 6.0,
+                    "greatBuffer": 7.0,
+                    "coolBuffer": 8.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 1,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4",
             "qtes": [
                 {
@@ -132,40 +166,6 @@
                     },
                     "qteType": 0,
                     "dontPress": true
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4",
-            "qtes": [
-                {
-                    "text": "<u>Mash</u> [e] to Chow Down",
-                    "button": "e",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -100.0
-                    },
-                    "promptTime": 0.0,
-                    "triggerTime": 8.5,
-                    "perfectBuffer": 6.0,
-                    "greatBuffer": 7.0,
-                    "coolBuffer": 8.0,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "resultPos": {
-                        "x": 0.0,
-                        "y": 0.0
-                    },
-                    "qteType": 1,
-                    "dontPress": false
                 }
             ],
             "volume": 1.0
@@ -272,5 +272,12 @@
             ],
             "volume": 1.0
         }
-    ]
+    ],
+    "scoreData": {
+        "scoref": 0,
+        "scorec": 1000,
+        "scoreb": 3000,
+        "scorea": 4500,
+        "scores": 6000
+    }
 }
