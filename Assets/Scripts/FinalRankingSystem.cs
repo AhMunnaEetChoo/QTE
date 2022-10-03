@@ -45,6 +45,7 @@ public float SecondsOfRanking;
     public GameObject BaldManFedora;
     public GameObject BaldManDog;
     public GameObject BaldManDogFedora;
+    private bool BaldManSound;
 
     public GameObject TVStaticSpare;
 
@@ -163,31 +164,47 @@ public float SecondsOfRanking;
 
         {
 
+            if (BaldManSound == false)
+            {
+
             if (CurrentScore >= ScoreS)
             {
                 BaldManDog.SetActive(true);
                 BaldManDogFedora.SetActive(true);
-            }
+                    BaldManSound = true;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Perfect");
+
+                }
 
             if (CurrentScore >= ScoreA && CurrentScore < ScoreS)
             {
                 BaldManDog.SetActive(true);
-            }
+                    BaldManSound = true;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Mash_Awesome");
+                }
 
             if (CurrentScore >= ScoreB && CurrentScore < ScoreA)
             {
                 BaldManFedora.SetActive(true);
-            }
+                    BaldManSound = true;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Great");
+                }
 
             if (CurrentScore >= ScoreC && CurrentScore < ScoreB)
             {
                 BaldManMop.SetActive(true);
-            }
+                    BaldManSound = true;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Cool");
+                }
 
             if (CurrentScore < ScoreC)
             {
                 BaldManSad.SetActive(true);
                 BaldManMain.SetActive(false);
+                    BaldManSound = true;
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
+                }
+
             }
 
         }
