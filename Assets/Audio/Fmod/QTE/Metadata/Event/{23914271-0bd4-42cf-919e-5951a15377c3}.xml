@@ -92,7 +92,7 @@
 	</object>
 	<object class="MultiSound" id="{155500e7-2731-4f2c-b183-92864dbbd2d4}">
 		<relationship name="sounds">
-			<destination>{c4e31b7a-accb-4249-9369-eebb038109e8}</destination>
+			<destination>{d3785fe8-2d54-4735-abcc-b7fe1dc5f308}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{05dfe660-49bc-45ed-9660-c9a38c4191ba}">
@@ -118,10 +118,17 @@
 	<object class="MixerBusEffectChain" id="{62655d82-6c19-4a64-8c27-b5db6913bac6}">
 		<relationship name="effects">
 			<destination>{78f6674c-c9c1-4787-8b67-b8804ef3b5f6}</destination>
+			<destination>{90176e36-46c4-41e8-84e4-d6a7a8244723}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{85f19320-a51d-4187-bb16-bd1c71fa4206}" />
-	<object class="SingleSound" id="{c4e31b7a-accb-4249-9369-eebb038109e8}">
+	<object class="SingleSound" id="{d3785fe8-2d54-4735-abcc-b7fe1dc5f308}">
+		<property name="volume">
+			<value>-5.5</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{fe6cc5f2-a986-4aef-9ab1-23e73d30a4d6}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{50892bce-ec61-46da-8afb-c8c6b3fa7eb0}</destination>
 		</relationship>
@@ -134,5 +141,33 @@
 	</object>
 	<object class="MixerBusPanner" id="{41566a3c-88a8-41c9-ae87-9af4653e0eb4}" />
 	<object class="MixerBusFader" id="{78f6674c-c9c1-4787-8b67-b8804ef3b5f6}" />
+	<object class="ThreeEQEffect" id="{90176e36-46c4-41e8-84e4-d6a7a8244723}">
+		<property name="highGain">
+			<value>-17</value>
+		</property>
+	</object>
+	<object class="ADSRModulator" id="{fe6cc5f2-a986-4aef-9ab1-23e73d30a4d6}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="attackTime">
+			<value>0</value>
+		</property>
+		<property name="holdTime">
+			<value>0</value>
+		</property>
+		<property name="decayTime">
+			<value>860</value>
+		</property>
+		<property name="sustainValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{10e78559-6d96-4ab1-ad37-8a3ff5d17a15}" />
 </objects>
