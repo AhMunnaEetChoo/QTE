@@ -48,7 +48,7 @@ public class LevelScriptEditor : Editor
         if (GUILayout.Button("Export to JSON"))
         {
             string jsonString = JsonUtility.ToJson(myTarget.m_gameData, true);
-            System.IO.File.WriteAllText(Application.dataPath + "/GameData.json", jsonString);
+            System.IO.File.WriteAllText(Application.dataPath + "/../docs/GameData.json", jsonString);
             Debug.Log(jsonString);
         }
 
