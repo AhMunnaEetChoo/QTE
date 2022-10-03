@@ -225,7 +225,7 @@ public class QTEManager : MonoBehaviour
 
         // setup state machine
         MainMenu mainMenuState = new MainMenu(this);
-        PlayClip playClipState = new PlayClip(this, m_gameData.clipData, m_videoPlayer);
+        PlayClip playClipState = new PlayClip(this, m_videoPlayer);
         ShowScore scoreState = new ShowScore(this);
 
         m_stateMachine.AddTransition(mainMenuState, playClipState, mainMenuState.ReadyToStart);

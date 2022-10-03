@@ -9,7 +9,6 @@ using TMPro;
 public class PlayClip : IState
 {
     private QTEManager m_manager;
-    private List<QTEManager.ClipData> m_clipDataList;
     private VideoPlayer m_videoPlayer;
     private int m_clipIndex = 0;
     private GameObject m_prompt;
@@ -62,10 +61,9 @@ public class PlayClip : IState
 
     private QTEManager.ClipData m_currentClipData;
 
-    public PlayClip(QTEManager _manager, List<QTEManager.ClipData> _dataList, VideoPlayer _videoPlayer)
+    public PlayClip(QTEManager _manager, VideoPlayer _videoPlayer)
     {
         m_manager = _manager;
-        m_clipDataList = _dataList;
         m_videoPlayer = _videoPlayer;
         m_videoPlayer.loopPointReached += EndReached;
     }
@@ -74,8 +72,8 @@ public class PlayClip : IState
         // TODO: is final video ...
 
         OnExit();
-        m_gameComplete = m_clipIndex >= m_clipDataList.Count;
-        if (m_clipIndex < m_clipDataList.Count)
+        m_gameComplete = m_clipIndex >= m_manager.m_gameData.clipData.Count;
+        if (m_clipIndex < m_manager.m_gameData.clipData.Count)
         {
             OnEnter();
         }
@@ -454,7 +452,7 @@ public class PlayClip : IState
         FlickChannel();
 
         // choose a clip
-        m_currentClipData = m_clipDataList[m_clipIndex];
+        m_currentClipData = m_manager.m_gameData.clipData[m_clipIndex];
 
         foreach (QTEManager.QTE qte in m_currentClipData.qtes)
         {
