@@ -449,6 +449,12 @@ public class PlayClip : IState
 
     public void OnExit()
     {
+        foreach(QTEState qteState in m_qteStates)
+        {
+            GameObject.Destroy(qteState.m_rhythmCue);
+            GameObject.Destroy(qteState.m_rhythmTarget);
+        }
+
         if (m_prompt)
         {
             GameObject.Destroy(m_prompt);

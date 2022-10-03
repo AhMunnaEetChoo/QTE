@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.Networking;
 using TMPro;
 
 public class QTEManager : MonoBehaviour
@@ -55,6 +56,8 @@ public class QTEManager : MonoBehaviour
     public FinalRankingSystem m_finalRankingSystem;
     public VideoPlayer m_videoPlayer;
     public TMP_Text m_timerText;
+    public string m_jsonURL;
+    public bool m_webDataRetrieved = false;
 
     public GameObject m_qtePrefab;
     public GameObject m_awesomePrefab;
@@ -110,12 +113,18 @@ public class QTEManager : MonoBehaviour
     public class MainMenu : IState
     {
         private bool m_isComplete = false;
-        public MainMenu()
+        private QTEManager m_manager;
+        public MainMenu(QTEManager _manager)
         {
+            m_manager = _manager;
         }
         public bool IsComplete()
         {
+#if !UNITY_EDITOR
+            return m_isComplete && m_manager.m_webDataRetrieved;
+#else
             return m_isComplete;
+#endif
         }
         public void Tick()
         {
@@ -147,6 +156,7 @@ public class QTEManager : MonoBehaviour
         public void OnEnter()
         {
             m_manager.m_finalRankingSystem.GameEnded = true;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/CreditsMusic");
         }
 
         public void OnExit() { }
@@ -157,8 +167,10 @@ public class QTEManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(GetRequest(m_jsonURL));
+
         // setup state machine
-        MainMenu mainMenuState = new MainMenu();
+        MainMenu mainMenuState = new MainMenu(this);
         PlayClip playClipState = new PlayClip(this, m_gameData.clipData, m_videoPlayer);
         ShowScore scoreState = new ShowScore(this);
 
@@ -168,6 +180,35 @@ public class QTEManager : MonoBehaviour
 
         m_scoreSystem = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
         m_finalRankingSystem = GameObject.Find("FinalRankingSystem").GetComponent<FinalRankingSystem>();
+    }
+    IEnumerator GetRequest(string uri)
+    {
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        {
+            // Request and wait for the desired page.
+            yield return webRequest.SendWebRequest();
+
+            string[] pages = uri.Split('/');
+            int page = pages.Length - 1;
+
+            switch (webRequest.result)
+            {
+                case UnityWebRequest.Result.ConnectionError:
+                case UnityWebRequest.Result.DataProcessingError:
+                    Debug.LogError(pages[page] + ": Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.ProtocolError:
+                    Debug.LogError(pages[page] + ": HTTP Error: " + webRequest.error);
+                    break;
+                case UnityWebRequest.Result.Success:
+                    Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
+#if !UNITY_EDITOR
+                    m_gameData = JsonUtility.FromJson<GameData>(webRequest.downloadHandler.text);
+#endif
+                    m_webDataRetrieved = true;
+                    break;
+            }
+        }
     }
 
     // Update is called once per frame
