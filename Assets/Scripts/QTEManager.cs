@@ -60,6 +60,7 @@ public class QTEManager : MonoBehaviour
     public GameObject m_perfectPrefab;
     public GameObject m_greatPrefab;
     public GameObject m_coolPrefab;
+    public GameObject m_nicePrefab;
     public GameObject m_shamePrefab;
     public GameObject m_tooBadPrefab;
     public GameObject m_whoopsPrefab;
@@ -146,6 +147,7 @@ public class QTEManager : MonoBehaviour
             Perfect,
             Great,
             Cool,
+            Nice,
             Shame,
             TooBad,
             Whoops
@@ -200,20 +202,32 @@ public class QTEManager : MonoBehaviour
                 {
                     // now check against the correct time..
                     float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
-                    if (difference < _qteData.perfectBuffer)
+
+                    if(_qteData.qteType == QTEType.Instruction)
                     {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                        _qteState.m_qteResult = QTEResult.Perfect;
+                        if (difference < _qteData.perfectBuffer)
+                        {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                            _qteState.m_qteResult = QTEResult.Perfect;
+                        }
+                        else if (difference < _qteData.greatBuffer)
+                        {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                            _qteState.m_qteResult = QTEResult.Great;
+                        }
+                        else if (difference < _qteData.coolBuffer)
+                        {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                            _qteState.m_qteResult = QTEResult.Cool;
+                        }
                     }
-                    else if (difference < _qteData.greatBuffer)
+                    else
                     {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                        _qteState.m_qteResult = QTEResult.Great;
-                    }
-                    else if (difference < _qteData.coolBuffer)
-                    {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
-                        _qteState.m_qteResult = QTEResult.Cool;
+                        if (difference < _qteData.coolBuffer)
+                        {
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_SuccessfulHitSound");
+                            _qteState.m_qteResult = QTEResult.Nice;
+                        }
                     }
                 }
 
@@ -226,7 +240,7 @@ public class QTEManager : MonoBehaviour
             }
             return false;
         }
-        private void QTEShowResult(QTEState _qteState, QTE _qteData)
+        private void QTEShowResult(QTEState _qteState, QTE _qteData, Vector3 _spawnPos)
         {
             _qteState.m_qteResultTimer += Time.deltaTime;
             if (_qteState.m_qteResult != QTEResult.None && _qteState.m_qteResultTimer > 0.4f)
@@ -250,6 +264,11 @@ public class QTEManager : MonoBehaviour
                         m_manager.m_scoreSystem.ScoreCoolTrigger = true;
                         toSpawn = m_manager.m_coolPrefab;
                         break;
+                    case QTEResult.Nice:
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/Rhythm_Nice");
+                        m_manager.m_scoreSystem.ScoreNiceTrigger = true;
+                        toSpawn = m_manager.m_nicePrefab;
+                        break;
                     case QTEResult.Shame:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Shame");
                         m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
@@ -268,7 +287,7 @@ public class QTEManager : MonoBehaviour
                 }
                 GameObject canvas = GameObject.Find("Canvas");
                 GameObject newText = Instantiate(toSpawn, Vector3.zero, Quaternion.identity, canvas.transform);
-                newText.transform.localPosition = Vector3.zero;
+                newText.transform.localPosition = _spawnPos;
 
                 _qteState.m_qteResult = QTEResult.None;
             }
@@ -294,7 +313,7 @@ public class QTEManager : MonoBehaviour
                 case QTEStage.ShowPrompt:
                     break;
                 case QTEStage.Showresult:
-                    QTEShowResult(_qteState, _qteData);
+                    QTEShowResult(_qteState, _qteData, Vector3.zero);
                     break;
             }
         }
@@ -441,7 +460,7 @@ public class QTEManager : MonoBehaviour
                     _qteState.m_rhythmCue.transform.localPosition = Vector3.LerpUnclamped(_qteData.rhythmCueStartPos, _qteData.rhythmTargetPos, t);
                     break;
                 case QTEStage.Showresult:
-                    QTEShowResult(_qteState, _qteData);
+                    QTEShowResult(_qteState, _qteData, _qteData.rhythmTargetPos + new Vector2(200.0f, 0.0f));
                     break;
             }
         }

@@ -7702,12 +7702,64 @@ MonoBehaviour:
   m_perfectPrefab: {fileID: 8258402941228443774, guid: c98ddf9936e5443fa814546cc6f5740a, type: 3}
   m_greatPrefab: {fileID: 5886064640447769246, guid: 81d452c9d605d4ca08f8ae3730dd6b3d, type: 3}
   m_coolPrefab: {fileID: 6704568547773963256, guid: c776001810f8c439ba214c198ac67387, type: 3}
+  m_nicePrefab: {fileID: 5653227522090462145, guid: b063f83d2eac043d49b433c1a2c9b3b2, type: 3}
   m_shamePrefab: {fileID: 431904441784585201, guid: 28b19a7e664884fe1a63969a72761c3f, type: 3}
   m_tooBadPrefab: {fileID: 8248972276569394638, guid: 8601d013e42474a97a3ce7c30cf0d4f9, type: 3}
   m_whoopsPrefab: {fileID: 8313402052362861787, guid: 70bb56847f3804848845d131b518cb63, type: 3}
   m_buttonPrefab: {fileID: 36991487993545089, guid: 1a668336898b94f9a8d0f18b679730fa, type: 3}
   m_gameData:
     clipData:
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4
+      qtes:
+      - text: No [i]'m Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 0.3
+        triggerTime: 3
+        perfectBuffer: 0.1
+        greatBuffer: 0.1
+        coolBuffer: 0.1
+        awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 0, y: 300}
+        qteType: 2
+      - text: No [i]'m Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 3.3
+        triggerTime: 4
+        perfectBuffer: 0.1
+        greatBuffer: 0.1
+        coolBuffer: 0.1
+        awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 0, y: 300}
+        qteType: 2
+      - text: No [i]'m Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 4.3
+        triggerTime: 7
+        perfectBuffer: 0.1
+        greatBuffer: 0.1
+        coolBuffer: 0.1
+        awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 0, y: 300}
+        qteType: 2
+      - text: No [i]'m Spartacus
+        button: i
+        screenPos: {x: 0, y: -200}
+        promptTime: 7.3
+        triggerTime: 9
+        perfectBuffer: 0.1
+        greatBuffer: 0.1
+        coolBuffer: 0.1
+        awesomeMashCount: 6
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 0, y: 300}
+        qteType: 2
+      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesBoulder.mp4
       qtes:
       - text: Mash [r] to run
@@ -7723,69 +7775,6 @@ MonoBehaviour:
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 1
       volume: 0.2
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4
-      qtes:
-      - text: No [i]'m Spartacus
-        button: i
-        screenPos: {x: 0, y: -200}
-        promptTime: 0.3
-        triggerTime: 3
-        perfectBuffer: 0.1
-        greatBuffer: 0.2
-        coolBuffer: 0.3
-        awesomeMashCount: 6
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 0, y: 300}
-        qteType: 2
-      - text: No [i]'m Spartacus
-        button: i
-        screenPos: {x: 0, y: -200}
-        promptTime: 3.3
-        triggerTime: 4
-        perfectBuffer: 0.1
-        greatBuffer: 0.2
-        coolBuffer: 0.3
-        awesomeMashCount: 6
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 0, y: 300}
-        qteType: 2
-      - text: No [i]'m Spartacus
-        button: i
-        screenPos: {x: 0, y: -200}
-        promptTime: 4.3
-        triggerTime: 7
-        perfectBuffer: 0.1
-        greatBuffer: 0.2
-        coolBuffer: 0.3
-        awesomeMashCount: 6
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 0, y: 300}
-        qteType: 2
-      - text: No [i]'m Spartacus
-        button: i
-        screenPos: {x: 0, y: -200}
-        promptTime: 7.3
-        triggerTime: 9
-        perfectBuffer: 0.1
-        greatBuffer: 0.2
-        coolBuffer: 0.3
-        awesomeMashCount: 6
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 0, y: 300}
-        qteType: 2
-      - text: Press [i] to Declare that you are Spartacus
-        button: i
-        screenPos: {x: 0, y: -200}
-        promptTime: 9.3
-        triggerTime: 11
-        perfectBuffer: 0.1
-        greatBuffer: 0.2
-        coolBuffer: 0.3
-        awesomeMashCount: 6
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 0, y: 300}
-        qteType: 2
-      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
       qtes:
       - text: Press [t] to Thrust
@@ -10910,7 +10899,6 @@ GameObject:
   m_Component:
   - component: {fileID: 982052246}
   - component: {fileID: 982052245}
-  - component: {fileID: 982052244}
   m_Layer: 0
   m_Name: UI Camera
   m_TagString: MainCamera
@@ -10918,14 +10906,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &982052244
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 982052243}
-  m_Enabled: 1
 --- !u!20 &982052245
 Camera:
   m_ObjectHideFlags: 0

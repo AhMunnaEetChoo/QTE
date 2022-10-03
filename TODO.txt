@@ -1,6 +1,6 @@
 TODO:
 
-
+Rhythm mode nice and toobad results
 Rhythm mode animation
 fix most current trigger
 
