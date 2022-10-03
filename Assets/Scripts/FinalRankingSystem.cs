@@ -45,6 +45,8 @@ public float SecondsOfRanking;
     public GameObject BaldManDog;
     public GameObject BaldManDogFedora;
 
+    public GameObject TVStaticSpare;
+
     void Start()
     {
 
@@ -62,6 +64,7 @@ public float SecondsOfRanking;
             CurrentScoreText.gameObject.SetActive(false);
             CurrentScore = ScoreSystem.CurrentScore;
             CountSpeed = CurrentScore / SecondsOfRanking;
+            TVStaticSpare.SetActive(true);
 
             if (CameraAnim.GetCurrentAnimatorStateInfo(0).IsName("CameraEndLoop"))
             {
