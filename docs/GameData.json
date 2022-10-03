@@ -641,6 +641,40 @@
                 }
             ],
             "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to Begin Beautiful Friendship",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 2.0,
+                    "triggerTime": 6.0,
+                    "perfectBuffer": 10.0,
+                    "greatBuffer": 11.0,
+                    "coolBuffer": 12.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
         }
     ]
 }
