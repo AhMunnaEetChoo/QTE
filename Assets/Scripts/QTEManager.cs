@@ -194,6 +194,7 @@ public class QTEManager : MonoBehaviour
         }
         public void OnEnter()
         {
+            m_manager.m_tvStatic.SetActive(false);
             m_manager.m_finalRankingSystem.GameEnded = true;
             FMODUnity.RuntimeManager.PlayOneShot("event:/CreditsApplause");
             m_manager.m_creditsMusicEmitter.Play();
