@@ -11,10 +11,10 @@
                         "y": -100.0
                     },
                     "promptTime": 1.0,
-                    "triggerTime": 5.0,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.20000000298023225,
-                    "coolBuffer": 0.30000001192092898,
+                    "triggerTime": 5.5,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
