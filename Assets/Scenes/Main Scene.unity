@@ -5042,10 +5042,7 @@ Transform:
   m_LocalPosition: {x: 6.9, y: 3, z: 494.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1213191001}
-  - {fileID: 1039517719}
-  - {fileID: 1689822105}
+  m_Children: []
   m_Father: {fileID: 982052246}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7714,65 +7711,23 @@ MonoBehaviour:
   m_buttonPrefab: {fileID: 36991487993545089, guid: 1a668336898b94f9a8d0f18b679730fa, type: 3}
   m_gameData:
     clipData:
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
       qtes:
-      - text: '[s]wipe!'
-        button: s
-        screenPos: {x: 0, y: -50}
-        promptTime: 0
-        triggerTime: 1.92
-        perfectBuffer: 0.3
-        greatBuffer: 0.3
-        coolBuffer: 0.3
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: -100}
-        resultPos: {x: 0, y: 0}
-        qteType: 2
-        dontPress: 0
-      - text: '[s]wipe!'
-        button: s
-        screenPos: {x: 0, y: -50}
-        promptTime: 0
-        triggerTime: 3.32
-        perfectBuffer: 0.3
-        greatBuffer: 0.3
-        coolBuffer: 0.3
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: -100}
-        resultPos: {x: 0, y: 0}
-        qteType: 2
-        dontPress: 0
-      - text: Press [k] to Kick!
-        button: k
-        screenPos: {x: 0, y: -50}
-        promptTime: 4
-        triggerTime: 6.32
-        perfectBuffer: 0.3
-        greatBuffer: 0.6
-        coolBuffer: 0.9
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      - text: Press [j] to Jump!
-        button: j
+      - text: Press [d] to Duck
+        button: d
         screenPos: {x: 0, y: -100}
-        promptTime: 7.3
-        triggerTime: 8.4
-        perfectBuffer: 0.3
-        greatBuffer: 0.6
-        coolBuffer: 0.9
+        promptTime: 1
+        triggerTime: 8
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
-      volume: 0.5
+      volume: 0.7
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesBoulder.mp4
       qtes:
       - text: <u>Mash</u> [r] to Run
@@ -7796,7 +7751,7 @@ MonoBehaviour:
         triggerTime: 7.875
         perfectBuffer: 0.5
         greatBuffer: 0.8
-        coolBuffer: 1
+        coolBuffer: 2
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
@@ -7804,47 +7759,41 @@ MonoBehaviour:
         qteType: 0
         dontPress: 0
       volume: 0.2
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
       qtes:
-      - text: <u>Mash</u> [e] to Chow Down
-        button: e
-        screenPos: {x: 0, y: -100}
-        promptTime: 0
-        triggerTime: 8.5
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 1
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
-      qtes:
-      - text: Press [space] to Space
-        button: space
-        screenPos: {x: 0, y: -100}
-        promptTime: 1
-        triggerTime: 8.05
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
-      qtes:
-      - text: Press [s] to Stroke Chin
+      - text: '[s]wipe!'
         button: s
-        screenPos: {x: 0, y: -100}
-        promptTime: 0.3
-        triggerTime: 8
+        screenPos: {x: 0, y: 0}
+        promptTime: 0
+        triggerTime: 1.92
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: -100, y: 100}
+        rhythmCueStartPos: {x: 600, y: -100}
+        resultPos: {x: -260, y: 100}
+        qteType: 2
+        dontPress: 0
+      - text: '[s]wipe!'
+        button: s
+        screenPos: {x: 0, y: 0}
+        promptTime: 0
+        triggerTime: 3.32
+        perfectBuffer: 0.3
+        greatBuffer: 0.3
+        coolBuffer: 0.3
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: -100, y: 100}
+        rhythmCueStartPos: {x: 600, y: -100}
+        resultPos: {x: -260, y: 100}
+        qteType: 2
+        dontPress: 0
+      - text: Press [k] to Kick!
+        button: k
+        screenPos: {x: 0, y: 100}
+        promptTime: 4
+        triggerTime: 6.32
         perfectBuffer: 0.3
         greatBuffer: 0.6
         coolBuffer: 0.9
@@ -7854,126 +7803,21 @@ MonoBehaviour:
         resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
-      qtes:
-      - text: Press [k] to Know Kung Fu
-        button: k
-        screenPos: {x: 0, y: -100}
-        promptTime: 1
-        triggerTime: 5
-        perfectBuffer: 0.2
-        greatBuffer: 0.4
-        coolBuffer: 0.8
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
-      qtes:
-      - text: Press [w] to Web
-        button: w
-        screenPos: {x: 0, y: -100}
-        promptTime: 1
-        triggerTime: 6
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 1
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4
-      qtes:
-      - text: Press [w] to Web
-        button: w
-        screenPos: {x: 0, y: -100}
-        promptTime: 1
-        triggerTime: 10.083
-        perfectBuffer: 0.2
-        greatBuffer: 0.4
-        coolBuffer: 0.6
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
-      qtes:
-      - text: Press [m] to Man Behind Winkie's
-        button: m
-        screenPos: {x: 0, y: -100}
-        promptTime: 1
-        triggerTime: 7.4
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
-      qtes:
-      - text: Press [b] to Begin Beautiful Friendship
-        button: b
-        screenPos: {x: 0, y: -100}
-        promptTime: 2
-        triggerTime: 6
-        perfectBuffer: 10
-        greatBuffer: 11
-        coolBuffer: 12
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4
-      qtes:
-      - text: <u>Mash</u> [s] to Sit On Couch
-        button: s
-        screenPos: {x: 0, y: -100}
-        promptTime: 1
-        triggerTime: 9
-        perfectBuffer: 6
-        greatBuffer: 7
-        coolBuffer: 8
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        resultPos: {x: 0, y: 0}
-        qteType: 1
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
-      qtes:
-      - text: Press [b] to ___
-        button: b
-        screenPos: {x: 0, y: -100}
-        promptTime: 1
-        triggerTime: 4
+      - text: Press [j] to Jump!
+        button: j
+        screenPos: {x: 0, y: 100}
+        promptTime: 7.3
+        triggerTime: 8.4
         perfectBuffer: 0.3
-        greatBuffer: 0.45
-        coolBuffer: 0.6
+        greatBuffer: 0.6
+        coolBuffer: 0.9
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
-      volume: 1
+      volume: 0.5
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
       qtes:
       - text: Press [b] to Be Back
@@ -8004,13 +7848,13 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
-        resultPos: {x: 0, y: 0}
+        resultPos: {x: -75, y: 25}
         qteType: 2
         dontPress: 0
       - text: No [i]'m Spartacus
         button: i
         screenPos: {x: 0, y: -50}
-        promptTime: 3.3
+        promptTime: 1.675
         triggerTime: 4
         perfectBuffer: 0.1
         greatBuffer: 0.1
@@ -8018,13 +7862,13 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
-        resultPos: {x: 0, y: 0}
+        resultPos: {x: 175, y: 25}
         qteType: 2
         dontPress: 0
       - text: No [i]'m Spartacus
         button: i
         screenPos: {x: 0, y: -50}
-        promptTime: 4.3
+        promptTime: 4.675
         triggerTime: 7
         perfectBuffer: 0.1
         greatBuffer: 0.1
@@ -8032,13 +7876,13 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
-        resultPos: {x: 0, y: 0}
+        resultPos: {x: 150, y: 100}
         qteType: 2
         dontPress: 0
       - text: No [i]'m Spartacus
         button: i
         screenPos: {x: 0, y: -50}
-        promptTime: 7.3
+        promptTime: 6.675
         triggerTime: 9
         perfectBuffer: 0.1
         greatBuffer: 0.1
@@ -8046,8 +7890,42 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
-        resultPos: {x: 0, y: 0}
+        resultPos: {x: -75, y: 100}
         qteType: 2
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
+      qtes:
+      - text: Press [k] to Know Kung Fu
+        button: k
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 5
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
+        coolBuffer: 0.8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
+      qtes:
+      - text: Press [b] to ___
+        button: b
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 4
+        perfectBuffer: 0.3
+        greatBuffer: 0.45
+        coolBuffer: 0.6
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
         dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
@@ -8137,15 +8015,15 @@ MonoBehaviour:
         qteType: 0
         dontPress: 0
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_TerminatorBee.mp4
       qtes:
-      - text: Press [d] to duck
-        button: d
-        screenPos: {x: 0, y: -200}
+      - text: Press [b] to Bee Back
+        button: b
+        screenPos: {x: 0, y: -150}
         promptTime: 1
-        triggerTime: 8
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
+        triggerTime: 8.083
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
         coolBuffer: 1
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
@@ -8153,7 +8031,7 @@ MonoBehaviour:
         resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
-      volume: 0.7
+      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
       qtes:
       - text: Press [b] to Blow The Bloody Doors Off
@@ -8161,6 +8039,23 @@ MonoBehaviour:
         screenPos: {x: 0, y: -100}
         promptTime: 1
         triggerTime: 6
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
+        coolBuffer: 0.6
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
+      qtes:
+      - text: Press [space] to Space
+        button: space
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 8.05
         perfectBuffer: 0.5
         greatBuffer: 0.8
         coolBuffer: 1
@@ -8171,16 +8066,118 @@ MonoBehaviour:
         qteType: 0
         dontPress: 0
       volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4
       qtes:
-      - text: Press [f] to Pay Respects
-        button: f
+      - text: <u>Mash</u> [e] to Chow Down
+        button: e
+        screenPos: {x: 0, y: -100}
+        promptTime: 0
+        triggerTime: 8.5
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 1
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
+      qtes:
+      - text: Press [w] to Web
+        button: w
         screenPos: {x: 0, y: -100}
         promptTime: 1
         triggerTime: 6
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 1
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
+      qtes:
+      - text: Press [s] to Stroke Chin
+        button: s
+        screenPos: {x: 0, y: -100}
+        promptTime: 0.3
+        triggerTime: 8
+        perfectBuffer: 0.3
+        greatBuffer: 0.6
+        coolBuffer: 0.9
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
+      qtes:
+      - text: Press [m] to Man Behind Winkie's
+        button: m
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 7.4
         perfectBuffer: 0.5
         greatBuffer: 0.8
-        coolBuffer: 1.2
+        coolBuffer: 1
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4
+      qtes:
+      - text: <u>Mash</u> [s] to Sit On Couch
+        button: s
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 9
+        perfectBuffer: 6
+        greatBuffer: 7
+        coolBuffer: 8
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 1
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4
+      qtes:
+      - text: Press [w] to Web
+        button: w
+        screenPos: {x: 0, y: -100}
+        promptTime: 1
+        triggerTime: 10.083
+        perfectBuffer: 0.2
+        greatBuffer: 0.4
+        coolBuffer: 0.6
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
+      qtes:
+      - text: Press [b] to Begin Beautiful Friendship
+        button: b
+        screenPos: {x: 0, y: -100}
+        promptTime: 2
+        triggerTime: 6
+        perfectBuffer: 10
+        greatBuffer: 11
+        coolBuffer: 12
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
@@ -11406,68 +11403,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1001 &1039517718
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 453852474}
-    m_Modifications:
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4118936611921964542, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-      propertyPath: m_Name
-      value: BlueSingleParticle
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
---- !u!4 &1039517719 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4118936611921964541, guid: fdb48ff4c5ede4bd4a70091ab4413dfb, type: 3}
-  m_PrefabInstance: {fileID: 1039517718}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1046826264
 GameObject:
   m_ObjectHideFlags: 0
@@ -12174,68 +12109,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1213191000
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 453852474}
-    m_Modifications:
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 662282866721291670, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-      propertyPath: m_Name
-      value: BlueBurstParticle
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
---- !u!4 &1213191001 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 662282866721291669, guid: 674bb54aa29d3493e9fc4ce35d09b571, type: 3}
-  m_PrefabInstance: {fileID: 1213191000}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1234258982
 GameObject:
   m_ObjectHideFlags: 0
@@ -17015,68 +16888,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1001 &1689822104
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 453852474}
-    m_Modifications:
-    - target: {fileID: 6328842377267627056, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_Name
-      value: RainbowBurstParticle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
---- !u!4 &1689822105 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6328842377267627059, guid: bb51fd64a80ac4ab597e1467f4a2bb13, type: 3}
-  m_PrefabInstance: {fileID: 1689822104}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1711811801
 GameObject:
   m_ObjectHideFlags: 0
