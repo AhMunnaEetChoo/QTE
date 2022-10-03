@@ -55,7 +55,6 @@ public class QTEManager : MonoBehaviour
     public ScoreSystem m_scoreSystem;
     public FinalRankingSystem m_finalRankingSystem;
     public VideoPlayer m_videoPlayer;
-    public TMP_Text m_timerText;
     public string m_jsonURL;
     public bool m_webDataRetrieved = false;
 
@@ -214,10 +213,6 @@ public class QTEManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        double seconds = m_videoPlayer.time;
-        double hundredseconds = m_videoPlayer.time * 100.0;
-        m_timerText.text = string.Format("{0:0}", seconds);
-
         m_stateMachine.Tick();
     }
 

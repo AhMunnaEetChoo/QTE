@@ -1,6 +1,7 @@
 TODO:
 
-import json from url
+result position
+provide custom json url option
 transitions
 Rhythm mode animation
 fix the game with capslock on
@@ -15,3 +16,4 @@ fix most current trigger
 Rhythm mode nice and toobad results
 spiderman
 Trigger game end when clips have finished
+import json from url

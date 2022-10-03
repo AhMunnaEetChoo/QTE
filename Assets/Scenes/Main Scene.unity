@@ -506,7 +506,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 322101201}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -2399,7 +2399,6 @@ RectTransform:
   m_Children:
   - {fileID: 503748038}
   - {fileID: 770826151}
-  - {fileID: 1779254354}
   - {fileID: 105274443}
   - {fileID: 5653227521663088764}
   - {fileID: 1073349981}
@@ -7695,8 +7694,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938635914b890465d93e4ef0d263a04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_scoreSystem: {fileID: 0}
+  m_finalRankingSystem: {fileID: 0}
   m_videoPlayer: {fileID: 693383885}
-  m_timerText: {fileID: 1779254352}
+  m_jsonURL: 
+  m_webDataRetrieved: 0
   m_qtePrefab: {fileID: 1187212016356222401, guid: da1f1ed1774ae4ff9928f14aee2fabb5, type: 3}
   m_awesomePrefab: {fileID: 5653227522090462145, guid: 61d2f7efbb643470c92a2cb239287558, type: 3}
   m_perfectPrefab: {fileID: 8258402941228443774, guid: c98ddf9936e5443fa814546cc6f5740a, type: 3}
@@ -7723,6 +7725,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
         qteType: 2
+        dontPress: 0
       - text: No [i]'m Spartacus
         button: i
         screenPos: {x: 0, y: -200}
@@ -7735,6 +7738,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
         qteType: 2
+        dontPress: 0
       - text: No [i]'m Spartacus
         button: i
         screenPos: {x: 0, y: -200}
@@ -7747,6 +7751,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
         qteType: 2
+        dontPress: 0
       - text: No [i]'m Spartacus
         button: i
         screenPos: {x: 0, y: -200}
@@ -7759,6 +7764,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
         qteType: 2
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesBoulder.mp4
       qtes:
@@ -7774,6 +7780,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 1
+        dontPress: 0
       volume: 0.2
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4
       qtes:
@@ -7789,6 +7796,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
+        dontPress: 0
       - text: Press [c] to Cut!
         button: c
         screenPos: {x: 0, y: -200}
@@ -7801,6 +7809,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 2
+        dontPress: 0
       - text: Press [k] to Kick
         button: k
         screenPos: {x: 0, y: -200}
@@ -7813,6 +7822,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       - text: Press [j] to Jump!
         button: j
         screenPos: {x: 0, y: -200}
@@ -7825,6 +7835,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 0.5
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4
       qtes:
@@ -7840,6 +7851,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 0.7
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_ItalianJob.mp4
       qtes:
@@ -7855,6 +7867,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
       qtes:
@@ -7870,6 +7883,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4
       qtes:
@@ -7885,6 +7899,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       - text: Press [d] to Duck!
         button: d
         screenPos: {x: 0, y: -200}
@@ -7897,6 +7912,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Meatballs.mp4
       qtes:
@@ -7912,6 +7928,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 1
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4
       qtes:
@@ -7927,6 +7944,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
       qtes:
@@ -7942,6 +7960,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4
       qtes:
@@ -7957,6 +7976,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4
       qtes:
@@ -7972,6 +7992,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesChin.mp4
       qtes:
@@ -7987,6 +8008,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_MulhollandDrive.mp4
       qtes:
@@ -8002,6 +8024,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman2.mp4
       qtes:
@@ -8017,6 +8040,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Space.mp4
       qtes:
@@ -8032,6 +8056,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Happiness.mp4
       qtes:
@@ -8047,6 +8072,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 1
+        dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4
       qtes:
@@ -8062,6 +8088,7 @@ MonoBehaviour:
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
         qteType: 0
+        dontPress: 0
       volume: 1
 --- !u!328 &693383885
 VideoPlayer:
@@ -16616,7 +16643,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 322101201}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -18363,141 +18390,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772327480}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1779254351
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1779254354}
-  - component: {fileID: 1779254353}
-  - component: {fileID: 1779254352}
-  m_Layer: 5
-  m_Name: ClipTimer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1779254352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779254351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: 0
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1779254353
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779254351}
-  m_CullTransparentMesh: 1
---- !u!224 &1779254354
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779254351}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 322101201}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -365.00003, y: 165}
-  m_SizeDelta: {x: -770, y: -370}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1781070745
 GameObject:
   m_ObjectHideFlags: 0
