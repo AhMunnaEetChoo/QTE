@@ -1,108 +1,6 @@
 {
     "clipData": [
         {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_TerminatorBee.mp4",
-            "qtes": [
-                {
-                    "text": "Press [b] to Bee Back",
-                    "button": "b",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -150.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 8.083000183105469,
-                    "perfectBuffer": 0.20000000298023225,
-                    "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.6000000238418579,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "resultPos": {
-                        "x": 0.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4",
-            "qtes": [
-                {
-                    "text": "Press [b] to Be Back",
-                    "button": "b",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -150.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 8.083000183105469,
-                    "perfectBuffer": 0.20000000298023225,
-                    "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.6000000238418579,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "resultPos": {
-                        "x": 0.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4",
-            "qtes": [
-                {
-                    "text": "Press [b] to ___",
-                    "button": "b",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -100.0
-                    },
-                    "promptTime": 1.0,
-                    "triggerTime": 4.0,
-                    "perfectBuffer": 0.30000001192092898,
-                    "greatBuffer": 0.44999998807907107,
-                    "coolBuffer": 0.6000000238418579,
-                    "awesomeMashCount": 10,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 800.0,
-                        "y": 0.0
-                    },
-                    "resultPos": {
-                        "x": 0.0,
-                        "y": 0.0
-                    },
-                    "qteType": 0,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
-        },
-        {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4",
             "qtes": [
                 {
@@ -769,6 +667,74 @@
                         "y": 0.0
                     },
                     "qteType": 1,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to ___",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 4.0,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.44999998807907107,
+                    "coolBuffer": 0.6000000238418579,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to Be Back",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -150.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.083000183105469,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 0.6000000238418579,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
                     "dontPress": false
                 }
             ],
