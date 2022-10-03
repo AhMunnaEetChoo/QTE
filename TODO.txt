@@ -1,9 +1,8 @@
 TODO:
 
+transitions
 Rhythm mode animation
 fix the game with capslock on
-spiderman
-transitions
 game start with title
 reset at end
 
@@ -13,3 +12,5 @@ only allow one prompt on screen at a time
 Score
 fix most current trigger
 Rhythm mode nice and toobad results
+spiderman
+Trigger game end when clips have finished
