@@ -1,6 +1,124 @@
 {
     "clipData": [
         {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4",
+            "qtes": [
+                {
+                    "text": "No [i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 0.30000001192092898,
+                    "triggerTime": 2.625,
+                    "perfectBuffer": 0.10000000149011612,
+                    "greatBuffer": 0.10000000149011612,
+                    "coolBuffer": 0.10000000149011612,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": -75.0,
+                        "y": 25.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "No [i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 3.299999952316284,
+                    "triggerTime": 4.0,
+                    "perfectBuffer": 0.10000000149011612,
+                    "greatBuffer": 0.10000000149011612,
+                    "coolBuffer": 0.10000000149011612,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": 175.0,
+                        "y": 25.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "No [i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 4.300000190734863,
+                    "triggerTime": 7.0,
+                    "perfectBuffer": 0.10000000149011612,
+                    "greatBuffer": 0.10000000149011612,
+                    "coolBuffer": 0.10000000149011612,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": 150.0,
+                        "y": 100.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "No [i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 7.300000190734863,
+                    "triggerTime": 9.0,
+                    "perfectBuffer": 0.10000000149011612,
+                    "greatBuffer": 0.10000000149011612,
+                    "coolBuffer": 0.10000000149011612,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": -75.0,
+                        "y": 100.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4",
             "qtes": [
                 {
@@ -213,124 +331,6 @@
                 }
             ],
             "volume": 0.5
-        },
-        {
-            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4",
-            "qtes": [
-                {
-                    "text": "No [i]'m Spartacus",
-                    "button": "i",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -50.0
-                    },
-                    "promptTime": 0.30000001192092898,
-                    "triggerTime": 2.625,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
-                    "awesomeMashCount": 6,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 0.0,
-                        "y": 300.0
-                    },
-                    "resultPos": {
-                        "x": 0.0,
-                        "y": -200.0
-                    },
-                    "qteType": 2,
-                    "dontPress": false
-                },
-                {
-                    "text": "No [i]'m Spartacus",
-                    "button": "i",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -50.0
-                    },
-                    "promptTime": 3.299999952316284,
-                    "triggerTime": 4.0,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
-                    "awesomeMashCount": 6,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 0.0,
-                        "y": 300.0
-                    },
-                    "resultPos": {
-                        "x": 0.0,
-                        "y": -50.0
-                    },
-                    "qteType": 2,
-                    "dontPress": false
-                },
-                {
-                    "text": "No [i]'m Spartacus",
-                    "button": "i",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -50.0
-                    },
-                    "promptTime": 4.300000190734863,
-                    "triggerTime": 7.0,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
-                    "awesomeMashCount": 6,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 0.0,
-                        "y": 300.0
-                    },
-                    "resultPos": {
-                        "x": 50.0,
-                        "y": 0.0
-                    },
-                    "qteType": 2,
-                    "dontPress": false
-                },
-                {
-                    "text": "No [i]'m Spartacus",
-                    "button": "i",
-                    "screenPos": {
-                        "x": 0.0,
-                        "y": -50.0
-                    },
-                    "promptTime": 7.300000190734863,
-                    "triggerTime": 9.0,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
-                    "awesomeMashCount": 6,
-                    "rhythmTargetPos": {
-                        "x": 0.0,
-                        "y": 100.0
-                    },
-                    "rhythmCueStartPos": {
-                        "x": 0.0,
-                        "y": 300.0
-                    },
-                    "resultPos": {
-                        "x": -50.0,
-                        "y": 0.0
-                    },
-                    "qteType": 2,
-                    "dontPress": false
-                }
-            ],
-            "volume": 1.0
         },
         {
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4",
