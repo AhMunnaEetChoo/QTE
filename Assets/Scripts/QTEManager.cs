@@ -271,17 +271,38 @@ public class QTEManager : MonoBehaviour
                         break;
                     case QTEResult.Shame:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Shame");
-                        m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
+                        if(_qteData.qteType == QTEType.Instruction)
+                        {
+                            m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
+                        }
+                        else
+                        {
+                            m_manager.m_scoreSystem.ScoreFailRhythmTrigger = true;
+                        }
                         toSpawn = m_manager.m_shamePrefab;
                         break;
                     case QTEResult.TooBad:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_TooBad");
-                        m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
+                        if (_qteData.qteType == QTEType.Instruction)
+                        {
+                            m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
+                        }
+                        else
+                        {
+                            m_manager.m_scoreSystem.ScoreFailRhythmTrigger = true;
+                        }
                         toSpawn = m_manager.m_tooBadPrefab;
                         break;
                     case QTEResult.Whoops:
                         FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Whoops");
-                        m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
+                        if (_qteData.qteType == QTEType.Instruction)
+                        {
+                            m_manager.m_scoreSystem.ScoreFailInstructionTrigger = true;
+                        }
+                        else
+                        {
+                            m_manager.m_scoreSystem.ScoreFailRhythmTrigger = true;
+                        }
                         toSpawn = m_manager.m_whoopsPrefab;
                         break;
                 }
@@ -364,6 +385,7 @@ public class QTEManager : MonoBehaviour
                         if (((KeyControl)Keyboard.current[_qteData.button]).wasPressedThisFrame)
                         {
                             _qteState.m_mashCount++;
+                            m_manager.m_scoreSystem.ScoreMashTrigger = true;
                             FMODUnity.RuntimeManager.PlayOneShot("event:/Mash_Hit");
                             // TODO: fire a star
                         }
