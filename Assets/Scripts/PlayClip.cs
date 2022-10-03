@@ -226,7 +226,7 @@ public class PlayClip : IState
             case QTEStage.ShowPrompt:
                 break;
             case QTEStage.Showresult:
-                QTEShowResult(_qteState, _qteData, Vector3.zero);
+                QTEShowResult(_qteState, _qteData, _qteData.resultPos);
                 break;
         }
     }
@@ -333,7 +333,7 @@ public class PlayClip : IState
                         }
                         GameObject canvas = GameObject.Find("Canvas");
                         GameObject newText = GameObject.Instantiate(toSpawn, Vector3.zero, Quaternion.identity, canvas.transform);
-                        newText.transform.localPosition = Vector3.zero;
+                        newText.transform.localPosition = _qteData.resultPos;
 
                         _qteState.m_qteResult = QTEResult.None;
                         _qteState.m_qteResultTimer = 0.0f;
@@ -374,7 +374,7 @@ public class PlayClip : IState
                 _qteState.m_rhythmCue.transform.localPosition = Vector3.Lerp(_qteData.rhythmCueStartPos, _qteData.rhythmTargetPos, t);
                 break;
             case QTEStage.Showresult:
-                QTEShowResult(_qteState, _qteData, _qteData.rhythmTargetPos + new Vector2(200.0f, 0.0f));
+                QTEShowResult(_qteState, _qteData, _qteData.resultPos);
                 break;
         }
     }

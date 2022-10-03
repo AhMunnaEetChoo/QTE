@@ -90,6 +90,7 @@ public class QTEManager : MonoBehaviour
         public int awesomeMashCount = 10;
         public Vector2 rhythmTargetPos = new Vector2(0, 100);
         public Vector2 rhythmCueStartPos = new Vector2(800, 0);
+        public Vector2 resultPos = Vector2.zero;
         public QTEType qteType = QTEType.Instruction;
         public bool dontPress = false;
     };
