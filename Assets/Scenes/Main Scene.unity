@@ -2401,11 +2401,11 @@ RectTransform:
   - {fileID: 770826151}
   - {fileID: 105274443}
   - {fileID: 5653227521663088764}
+  - {fileID: 1647140105}
   - {fileID: 1073349981}
   - {fileID: 1791305905}
   - {fileID: 971278561}
   - {fileID: 355011707}
-  - {fileID: 1647140105}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7675,6 +7675,7 @@ GameObject:
   - component: {fileID: 693383886}
   - component: {fileID: 693383885}
   - component: {fileID: 693383884}
+  - component: {fileID: 693383887}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -7699,6 +7700,8 @@ MonoBehaviour:
   m_videoPlayer: {fileID: 693383885}
   m_jsonURL: 
   m_webDataRetrieved: 0
+  m_tvStatic: {fileID: 1113628085}
+  m_creditsMusicEmitter: {fileID: 693383887}
   m_qtePrefab: {fileID: 1187212016356222401, guid: da1f1ed1774ae4ff9928f14aee2fabb5, type: 3}
   m_awesomePrefab: {fileID: 5653227522090462145, guid: 61d2f7efbb643470c92a2cb239287558, type: 3}
   m_perfectPrefab: {fileID: 8258402941228443774, guid: c98ddf9936e5443fa814546cc6f5740a, type: 3}
@@ -7711,6 +7714,40 @@ MonoBehaviour:
   m_buttonPrefab: {fileID: 36991487993545089, guid: 1a668336898b94f9a8d0f18b679730fa, type: 3}
   m_gameData:
     clipData:
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
+      qtes:
+      - text: Press [k] to Know Kung Fu
+        button: k
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 5.5
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
+    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4
+      qtes:
+      - text: Press [d] to ?
+        button: b
+        screenPos: {x: 0, y: -200}
+        promptTime: 1
+        triggerTime: 6
+        perfectBuffer: 0.5
+        greatBuffer: 0.8
+        coolBuffer: 1.2
+        awesomeMashCount: 10
+        rhythmTargetPos: {x: 0, y: 100}
+        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
+        qteType: 0
+        dontPress: 0
+      volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4
       qtes:
       - text: No [i]'m Spartacus
@@ -7724,6 +7761,7 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
+        resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
       - text: No [i]'m Spartacus
@@ -7737,6 +7775,7 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
+        resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
       - text: No [i]'m Spartacus
@@ -7750,6 +7789,7 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
+        resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
       - text: No [i]'m Spartacus
@@ -7763,6 +7803,7 @@ MonoBehaviour:
         awesomeMashCount: 6
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 0, y: 300}
+        resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
       volume: 1
@@ -7779,6 +7820,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 1
         dontPress: 0
       volume: 0.2
@@ -7795,6 +7837,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
       - text: Press [c] to Cut!
@@ -7808,6 +7851,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 2
         dontPress: 0
       - text: Press [k] to Kick
@@ -7821,6 +7865,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       - text: Press [j] to Jump!
@@ -7834,6 +7879,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 0.5
@@ -7850,6 +7896,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 0.7
@@ -7866,22 +7913,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
-        qteType: 0
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4
-      qtes:
-      - text: Press [k] to Know Kung Fu
-        button: k
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 5.5
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -7898,6 +7930,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       - text: Press [d] to Duck!
@@ -7911,6 +7944,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -7927,23 +7961,8 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 1
-        dontPress: 0
-      volume: 1
-    - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Zabrisk.mp4
-      qtes:
-      - text: Press [d] to ?
-        button: b
-        screenPos: {x: 0, y: -200}
-        promptTime: 1
-        triggerTime: 6
-        perfectBuffer: 0.5
-        greatBuffer: 0.8
-        coolBuffer: 1.2
-        awesomeMashCount: 10
-        rhythmTargetPos: {x: 0, y: 100}
-        rhythmCueStartPos: {x: 800, y: 0}
-        qteType: 0
         dontPress: 0
       volume: 1
     - url: https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spiderman1.mp4
@@ -7959,6 +7978,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -7975,6 +7995,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -7991,6 +8012,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -8007,6 +8029,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -8023,6 +8046,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -8039,6 +8063,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -8055,6 +8080,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -8071,6 +8097,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 1
         dontPress: 0
       volume: 1
@@ -8087,6 +8114,7 @@ MonoBehaviour:
         awesomeMashCount: 10
         rhythmTargetPos: {x: 0, y: 100}
         rhythmCueStartPos: {x: 800, y: 0}
+        resultPos: {x: 0, y: 0}
         qteType: 0
         dontPress: 0
       volume: 1
@@ -8140,6 +8168,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &693383887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693383883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -751000535
+      Data2: 1078265962
+      Data3: 1484231356
+      Data4: 1973014806
+    Path: event:/CreditsMusic
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!43 &693801616
 Mesh:
   m_ObjectHideFlags: 0
@@ -11937,6 +11995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1113628086}
   - component: {fileID: 1113628087}
+  - component: {fileID: 1113628088}
   m_Layer: 0
   m_Name: TVStaticAnim
   m_TagString: Untagged
@@ -11982,6 +12041,36 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1113628088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113628085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -653043528
+      Data2: 1188767546
+      Data3: -736231551
+      Data4: 1903607808
+    Path: event:/TVStaticLoop
+  Event: 
+  PlayEvent: 11
+  StopEvent: 12
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1195151010
 GameObject:
   m_ObjectHideFlags: 0
@@ -16643,7 +16732,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 322101201}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -20659,7 +20748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4199803104964673808, guid: 907b1cfa93a03413ea26ec2e8054efeb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4199803104964673808, guid: 907b1cfa93a03413ea26ec2e8054efeb, type: 3}
       propertyPath: m_AnchorMax.x

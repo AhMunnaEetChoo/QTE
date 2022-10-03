@@ -1,12 +1,16 @@
 TODO:
 
-result position
-provide custom json url option
 transitions
+provide custom json url option
 Rhythm mode animation
 fix the game with capslock on
 game start with title
 reset at end
+
+audio to hook up:
+Credits applause
+channel change
+tv static loop
 
 Done:
 sfx for mashing
@@ -17,3 +21,4 @@ Rhythm mode nice and toobad results
 spiderman
 Trigger game end when clips have finished
 import json from url
+result position

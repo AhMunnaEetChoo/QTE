@@ -58,6 +58,9 @@ public class QTEManager : MonoBehaviour
     public string m_jsonURL;
     public bool m_webDataRetrieved = false;
 
+    public GameObject m_tvStatic;
+    public FMODUnity.StudioEventEmitter m_creditsMusicEmitter;
+
     public GameObject m_qtePrefab;
     public GameObject m_awesomePrefab;
     public GameObject m_perfectPrefab;
@@ -132,9 +135,14 @@ public class QTEManager : MonoBehaviour
         }
         public void OnEnter()
         {
+            m_manager.m_tvStatic.SetActive(true);
         }
 
-        public void OnExit() { m_isComplete = false;  }
+        public void OnExit()
+        {
+            m_manager.m_tvStatic.SetActive(false);
+            m_isComplete = false;
+        }
     }
     public class ShowScore : IState
     {
@@ -156,10 +164,13 @@ public class QTEManager : MonoBehaviour
         public void OnEnter()
         {
             m_manager.m_finalRankingSystem.GameEnded = true;
-            FMODUnity.RuntimeManager.PlayOneShot("event:/CreditsMusic");
+            m_manager.m_creditsMusicEmitter.Play();
         }
 
-        public void OnExit() { }
+        public void OnExit()
+        {
+            m_manager.m_creditsMusicEmitter.Stop();
+        }
     }
 
    
@@ -221,4 +232,5 @@ public class QTEManager : MonoBehaviour
     {
         m_gameData = JsonUtility.FromJson<GameData>(_jsonString);
     }
+
 }

@@ -15,6 +15,7 @@ public class PlayClip : IState
     private GameObject m_prompt;
     private float m_promptDestroyTime;
     private bool m_gameComplete = false;
+    private float m_channelChangetimer = 0.0f;
 
     enum QTEStage
     {
@@ -380,6 +381,15 @@ public class PlayClip : IState
     }
     public void Tick()
     {
+        if (m_channelChangetimer <= 0.0f)
+        {
+            m_manager.m_tvStatic.SetActive(false);
+        }
+        else
+        {
+            m_channelChangetimer -= Time.deltaTime;
+        }
+
         if ((float)m_videoPlayer.time >= m_promptDestroyTime)
         {
             GameObject.Destroy(m_prompt);
@@ -434,6 +444,9 @@ public class PlayClip : IState
     }
     public void OnEnter()
     {
+        // play the fuzzy transition thing
+        FlickChannel();
+
         // choose a clip
         m_currentClipData = m_clipDataList[m_clipIndex];
 
@@ -461,5 +474,14 @@ public class PlayClip : IState
         }
         m_qteStates.Clear();
         m_clipIndex++;
+
+        m_videoPlayer.Stop();
+    }
+
+    public void FlickChannel()
+    {
+        m_manager.m_tvStatic.SetActive(true);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/ChannelChange");
+        m_channelChangetimer = 0.5f;
     }
 }
