@@ -335,6 +335,7 @@ public class PlayClip : IState
                         GameObject canvas = GameObject.Find("Canvas");
                         GameObject newText = GameObject.Instantiate(toSpawn, Vector3.zero, Quaternion.identity, canvas.transform);
                         newText.transform.localPosition = _qteData.resultPos;
+                        GameObject.Destroy(m_prompt);
 
                         _qteState.m_qteResult = QTEResult.None;
                         _qteState.m_qteResultTimer = 0.0f;
