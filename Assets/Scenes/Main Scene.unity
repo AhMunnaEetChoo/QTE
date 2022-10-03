@@ -7698,8 +7698,10 @@ MonoBehaviour:
   m_jsonURL: https://ahmunnaeetchoo.github.io/QTE/GameData.json
   m_extraJsonURL: https://ahmunnaeetchoo.github.io/QTE/GameDataExtra.json
   m_webDataRetrieved: 0
+  m_cameraAnimated: {fileID: 1071475164}
   m_tvStatic: {fileID: 1113628085}
   m_creditsMusicEmitter: {fileID: 693383887}
+  m_startPromptPosition: {x: 0, y: 50}
   m_qtePrefab: {fileID: 1187212016356222401, guid: da1f1ed1774ae4ff9928f14aee2fabb5, type: 3}
   m_awesomePrefab: {fileID: 5653227522090462145, guid: 61d2f7efbb643470c92a2cb239287558, type: 3}
   m_perfectPrefab: {fileID: 8258402941228443774, guid: c98ddf9936e5443fa814546cc6f5740a, type: 3}

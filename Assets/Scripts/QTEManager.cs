@@ -62,8 +62,10 @@ public class QTEManager : MonoBehaviour
     private string m_mainGameJson;
     private string m_extraGameJson;
 
+    public GameObject m_cameraAnimated;
     public GameObject m_tvStatic;
     public FMODUnity.StudioEventEmitter m_creditsMusicEmitter;
+    public Vector2 m_startPromptPosition;
 
     public GameObject m_qtePrefab;
     public GameObject m_awesomePrefab;
@@ -151,7 +153,7 @@ public class QTEManager : MonoBehaviour
 
             // spawn the text
             m_startPrompt = GameObject.Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
-            m_startPrompt.transform.localPosition = new Vector3(0.0f, 100.0f, 0.0f);
+            m_startPrompt.transform.localPosition = m_manager.m_startPromptPosition;
             TMP_Text newText = m_startPrompt.GetComponent<TMP_Text>();
             string pressSText = "Press [s] to Start\n Press [e] for Extra Mode";
             newText.text = pressSText.Replace("[s]", "<sprite=" + QTEManager.charToSpriteIndex["s"].ToString() + ">").Replace("[e]", "<sprite=" + QTEManager.charToSpriteIndex["e"].ToString() + ">");
@@ -168,6 +170,8 @@ public class QTEManager : MonoBehaviour
             {
                 m_manager.m_gameData = JsonUtility.FromJson<GameData>(m_manager.m_extraGameJson);
             }
+            // trigger camera animation
+            m_manager.m_cameraAnimated.GetComponent<Animator>().SetBool("GameStarted", true);
 
             m_manager.m_scoreSystem.CurrentScoreText.gameObject.SetActive(true);
             m_manager.m_tvStatic.SetActive(false);
