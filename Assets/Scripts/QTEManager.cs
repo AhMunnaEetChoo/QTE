@@ -130,6 +130,8 @@ public class QTEManager : MonoBehaviour
         private List<ClipData> m_clipDataList;
         private VideoPlayer m_videoPlayer;
         private int m_clipIndex = 0;
+        private GameObject m_prompt;
+        private float m_promptDestroyTime;
 
         enum QTEStage
         {
@@ -147,6 +149,15 @@ public class QTEManager : MonoBehaviour
             TooBad,
             Whoops
         }
+        private void SetPrompt(GameObject _newPrompt, float _promptDestroyTime)
+        {
+            if(m_prompt != null)
+            {
+                GameObject.Destroy(m_prompt);
+            }
+            m_prompt = _newPrompt;
+            m_promptDestroyTime = _promptDestroyTime;
+        }
 
         private class QTEState
         {
@@ -154,7 +165,6 @@ public class QTEManager : MonoBehaviour
             public QTEResult m_qteResult = QTEResult.None;
             public float m_qteResultTimer = 0.0f;
             public int m_mashCount = 0;
-            public GameObject m_prompt;
             public GameObject m_rhythmTarget;
             public GameObject m_rhythmCue;
         };
@@ -183,9 +193,9 @@ public class QTEManager : MonoBehaviour
         private bool QTECheckTime(QTEState _qteState, QTE _qteData)
         {
             bool outOfTime = m_videoPlayer.time > (_qteData.triggerTime + _qteData.coolBuffer);
-            if (Keyboard.current.anyKey.isPressed || outOfTime)
+            if (Keyboard.current.anyKey.wasPressedThisFrame || outOfTime)
             {
-                if (((KeyControl)Keyboard.current[_qteData.button]).isPressed)
+                if (((KeyControl)Keyboard.current[_qteData.button]).wasPressedThisFrame)
                 {
                     // now check against the correct time..
                     float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
@@ -267,28 +277,44 @@ public class QTEManager : MonoBehaviour
                         GameObject canvas = GameObject.Find("Canvas");
 
                         // spawn the text
-                        _qteState.m_prompt = Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
-                        _qteState.m_prompt.transform.localPosition = _qteData.screenPos;
-                        TMP_Text newText = _qteState.m_prompt.GetComponent<TMP_Text>();
+                        SetPrompt(Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform), _qteData.triggerTime + _qteData.coolBuffer);
+                        m_prompt.transform.localPosition = _qteData.screenPos;
+                        TMP_Text newText = m_prompt.GetComponent<TMP_Text>();
                         newText.text = _qteData.text.Replace("[" + _qteData.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">");
                         _qteState.m_qteStage = QTEStage.ShowPrompt;
                     }
                     break;
                 case QTEStage.ShowPrompt:
-                    // if player presses the right QTE button
-                    if(QTECheckTime(_qteState, _qteData))
-                    {
-                        _qteState.m_qteResultTimer = 0.0f;
-                        _qteState.m_qteStage = QTEStage.Showresult;
-                        GameObject.Destroy(_qteState.m_prompt);
-                    }
-
                     break;
                 case QTEStage.Showresult:
                     QTEShowResult(_qteState, _qteData);
                     break;
             }
         }
+
+        void TriggerQTE(QTEState _qteState, QTE _qteData)
+        {
+            switch (_qteData.qteType)
+            {
+                case QTEType.Instruction:
+                {
+                    _qteState.m_qteResultTimer = 0.0f;
+                    _qteState.m_qteStage = QTEStage.Showresult;
+                    break;
+                }
+                case QTEType.Mash:
+                    break;
+                case QTEType.Rhythm:
+                {
+                    _qteState.m_qteResultTimer = 0.0f;
+                    _qteState.m_qteStage = QTEStage.Showresult;
+                    GameObject.Destroy(_qteState.m_rhythmCue);
+                    GameObject.Destroy(_qteState.m_rhythmTarget);
+                    break;
+                }
+            }
+        }
+
         private void MashUpdate(QTEState _qteState, QTE _qteData)
         {
             switch (_qteState.m_qteStage)
@@ -299,9 +325,9 @@ public class QTEManager : MonoBehaviour
                         GameObject canvas = GameObject.Find("Canvas");
 
                         // spawn the text
-                        _qteState.m_prompt = Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
-                        _qteState.m_prompt.transform.localPosition = _qteData.screenPos;
-                        TMP_Text newText = _qteState.m_prompt.GetComponent<TMP_Text>();
+                        SetPrompt(Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform), _qteData.triggerTime + _qteData.coolBuffer);
+                        m_prompt.transform.localPosition = _qteData.screenPos;
+                        TMP_Text newText = m_prompt.GetComponent<TMP_Text>();
                         newText.text = _qteData.text.Replace("[" + _qteData.button + "]", "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">");
                         _qteState.m_qteStage = QTEStage.ShowPrompt;
                     }
@@ -309,10 +335,10 @@ public class QTEManager : MonoBehaviour
                 case QTEStage.ShowPrompt:
                     {
                         // if player presses the right QTE button
-                        if (((KeyControl)Keyboard.current[_qteData.button]).isPressed)
+                        if (((KeyControl)Keyboard.current[_qteData.button]).wasPressedThisFrame)
                         {
                             _qteState.m_mashCount++;
-                            // TODO: play a small ping thing,
+                            FMODUnity.RuntimeManager.PlayOneShot("event:/Mash_Hit");
                             // TODO: fire a star
                         }
                         if (m_videoPlayer.time > _qteData.triggerTime)
@@ -330,7 +356,6 @@ public class QTEManager : MonoBehaviour
                             }
                             _qteState.m_qteStage = QTEStage.Showresult;
                             _qteState.m_qteResultTimer = 0.0f;
-                            GameObject.Destroy(_qteState.m_prompt);
                         }
                         break;
                     }
@@ -383,9 +408,9 @@ public class QTEManager : MonoBehaviour
                         GameObject canvas = GameObject.Find("Canvas");
                         string buttonSprite = "<sprite=" + QTEManager.charToSpriteIndex[_qteData.button].ToString() + ">";
                         // spawn the text
-                        _qteState.m_prompt = Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
-                        _qteState.m_prompt.transform.localPosition = _qteData.screenPos;
-                        TMP_Text newText = _qteState.m_prompt.GetComponent<TMP_Text>();
+                        SetPrompt(Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform), _qteData.triggerTime+_qteData.coolBuffer);
+                        m_prompt.transform.localPosition = _qteData.screenPos;
+                        TMP_Text newText = m_prompt.GetComponent<TMP_Text>();
                         newText.text = _qteData.text.Replace("[" + _qteData.button + "]", buttonSprite);
                         _qteState.m_qteStage = QTEStage.ShowPrompt;
 
@@ -403,15 +428,6 @@ public class QTEManager : MonoBehaviour
                 case QTEStage.ShowPrompt:
                     float t = ((float)m_videoPlayer.time - _qteData.promptTime) / (_qteData.triggerTime - _qteData.promptTime);
                     _qteState.m_rhythmCue.transform.localPosition = Vector3.LerpUnclamped(_qteData.rhythmCueStartPos, _qteData.rhythmTargetPos, t);
-
-                    if(QTECheckTime(_qteState, _qteData))
-                    {
-                        _qteState.m_qteResultTimer = 0.0f;
-                        _qteState.m_qteStage = QTEStage.Showresult;
-                        GameObject.Destroy(_qteState.m_prompt);
-                        GameObject.Destroy(_qteState.m_rhythmCue);
-                        GameObject.Destroy(_qteState.m_rhythmTarget);
-                    }
                     break;
                 case QTEStage.Showresult:
                     QTEShowResult(_qteState, _qteData);
@@ -420,10 +436,35 @@ public class QTEManager : MonoBehaviour
         }
         public void Tick()
         {
+            if((float)m_videoPlayer.time >= m_promptDestroyTime)
+            {
+                GameObject.Destroy(m_prompt);
+            }
+
+            if (m_currentClipData.qtes.Count ==0)
+            {
+                return;
+            }
+
+            QTE closestTotrigger = m_currentClipData.qtes[0];
+            QTEState closestStateToTrigger = m_qteStates[0];
+            float smallestDelta = float.PositiveInfinity;
+
             for (int i = 0; i < m_qteStates.Count; ++i)
             {
                 QTE currentQTE = m_currentClipData.qtes[i];
                 QTEState currentState = m_qteStates[i];
+
+                // find the closest QTE to trigger
+                float triggerDelta = Mathf.Abs((float)m_videoPlayer.time - currentQTE.triggerTime);
+                if(currentState.m_qteStage == QTEStage.ShowPrompt && triggerDelta < smallestDelta)
+                {
+                    closestTotrigger = currentQTE;
+                    closestStateToTrigger = currentState;
+                    smallestDelta = triggerDelta;
+                }
+
+                // update the different types
                 switch (currentQTE.qteType)
                 {
                     case QTEType.Instruction:
@@ -437,6 +478,14 @@ public class QTEManager : MonoBehaviour
                         break;
 
                 }
+            }
+
+            // check to see if we can trigger the closest QTE
+            if(closestStateToTrigger.m_qteStage == QTEStage.ShowPrompt && 
+                closestTotrigger.qteType != QTEType.Mash && 
+                QTECheckTime(closestStateToTrigger, closestTotrigger))
+            {
+                TriggerQTE(closestStateToTrigger, closestTotrigger);
             }
         }
         public void OnEnter()
@@ -456,12 +505,9 @@ public class QTEManager : MonoBehaviour
 
         public void OnExit()
         {
-            foreach(QTEState qteState in m_qteStates)
+            if(m_prompt)
             {
-                if(qteState.m_prompt)
-                {
-                    GameObject.Destroy(qteState.m_prompt);
-                }
+                GameObject.Destroy(m_prompt);
             }
             m_qteStates.Clear();
             m_clipIndex++;
