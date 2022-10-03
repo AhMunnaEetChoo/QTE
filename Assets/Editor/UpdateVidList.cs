@@ -48,14 +48,14 @@ public class LevelScriptEditor : Editor
         if (GUILayout.Button("Export to JSON"))
         {
             string jsonString = JsonUtility.ToJson(myTarget.m_gameData, true);
-            System.IO.File.WriteAllText(Application.dataPath + "/../docs/GameData.json", jsonString);
+            System.IO.File.WriteAllText(EditorUtility.OpenFilePanel("select JSON file", Application.dataPath, "json"), jsonString);
             Debug.Log(jsonString);
         }
 
             
         if (GUILayout.Button("Import from JSON"))
         {
-            string jsonString = System.IO.File.ReadAllText(EditorUtility.OpenFilePanel("select JSON file", Application.dataPath, ".json"));
+            string jsonString = System.IO.File.ReadAllText(EditorUtility.OpenFilePanel("select JSON file", Application.dataPath, "json"));
             myTarget.m_gameData = JsonUtility.FromJson<QTEManager.GameData>(jsonString);
         }
     }

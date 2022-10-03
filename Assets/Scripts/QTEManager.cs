@@ -55,8 +55,12 @@ public class QTEManager : MonoBehaviour
     public ScoreSystem m_scoreSystem;
     public FinalRankingSystem m_finalRankingSystem;
     public VideoPlayer m_videoPlayer;
+
     public string m_jsonURL;
-    public bool m_webDataRetrieved = false;
+    public string m_extraJsonURL;
+    public bool m_webDataRetrieved = true;
+    private string m_mainGameJson;
+    private string m_extraGameJson;
 
     public GameObject m_tvStatic;
     public FMODUnity.StudioEventEmitter m_creditsMusicEmitter;
@@ -115,33 +119,60 @@ public class QTEManager : MonoBehaviour
 
     public class MainMenu : IState
     {
-        private bool m_isComplete = false;
+        private bool m_readyToStart = false;
+        private bool m_readyForExtra = false;
         private QTEManager m_manager;
+        private GameObject m_startPrompt;
+
         public MainMenu(QTEManager _manager)
         {
             m_manager = _manager;
         }
-        public bool IsComplete()
+        public bool ReadyToStart()
         {
 #if !UNITY_EDITOR
-            return m_isComplete && m_manager.m_webDataRetrieved;
+            return (m_readyToStart || m_readyForExtra) && m_manager.m_webDataRetrieved;
 #else
-            return m_isComplete;
+            return m_readyToStart || m_readyForExtra;
 #endif
         }
+
         public void Tick()
         {
-            m_isComplete = m_isComplete || (bool)Keyboard.current?.anyKey.wasPressedThisFrame;
+            m_readyToStart = m_readyToStart || (bool)Keyboard.current?.sKey.wasPressedThisFrame;
+            m_readyForExtra = m_readyToStart || (bool)Keyboard.current?.eKey.wasPressedThisFrame;
         }
         public void OnEnter()
         {
             m_manager.m_tvStatic.SetActive(true);
+            m_manager.m_scoreSystem.CurrentScoreText.gameObject.SetActive(false);
+
+            GameObject canvas = GameObject.Find("Canvas");
+
+            // spawn the text
+            m_startPrompt = GameObject.Instantiate(m_manager.m_qtePrefab, m_manager.m_qtePrefab.transform.position, Quaternion.identity, canvas.transform);
+            m_startPrompt.transform.localPosition = new Vector3(0.0f, 100.0f, 0.0f);
+            TMP_Text newText = m_startPrompt.GetComponent<TMP_Text>();
+            string pressSText = "Press [s] to Start\n Press [e] for Extra Mode";
+            newText.text = pressSText.Replace("[s]", "<sprite=" + QTEManager.charToSpriteIndex["s"].ToString() + ">").Replace("[e]", "<sprite=" + QTEManager.charToSpriteIndex["e"].ToString() + ">");
+
         }
 
         public void OnExit()
         {
+            if (m_readyToStart)
+            {
+                m_manager.m_gameData = JsonUtility.FromJson<GameData>(m_manager.m_mainGameJson);
+            }
+            else if (m_readyForExtra)
+            {
+                m_manager.m_gameData = JsonUtility.FromJson<GameData>(m_manager.m_extraGameJson);
+            }
+
+            m_manager.m_scoreSystem.CurrentScoreText.gameObject.SetActive(true);
             m_manager.m_tvStatic.SetActive(false);
-            m_isComplete = false;
+            m_readyToStart = false;
+            GameObject.Destroy(m_startPrompt);
         }
     }
     public class ShowScore : IState
@@ -179,21 +210,29 @@ public class QTEManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(GetRequest(m_jsonURL));
+        m_scoreSystem = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
+        m_finalRankingSystem = GameObject.Find("FinalRankingSystem").GetComponent<FinalRankingSystem>();
+
+#if UNITY_EDITOR
+        m_mainGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameData.json");
+        m_extraGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameDataExtra.json");
+#else
+        StartCoroutine(GetRequest(m_jsonURL, m_mainGameJson));
+        StartCoroutine(GetRequest(m_extraJsonURL, m_extraGameJson));
+        m_webDataRetrieved = false;
+#endif
 
         // setup state machine
         MainMenu mainMenuState = new MainMenu(this);
         PlayClip playClipState = new PlayClip(this, m_gameData.clipData, m_videoPlayer);
         ShowScore scoreState = new ShowScore(this);
 
-        m_stateMachine.AddTransition(mainMenuState, playClipState, mainMenuState.IsComplete);
+        m_stateMachine.AddTransition(mainMenuState, playClipState, mainMenuState.ReadyToStart);
         m_stateMachine.AddTransition(playClipState, scoreState, playClipState.GameComplete);
         m_stateMachine.SetState(mainMenuState);
 
-        m_scoreSystem = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
-        m_finalRankingSystem = GameObject.Find("FinalRankingSystem").GetComponent<FinalRankingSystem>();
     }
-    IEnumerator GetRequest(string uri)
+    IEnumerator GetRequest(string uri, string output)
     {
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
@@ -214,9 +253,7 @@ public class QTEManager : MonoBehaviour
                     break;
                 case UnityWebRequest.Result.Success:
                     Debug.Log(pages[page] + ":\nReceived: " + webRequest.downloadHandler.text);
-#if !UNITY_EDITOR
-                    m_gameData = JsonUtility.FromJson<GameData>(webRequest.downloadHandler.text);
-#endif
+                    output = webRequest.downloadHandler.text;
                     m_webDataRetrieved = true;
                     break;
             }
