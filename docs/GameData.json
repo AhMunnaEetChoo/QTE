@@ -4,13 +4,41 @@
             "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4",
             "qtes": [
                 {
-                    "text": "Press [d] to Duck",
+                    "text": "Wait for the right moment,,,",
+                    "button": "",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 0.5,
+                    "triggerTime": 4.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": true
+                },
+                {
+                    "text": "Then press [d] to Duck",
                     "button": "d",
                     "screenPos": {
                         "x": 0.0,
                         "y": -100.0
                     },
-                    "promptTime": 1.0,
+                    "promptTime": 4.0,
                     "triggerTime": 8.0,
                     "perfectBuffer": 0.5,
                     "greatBuffer": 0.800000011920929,
