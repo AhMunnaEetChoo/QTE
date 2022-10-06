@@ -14,7 +14,7 @@
                     "triggerTime": 4.0,
                     "perfectBuffer": 0.5,
                     "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
+                    "coolBuffer": 1.399999976158142,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -104,7 +104,7 @@
                     "triggerTime": 7.875,
                     "perfectBuffer": 0.5,
                     "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 2.0,
+                    "coolBuffer": 2.4000000953674318,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -194,7 +194,7 @@
                     "triggerTime": 6.320000171661377,
                     "perfectBuffer": 0.30000001192092898,
                     "greatBuffer": 0.6000000238418579,
-                    "coolBuffer": 0.8999999761581421,
+                    "coolBuffer": 1.2999999523162842,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -222,7 +222,7 @@
                     "triggerTime": 8.399999618530274,
                     "perfectBuffer": 0.30000001192092898,
                     "greatBuffer": 0.6000000238418579,
-                    "coolBuffer": 0.8999999761581421,
+                    "coolBuffer": 1.2999999523162842,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -256,7 +256,7 @@
                     "triggerTime": 8.083000183105469,
                     "perfectBuffer": 0.20000000298023225,
                     "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.6000000238418579,
+                    "coolBuffer": 1.0,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -288,9 +288,9 @@
                     },
                     "promptTime": 0.30000001192092898,
                     "triggerTime": 2.5250000953674318,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
                     "awesomeMashCount": 6,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -298,7 +298,7 @@
                     },
                     "rhythmCueStartPos": {
                         "x": 0.0,
-                        "y": 600.0
+                        "y": 300.0
                     },
                     "resultPos": {
                         "x": -75.0,
@@ -316,9 +316,9 @@
                     },
                     "promptTime": 1.6749999523162842,
                     "triggerTime": 3.9000000953674318,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
                     "awesomeMashCount": 6,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -326,7 +326,7 @@
                     },
                     "rhythmCueStartPos": {
                         "x": 0.0,
-                        "y": 600.0
+                        "y": 300.0
                     },
                     "resultPos": {
                         "x": 175.0,
@@ -344,9 +344,9 @@
                     },
                     "promptTime": 4.675000190734863,
                     "triggerTime": 6.900000095367432,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
                     "awesomeMashCount": 6,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -354,7 +354,7 @@
                     },
                     "rhythmCueStartPos": {
                         "x": 0.0,
-                        "y": 600.0
+                        "y": 300.0
                     },
                     "resultPos": {
                         "x": 150.0,
@@ -372,9 +372,9 @@
                     },
                     "promptTime": 6.675000190734863,
                     "triggerTime": 8.899999618530274,
-                    "perfectBuffer": 0.10000000149011612,
-                    "greatBuffer": 0.10000000149011612,
-                    "coolBuffer": 0.10000000149011612,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
                     "awesomeMashCount": 6,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -382,7 +382,7 @@
                     },
                     "rhythmCueStartPos": {
                         "x": 0.0,
-                        "y": 600.0
+                        "y": 300.0
                     },
                     "resultPos": {
                         "x": -75.0,
@@ -408,7 +408,7 @@
                     "triggerTime": 5.0,
                     "perfectBuffer": 0.20000000298023225,
                     "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.800000011920929,
+                    "coolBuffer": 1.2000000476837159,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -442,7 +442,7 @@
                     "triggerTime": 4.0,
                     "perfectBuffer": 0.30000001192092898,
                     "greatBuffer": 0.44999998807907107,
-                    "coolBuffer": 0.6000000238418579,
+                    "coolBuffer": 1.0,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -616,7 +616,7 @@
                     "triggerTime": 6.5,
                     "perfectBuffer": 0.20000000298023225,
                     "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.800000011920929,
+                    "coolBuffer": 1.2000000476837159,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -650,7 +650,7 @@
                     "triggerTime": 8.083000183105469,
                     "perfectBuffer": 0.20000000298023225,
                     "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 1.0,
+                    "coolBuffer": 1.399999976158142,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -710,6 +710,6 @@
         "scorec": 3000,
         "scoreb": 6000,
         "scorea": 10000,
-        "scores": 14000
+        "scores": 13000
     }
 }

@@ -14,7 +14,7 @@
                     "triggerTime": 5.708000183105469,
                     "perfectBuffer": 0.20000000298023225,
                     "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.6000000238418579,
+                    "coolBuffer": 1.0,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -48,7 +48,7 @@
                     "triggerTime": 7.583000183105469,
                     "perfectBuffer": 0.30000001192092898,
                     "greatBuffer": 0.6000000238418579,
-                    "coolBuffer": 0.8999999761581421,
+                    "coolBuffer": 1.2999999523162842,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -116,7 +116,7 @@
                     "triggerTime": 8.0,
                     "perfectBuffer": 0.30000001192092898,
                     "greatBuffer": 0.6000000238418579,
-                    "coolBuffer": 0.8999999761581421,
+                    "coolBuffer": 1.2999999523162842,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -184,7 +184,7 @@
                     "triggerTime": 7.400000095367432,
                     "perfectBuffer": 0.5,
                     "greatBuffer": 0.800000011920929,
-                    "coolBuffer": 1.0,
+                    "coolBuffer": 1.399999976158142,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -252,7 +252,7 @@
                     "triggerTime": 10.083000183105469,
                     "perfectBuffer": 0.20000000298023225,
                     "greatBuffer": 0.4000000059604645,
-                    "coolBuffer": 0.6000000238418579,
+                    "coolBuffer": 1.0,
                     "awesomeMashCount": 10,
                     "rhythmTargetPos": {
                         "x": 0.0,
@@ -276,8 +276,8 @@
     "scoreData": {
         "scoref": 0,
         "scorec": 1000,
-        "scoreb": 3000,
-        "scorea": 4500,
-        "scores": 6000
+        "scoreb": 2500,
+        "scorea": 4000,
+        "scores": 5500
     }
 }
