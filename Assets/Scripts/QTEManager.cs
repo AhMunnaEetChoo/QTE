@@ -252,12 +252,15 @@ public class QTEManager : MonoBehaviour
         m_scoreSystem = GameObject.Find("ScoreSystem").GetComponent<ScoreSystem>();
         m_finalRankingSystem = GameObject.Find("FinalRankingSystem").GetComponent<FinalRankingSystem>();
 
-#if UNITY_EDITOR
-        m_mainGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameData.json");
-        m_extraGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameDataExtra.json");
-#else
+#if PLATFORM_WEBGL
         StartCoroutine(GetRequest(m_jsonURL, false));
         StartCoroutine(GetRequest(m_extraJsonURL, true));
+#else
+        m_mainGameJson = Resources.Load<TextAsset>("GameData/GameData").text;
+        m_extraGameJson = Resources.Load<TextAsset>("GameData/GameDataExtra").text;
+        //#if UNITY_EDITOR
+        //        m_mainGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameData.json");
+        //        m_extraGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameDataExtra.json");
 #endif
 
         // setup state machine

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine;
+using UnityEngine.Bindings;
 using UnityEngine.Video;
 using TMPro;
 
@@ -457,7 +458,14 @@ public class PlayClip : IState
             m_qteStates.Add(new QTEState());
         }
 
+#if PLATFORM_WEBGL
         m_videoPlayer.url = m_currentClipData.url;
+#else
+        // horrible url hack -> clip hohoho
+        string resourceURL = m_currentClipData.url.Substring("https://ahmunnaeetchoo.github.io/QTE/".Length);
+        resourceURL = resourceURL.Split(".")[0];
+        m_videoPlayer.clip = Resources.Load<VideoClip>(resourceURL);
+#endif
         m_videoPlayer.Play();
         m_videoPlayer.SetDirectAudioVolume(0, m_currentClipData.volume);
     }

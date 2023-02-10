@@ -1,0 +1,715 @@
+{
+    "clipData": [
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Northwest.mp4",
+            "qtes": [
+                {
+                    "text": "Wait for the right moment,,,",
+                    "button": "",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 0.5,
+                    "triggerTime": 4.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.399999976158142,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": true
+                },
+                {
+                    "text": "Then press [d] to Duck",
+                    "button": "d",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 4.0,
+                    "triggerTime": 8.0,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 0.699999988079071
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_IndianaJonesBoulder.mp4",
+            "qtes": [
+                {
+                    "text": "<u>Mash</u> [r] to Run",
+                    "button": "r",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 0.5,
+                    "triggerTime": 4.5,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "qteType": 1,
+                    "dontPress": false
+                },
+                {
+                    "text": "Press [j] to Jump",
+                    "button": "j",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "promptTime": 6.0,
+                    "triggerTime": 7.875,
+                    "perfectBuffer": 0.5,
+                    "greatBuffer": 0.800000011920929,
+                    "coolBuffer": 2.4000000953674318,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 0.20000000298023225
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_RobinHood.mp4",
+            "qtes": [
+                {
+                    "text": "[s]wipe!",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 1.9199999570846558,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": -100.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 600.0,
+                        "y": -100.0
+                    },
+                    "resultPos": {
+                        "x": -260.0,
+                        "y": 100.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[s]wipe!",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 3.319999933242798,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": -100.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 600.0,
+                        "y": -100.0
+                    },
+                    "resultPos": {
+                        "x": -260.0,
+                        "y": 100.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "Press [k] to Kick!",
+                    "button": "k",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "promptTime": 4.0,
+                    "triggerTime": 6.320000171661377,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.6000000238418579,
+                    "coolBuffer": 1.2999999523162842,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                },
+                {
+                    "text": "Press [j] to Jump!",
+                    "button": "j",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "promptTime": 7.300000190734863,
+                    "triggerTime": 8.399999618530274,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.6000000238418579,
+                    "coolBuffer": 1.2999999523162842,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 0.5
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Terminator.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to Be Back",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -150.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.083000183105469,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Spartacus.mp4",
+            "qtes": [
+                {
+                    "text": "[i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 0.30000001192092898,
+                    "triggerTime": 2.5250000953674318,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": -75.0,
+                        "y": 25.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 1.6749999523162842,
+                    "triggerTime": 3.9000000953674318,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": 175.0,
+                        "y": 25.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 4.675000190734863,
+                    "triggerTime": 6.900000095367432,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": 150.0,
+                        "y": 100.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[i]'m Spartacus",
+                    "button": "i",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -50.0
+                    },
+                    "promptTime": 6.675000190734863,
+                    "triggerTime": 8.899999618530274,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.30000001192092898,
+                    "coolBuffer": 0.30000001192092898,
+                    "awesomeMashCount": 6,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 0.0,
+                        "y": 300.0
+                    },
+                    "resultPos": {
+                        "x": -75.0,
+                        "y": 100.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Matrix.mp4",
+            "qtes": [
+                {
+                    "text": "Press [k] to Know Kung Fu",
+                    "button": "k",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 5.0,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 1.2000000476837159,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Bee.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to ___",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 4.0,
+                    "perfectBuffer": 0.30000001192092898,
+                    "greatBuffer": 0.44999998807907107,
+                    "coolBuffer": 1.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Whiplash.mp4",
+            "qtes": [
+                {
+                    "text": "[s]nare",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 0.8330000042915344,
+                    "perfectBuffer": 0.25,
+                    "greatBuffer": 0.25,
+                    "coolBuffer": 0.25,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": -600.0,
+                        "y": 100.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[s]nare",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 1.9579999446868897,
+                    "perfectBuffer": 0.25,
+                    "greatBuffer": 0.25,
+                    "coolBuffer": 0.25,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": -600.0,
+                        "y": 100.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[s]nare",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 3.0829999446868898,
+                    "perfectBuffer": 0.25,
+                    "greatBuffer": 0.25,
+                    "coolBuffer": 0.25,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": -600.0,
+                        "y": 100.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[s]nare",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 4.083000183105469,
+                    "perfectBuffer": 0.25,
+                    "greatBuffer": 0.25,
+                    "coolBuffer": 0.25,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": -600.0,
+                        "y": 100.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "[s]nare",
+                    "button": "s",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 0.0,
+                    "triggerTime": 4.25,
+                    "perfectBuffer": 0.25,
+                    "greatBuffer": 0.25,
+                    "coolBuffer": 0.25,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": -600.0,
+                        "y": 100.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 2,
+                    "dontPress": false
+                },
+                {
+                    "text": "Press [d] to Duck!",
+                    "button": "d",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": 150.0
+                    },
+                    "promptTime": 5.0,
+                    "triggerTime": 6.5,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 1.2000000476837159,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_TerminatorBee.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to Bee Back",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -150.0
+                    },
+                    "promptTime": 1.0,
+                    "triggerTime": 8.083000183105469,
+                    "perfectBuffer": 0.20000000298023225,
+                    "greatBuffer": 0.4000000059604645,
+                    "coolBuffer": 1.399999976158142,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        },
+        {
+            "url": "https://ahmunnaeetchoo.github.io/QTE/Clips/Vid_Casablanca.mp4",
+            "qtes": [
+                {
+                    "text": "Press [b] to Begin Beautiful Friendship",
+                    "button": "b",
+                    "screenPos": {
+                        "x": 0.0,
+                        "y": -100.0
+                    },
+                    "promptTime": 2.0,
+                    "triggerTime": 6.0,
+                    "perfectBuffer": 10.0,
+                    "greatBuffer": 11.0,
+                    "coolBuffer": 12.0,
+                    "awesomeMashCount": 10,
+                    "rhythmTargetPos": {
+                        "x": 0.0,
+                        "y": 100.0
+                    },
+                    "rhythmCueStartPos": {
+                        "x": 800.0,
+                        "y": 0.0
+                    },
+                    "resultPos": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "qteType": 0,
+                    "dontPress": false
+                }
+            ],
+            "volume": 1.0
+        }
+    ],
+    "scoreData": {
+        "scoref": 1000,
+        "scorec": 3000,
+        "scoreb": 6000,
+        "scorea": 10000,
+        "scores": 13000
+    }
+}
