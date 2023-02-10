@@ -81,10 +81,11 @@ public class PlayClip : IState
 
     private bool QTECheckTime(QTEState _qteState, QTEManager.QTE _qteData)
     {
+        bool hasButton = _qteData.button.Length > 0;
         bool outOfTime = m_videoPlayer.time > (_qteData.triggerTime + _qteData.coolBuffer);
         if (Keyboard.current.anyKey.wasPressedThisFrame || outOfTime)
         {
-            if (((KeyControl)Keyboard.current[_qteData.button]).wasPressedThisFrame)
+            if (hasButton && ((KeyControl)Keyboard.current[_qteData.button]).wasPressedThisFrame)
             {
                 // now check against the correct time..
                 float difference = Mathf.Abs(_qteData.triggerTime - (float)m_videoPlayer.time);
@@ -113,7 +114,14 @@ public class PlayClip : IState
                 }
             }
 
-            if (_qteState.m_qteResult == QTEResult.None)
+            if(!hasButton)
+            {
+                if (m_prompt)
+                {
+                    GameObject.Destroy(m_prompt);
+                }
+            }
+            else if (_qteState.m_qteResult == QTEResult.None)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Instruction_Fail");
                 _qteState.m_qteResult = (QTEResult)Random.Range((int)QTEResult.Shame, (int)QTEResult.Whoops + 1);
