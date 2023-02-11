@@ -258,6 +258,7 @@ public class QTEManager : MonoBehaviour
 #else
         m_mainGameJson = Resources.Load<TextAsset>("GameData/GameData").text;
         m_extraGameJson = Resources.Load<TextAsset>("GameData/GameDataExtra").text;
+        m_gameLoadCount = 2;
         //#if UNITY_EDITOR
         //        m_mainGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameData.json");
         //        m_extraGameJson = System.IO.File.ReadAllText(Application.dataPath + "/../docs/GameDataExtra.json");
